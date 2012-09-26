@@ -1,0 +1,123 @@
+#!/usr/bin/perl
+# Copyright (c) 2012, Cornell University
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# 
+#     * Redistributions of source code must retain the above copyright notice,
+#       this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright notice,
+#       this list of conditions and the following disclaimer in the documentation
+#       and/or other materials provided with the distribution.
+#     * Neither the name of Cornell University nor the names of its contributors
+#       may be used to endorse or promote products derived from this software
+#       without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# 
+
+
+use Cwd qw(chdir getcwd);
+use sigtrap qw(die INT QUIT);
+use sigtrap qw(die untrapped normal-signals stack-trace any error-signals);
+use Getopt::Std;
+use FileHandle;
+use POSIX qw( strftime );
+use FindBin qw($Bin);
+use Term::ReadKey;
+@av = @ARGV;
+$g_T0 = time();
+$g_STARTED_AT = strftime("%Y\%m%d%H\%M\%S", localtime($g_T0) );
+print "Started at $g_STARTED_AT\n";
+if(scalar(@ARGV) == 0){
+    usage(0);
+}
+
+# designed and coded by Joseph R. Mc Enerney jrm424@cornell.edu 
+
+sub usage{
+    my($ex)=@_;
+    print "dodiscover [params] urifile\n";
+    print "-C           clear out file if it exists\n";
+    print "-c ctxt      context of vivo instance\n";
+    print "-E num       expecting num uris\n";
+    print "-h host      host of  vivo instance\n";
+    print "-o file      output file\n";
+    print "-P           use prefixes where possible\n";
+    print "-p port      port of vivo instance\n";
+    print "-v           verbose\n";
+    print "'dodv' calls 'discover' and points it to vivo prod.\n";
+    exit($ex);
+}
+
+$opts = "b:c:CE:h:o:Pp:n:vu:";
+getopts($opts);
+$base = "/home/ingest/Common";
+$base = $opt_b if $opt_b ne '';
+$outf = "problemObjs.xmls";
+$outf = $opt_o if $opt_o ne '';
+$N=0;
+$v = " -v" if $opt_v;
+
+$u = qx(id -un);
+chomp $u;
+$u = $opt_u if $opt_u ne '';
+$u = " -u $u ";
+if($opt_C && -e $outf){
+    qx(/bin/rm -f $outf);
+}
+$n = "";
+$n = " -n $opt_n " if $opt_n ne '';
+
+$hpc = " -h $opt_h " if $opt_h ne '';
+$hpc .= " -p $opt_p " if $opt_p ne '';
+$hpc .= " -c $opt_c " if $opt_c ne '';
+
+open LOG, ">>/home/ingest/www/logs/uritool.log";
+print LOG "$0 " . join(' ',@av) . "\n" if $opt_v;
+qx(/bin/rm -f $outf);
+while(<>){
+    chomp;
+    next if $_ eq "";
+    $cmd = "discover $hpc -b $base $u$v $n -N $N -aO $outf $_";
+    print $cmd . "\n";
+    qx($cmd);
+    $N++;
+    my $r = ($? >> 8);
+    exit 1 if $r;
+}
+
+END {
+    my $rcode = $?;
+    my $elapsed = time() - $g_T0;
+    print STDERR "Expected $opt_E; " if $opt_E;
+    print STDERR "$N done \n";
+    my $err = "ERROR ";
+
+    $err = '' if $rcode == 0;
+    my $t1 = strftime("%Y\%m%d%H\%M\%S", localtime(time()));
+    print STDERR $err . "Ending $0 at $t1. ". hms($elapsed) . " hms.\n";
+
+    $? = $rcode;
+}
+sub hms {
+    my($s) = @_;
+    my $h = int($s/3600);
+    my $r = $s - 3600*$h;
+    my $m = int($r/60);
+    my $s = $r - 60*$m;
+    my $res;
+    $res = sprintf("%02d:%02d:%02d", $h, $m, $s);
+    return $res;
+}
+

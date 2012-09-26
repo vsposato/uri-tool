@@ -1,0 +1,438 @@
+#!/usr/bin/perl
+
+# Copyright (c) 2010, Cornell University
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# 
+#     * Redistributions of source code must retain the above copyright notice,
+#       this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright notice,
+#       this list of conditions and the following disclaimer in the documentation
+#       and/or other materials provided with the distribution.
+#     * Neither the name of Cornell University nor the names of its contributors
+#       may be used to endorse or promote products derived from this software
+#       without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# 
+
+# designed and coded by Joseph R. Mc Enerney jrm424@cornell.edu 
+
+use sigtrap qw(die INT QUIT);
+use sigtrap qw(die untrapped normal-signals stack-trace any error-signals);
+use Getopt::Std;
+use FileHandle;
+use POSIX qw( strftime );
+use FindBin qw($Bin);
+use Term::ReadKey;
+
+$g_T0 = time();
+$g_STARTED_AT = strftime("%Y\%m%d%H\%M\%S", localtime($g_T0) );
+$g_ErrorToken = "$0: $$ $g_STARTED_AT";
+# duplicate stdout
+open CONSOLE, ">&STDOUT";
+# flush
+autoflush CONSOLE 1;
+# flush
+autoflush STDOUT 1;
+# print usage if no args
+if(scalar(@ARGV) == 0){
+    usage();
+}
+
+# get command line params
+getopts("ac:C:dh:i:ln:O:o:p:P:rsS:u:vVW:");
+
+if($opt_W ne ''){
+    $g_ErrorToken = "$opt_W ". $g_ErrorToken;
+    $opt_W .= '=';
+} else {
+    $opt_W = "=";
+}
+$g_ontology = "1.4";
+$g_context ='vivo';
+# explain myself
+sub usage {
+    print STDOUT "\nsparqlTool dh:i:n:O:o:p:rsvV    (version 1.2)\n";
+    print STDOUT "\t-a           append to log\n";
+    print STDOUT "\t-c context   default 'vivo'\n";
+    print STDOUT "\t-C type      Construct output types: RDF/XML, RDF/XML-ABBREV, N3, N-Triple, TTL\n";
+    print STDOUT "\t-d           debug mode\n";
+    print STDOUT "\t-h host      host:ip, name or dns name. default='localhost'\n";
+    print STDOUT "\t             'vivo.cornell.edu' is production vivo\n";
+    print STDOUT "\t-i path      path refers to the in file in which the query is found\n";
+    print STDOUT "\t-l           log activity\n";
+    print STDOUT "\t-n name      user name. default=defaultAdmin\n";
+    #print STDOUT "\t-O ontology  default 1.3 (use 1.1 for old version)\n";
+    print STDOUT "\t-o path      path refers to the out file in which results are placed\n";
+    print STDOUT "\t-p port      port number. default=8080\n";
+    print STDOUT "\t-P password  \n";
+    print STDOUT "\t-s           silent operation\n";
+    print STDOUT "\t-S type      Select output types: RS_XML,RS_TEXT,CSV,RS_RDF/N3,RS_JASON,RS_RDF\n";
+    print STDOUT "\t-v           verbose\n";
+    #print STDOUT "\t-V           very verbose\n";
+    exit(0);
+}
+@SOT=('RS_XML','RS_TEXT','CSV','RS_RDF/N3','RS_JSON','RS_RDF');
+@COT=('RDF/XML', 'RDF/XML-ABBREV', 'N3', 'N-TRIPLE', 'TTL');
+
+$selectOutType="resultFormat=RS_TEXT";
+foreach $s (@SOT){
+    if(uc($opt_S) eq uc($s)){
+	$selectOutType="resultFormat=" . uc($opt_S) . "";
+	last;
+    }
+}
+
+$constructOutType =  "rdfResultFormat=RDF/XML-ABBREV";
+foreach $c (@COT){
+    if(uc($opt_C) eq uc($c)){
+	$constructOutType="'rdfResultFormat=". uc($opt_C) . "'";
+	last;
+    }
+}
+
+# clean up string ends
+sub trim {
+    my($a) = @_;
+    $a =~ s/^\s*(\S+)\s*$/$1/;
+    $a =~ s/^\s*(\S.*\S)\s*$/$1/;
+    $a =~ s/(\s*)//;
+    return $a;
+}
+$g_ontology = $opt_O if $opt_O ne '';
+
+$g_context = $opt_c if $opt_c ne '';
+
+
+
+# HOST default vs arg
+$host = 'localhost';
+$host = $opt_h if $opt_h ne '';
+
+if($host ne 'vivo.cornell.edu' && $host ne 'vivo' ){
+# PORT default vs arg
+    $port = '8080';
+    $port = $opt_p if $opt_p ne '';
+
+# combine parts
+    $g_HOSTCTX = $host;
+    $g_HOSTCTX .= ":$port" if $port ne '';
+    $g_HOSTCTX .= "/$g_context" if $g_context ne '';
+} else {
+    $g_HOSTCTX =  $ENV{'VIVO_HOST_PORT'}; 
+    # e.g. 'sisler.mannlib.cornell.edu:8080';
+    #      'vivo.cornell.edu:8080';
+}
+
+# USER default vs arg
+$g_usr = 'defaultAdmin';
+$g_usr = $opt_n if $opt_n ne '';
+
+# now prep variables
+
+$g_PRE_LOGIN_URL = "http://$g_HOSTCTX/siteAdmin";
+$g_AUTH_URL      = "http://$g_HOSTCTX/authenticate";
+$g_SITE_ADMIN    = "http://$g_HOSTCTX/siteAdmin";
+$g_SPARQL        = "http://$g_HOSTCTX/admin/sparqlquery";
+
+$u = qx(id -un);
+chomp $u;
+$u = $opt_u if $opt_u ne '';
+$g_COOKIE_FILE="/tmp/vivocookies-$u.txt";
+
+$g_Log="/tmp/sparqltool_log_$>";
+if($opt_l){
+    my $r;
+    if($opt_a){
+	$r = open LOG, ">>$g_Log";
+    } else {
+	$r = open LOG, ">$g_Log";
+    }
+    if(!defined($r)){
+	print "Can't open log $g_Log\n";
+	exit 1;
+    }
+    autoflush LOG 1;
+}
+if($opt_l && $opt_a){
+    print LOG "++++++++++++++++++++++++++++++\n";
+
+}
+
+
+sub encode_ctrls {
+    my($x)=@_;
+    if((ord($x)<32) || (ord($x)>127)) {
+	return sprintf('%%%2.2X',ord($x));
+    } else {
+	return $x;
+    }
+}
+sub urlencode {
+    my($x)=@_;
+    $x =~ s/([%+&=<>\[\]\\^\`{}|~:?;])/sprintf('%%%2.2X',ord($1))/ge;
+    $x =~ s/(.|[\n])/encode_ctrls($1)/ge;
+    $x =~ s/ /+/g;
+    return $x;
+}
+
+
+$q = <<"EXQ";
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX swrl:  <http://www.w3.org/2003/11/swrl#>
+PREFIX swrlb: <http://www.w3.org/2003/11/swrlb#>
+PREFIX vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#>
+PREFIX acti: <http://vivoweb.org/ontology/activity-insight#>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX hr: <http://vivo.cornell.edu/ns/hr/0.9/hr.owl#>
+PREFIX dcelem: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX geo: <http://aims.fao.org/aos/geopolitical.owl#>
+PREFIX ospcu: <http://vivoweb.org/ontology/osp-cornell#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX j.1: <http://vitro.mannlib.cornell.edu/ns/vitro/public#>
+PREFIX core: <http://vivoweb.org/ontology/core#>
+
+#
+# This example query gets 20 geographic locations
+# and (if available) their labels
+#
+SELECT ?geoLocation ?label
+WHERE
+{
+  ?geoLocation rdf:type core:GeographicLocation .
+  OPTIONAL { ?geoLocation rdfs:label ?label }
+}
+LIMIT 20
+EXQ
+    
+if($opt_i ne ""){
+    @q = qx(cat $opt_i);
+    $q = join("",@q);
+}
+
+$out = "/tmp/resSparql.$>";
+if($opt_o ne ''){
+    chomp $opt_o;
+    if($opt_o eq '-'){
+	$out = '';
+    } else {
+	$out = " > $opt_o";
+    }
+}
+if(!$opt_s){
+    print "Note: using context '$g_context'\n";
+    print "Note: Host:port/context='http://$g_HOSTCTX'\n";
+
+    print "Note: In " . ($opt_S ne ''?'Query':$opt_C ne '' ? 'Construct': ''). " file '$opt_i'\n";
+    print "Note: Out file '$opt_o'\n";
+    print "Note: Out Query type '$opt_S'\n" if $opt_S ne '';
+    print "Note: Out Construct type '$opt_C'\n" if $opt_C ne '';
+    print "Note: Vivo User='$g_usr'\n";
+    print "Note: If these settings are not correct then enter 'Cancel' ";
+    print "as a password ...\n";
+}
+if($opt_P eq ''){
+# get password for user
+    print  CONSOLE "Password for '$g_usr': ";
+    ReadMode 'noecho';
+    $g_pw = ReadLine(0);
+    print  CONSOLE "\n";
+    chomp($g_pw);
+    $g_pw =~ s/\$/\\\$/g;
+    ReadMode 'normal';
+} elsif($opt_P ne 'env'){ 
+    $g_pw = $opt_P;
+} else {
+    $g_pw = $ENV{'SPARQLTOOL_PW'};
+}
+
+if($g_pw eq '' || $g_pw =~ /^Cancel/i){
+    print "No password - bye ...\n";
+    exit 1;
+}
+
+
+# if -d option then run curl in verbose mode
+$curlverb = '';
+$curlverb = '-v' if $opt_d;
+
+# prepare parameters
+$g_LOGIN_DATA = "bogus=b&loginName=$g_usr&";
+$g_LOGIN_DATA .= "loginPassword=$g_pw&loginForm=Log%20in";
+
+# language
+$lang = 'RDF/XML';
+if(uc($opt_l) eq 'N3'){
+    $lang = 'N3' ;
+}
+
+#encode q
+$Q = urlencode($q);
+$g_PARMS = " -d $selectOutType -d $constructOutType -d query='$Q'";
+if(length($Q) < 512){
+    $g_PARMS = "-G " . $g_PARMS;
+} else {
+    $g_PARMS = "-X POST -H Expect: " . $g_PARMS;
+}
+#$g_PARMS = "-G -d $selectOutType 
+#             -d $constructOutType -d query='" . urlencode($q) ."'";
+
+
+# remove old cookie file ... if any
+@g_res = qx(/bin/rm -f $g_COOKIE_FILE);
+# look for trouble
+$g_r = ($? >> 8);
+print join('', @g_res) . "\n" if ($opt_v || $g_r) &&  scalar(@g_res) > 0;
+exit 1 if $g_r; # quit on fault
+
+
+# Step 1: get cookies by requesting the site admin page
+#
+print LOG "=================\n" if $opt_l;
+$cmd = "curl $curlverb -s -L --cookie junk";
+$cmd .= " --cookie-jar $g_COOKIE_FILE $g_PRE_LOGIN_URL 2>&1 ";
+print "$cmd\n" if $opt_v;
+print LOG "$cmd\n" if $opt_l;
+@g_res = qx($cmd);
+#
+# look for trouble
+$g_r = ($? >> 8);
+# output results if fault or verbose and there is something to say
+$msg = join('', @g_res) . "\n";
+
+print $msg if ($opt_v || $g_r) && !$opt_l &&  scalar(@g_res) > 0;  
+print LOG $msg  if $opt_l && ($opt_v || $g_r) &&  scalar(@g_res) > 0;
+
+exit 1 if $g_r; # quit on fault
+
+
+# Step 2: login passing cookies, user/pw
+print LOG "=================\n" if $opt_l;
+$cmd = "curl $curlverb -s -L --cookie $g_COOKIE_FILE ";
+$cmd .= " --data \"$g_LOGIN_DATA\" $g_AUTH_URL 2>&1 ";
+print "$cmd\n" if $opt_v;
+print LOG "$cmd\n" if $opt_l;
+@g_res = qx($cmd);
+    
+# look for trouble
+$g_r = ($? >> 8);
+
+# output results if fault or verbose and there is something to say
+$msg = join('', @g_res) . "\n";
+print $msg if ($opt_v || $g_r) &&  scalar(@g_res) && !$opt_l > 0;
+print LOG $msg  if $opt_l && ($opt_v || $g_r) &&  scalar(@g_res) > 0;
+if($msg !~ /individual loggedIn/){
+    print "\n>>>------> LOG IN FAILED\n";
+    print LOG "\n>>>------> LOG IN FAILED\n" if $opt_l;
+    exit 1;
+}
+exit 1 if $g_r; # quit on fault
+
+
+# Step 3:  perform op 
+print LOG "=================\n" if $opt_l;
+$cmd = "curl $curlverb  -s -L --cookie $g_COOKIE_FILE ";
+$cmd .= " $g_PARMS $g_SPARQL 2>> $g_Log $out " if $opt_o ne '';
+$cmd .= " $g_PARMS $g_SPARQL 2>> $g_Log | tee $out " if $opt_o eq '';
+print "$cmd\n" if $opt_v;
+@g_res = qx($cmd);
+
+print LOG "$cmd\n" if $opt_l;
+
+# look for trouble
+$g_r = ($? >> 8);
+
+# output results if fault or verbose and there is something to say
+$msg = join('', @g_res) . "\n";
+print $msg . "\n" if ($opt_v || $g_r || ($opt_o eq '-') ||
+		      ($opt_o eq '') || !$opt_l) && scalar(@g_res) > 0;
+exit 1 if $g_r; # quit on fault
+
+#look for problems in response
+if($opt_o ne ''){
+    if($opt_o eq '-'){
+	if($msg =~ /internal error/i){
+	    print "\n>>>------> SPARQL FAILED!\n";
+	    print LOG "\n>>>------> SPARQL FAILED!\n" if $opt_l;
+	    exit 1;
+	}
+    } else {
+	open INF, $opt_o;
+	my @in = <INF>;
+	close INF;
+	$msg = join('', @in);
+	if($msg =~ /internal error/i){
+	    print "\n>>>------> SPARQL FAILED!\n";
+	    print LOG "\n>>>------> SPARQL FAILED!\n" if $opt_l;
+	    exit 1;
+	}
+	print "A2\n";
+    }
+} else {
+    open INF, "/tmp/resSparql.$>";
+    my @in = <INF>;
+    close INF;
+    $msg = join('', @in);
+    if($msg =~ /internal error/i){
+	print "\n>>>------> SPARQL FAILED!\n";
+	print LOG "\n>>>------> SPARQL FAILED!\n" if $opt_l;
+	exit 1;
+    }
+
+}
+
+
+
+
+
+# if there is a cookie file remove it
+# before really exiting. all exits go 
+# through here
+END {
+    my $ec = $?;
+    if(!$opt_d && -e $g_COOKIE_FILE) {
+	qx(/bin/rm -f $g_COOKIE_FILE);
+    }
+    if($ec){
+	qx(echo $g_ErrorToken >> /home/ingest/Common/flags/sparqlTool-error);
+    }
+
+    my $elapsed = time() - $g_T0;
+    my $err = "ERROR ";
+    $err = '' if $ec == 0;
+    my $t1 = strftime("%Y\%m%d%H\%M\%S", localtime(time()));
+    print STDERR $err . "Ending $0 at $t1. ". hms($elapsed) . "\n" if !$opt_s;
+    $? = $ec;
+}
+
+
+
+sub hms {
+    my($s) = @_;
+    my $h = int($s/3600);
+    my $r = $s - 3600*$h;
+    my $m = int($r/60);
+    my $s = $r - 60*$m;
+    my $res;
+    $res = sprintf("%02d:%02d:%02d hms", $h, $m, $s);
+    return $res;
+}
+

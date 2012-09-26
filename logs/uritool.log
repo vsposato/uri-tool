@@ -1,0 +1,10 @@
++++++++++++++++++++ lp.cgi
+/var/www/uritool/bin:/var/www/uritool/bin:/var/www/uritool/bin:URITOOL_HOMEDIR/bin/apache-jena-2.7.0-incubating/bin:/usr/local/bin:/usr/bin:/bin
+wuser=vsposato@ufl.edu
+SERVER_PORT=80
+H:P/C vivo.cornell.edu:8080
+ -h vivo.cornell.edu  -p 8080 
+discover -b /var/www/uritool -u vsposato@ufl.edu -n   -h vivo.cornell.edu  -p 8080  -O /var/www/uritool/uritool/inbasket/vsposato/test-TK.xml http://vivo.ufl.edu/individual/n41591 
+java -jar $URITOOL_XSLT_DIR_80/saxon9he.jar /var/www/uritool/uritool/inbasket/vsposato/test-TK.xml /var/www/uritool/xslt/Sum2Html.xsl filebase=test-TK rootbase=test-TK ruser=vsposato wuser=vsposato@ufl.edu hpc=vivo.cornell.edu:8080:  | tee /var/www/uritool/uritool/inbasket/vsposato/test-TK.html
+cp /var/www/uritool/uritool/inbasket/vsposato/test-TK.html  /var/www/uritool/uritool/wip/vsposato/test-TK.html 
+getrip /var/www/uritool/uritool/inbasket/vsposato/test-TK.html > /var/www/uritool/uritool/inbasket/vsposato/test-TK.tmap

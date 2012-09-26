@@ -1,0 +1,434 @@
+UG1P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000109B
+LBG1P1|Information Systems Division of the International Communication Association
+UG1P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000288B
+LBG1P2|International Communication Association-Information Systems Division
+UG2P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000010F3
+LBG2P1|International Communication Association
+UG2P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000010F4
+LBG2P2|International Communication Association (ICA)
+UG3P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020B1
+LBG3P1|Association for Women in Communication
+UG3P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020EA
+LBG3P2|Association of Women in Communications
+UG4P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006338
+LBG4P1|International City County Management Association
+UG4P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006339
+LBG4P2|International City/County Management Association
+UG4P3|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30001CCC7
+LBG4P3|International City/County Management Association
+UG5P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002B6C
+LBG5P1|National Association of State Universities and Land Grant College
+UG5P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001298
+LBG5P2|National Association of State Universities and Land Grant Colleges (NASULGC)
+UG6P1|http://vivo.cornell.edu/individual/n108621
+LBG6P1|Association of College and Research Libraries
+UG6P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C39
+LBG6P2|Association of College and Research Libraries (for series edited by W.C. Olsen, The Literature of the Agricultural Sciences)
+UG7P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002EFC
+LBG7P1|NYS Association of Cornell Cooperative Extension 4-H Educators
+UG7P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000013CB
+LBG7P2|NYS Association of Cornell Cooperative Extensions 4-H Educators
+UG8P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005940
+LBG8P1|Cornell Cooperative Extension and NYS Vegetable Growers Association
+UG8P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005942
+LBG8P2|Cornell Cooperative Extension and the NYS Vegetable Growers Association
+UG9P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002095
+LBG9P1|Association for Career and Technical Education Research
+UG9P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005513
+LBG9P2|Association of Career and Technical Education Research
+UG10P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C32
+LBG10P1|Association for Consumer Research
+UG10P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020C2
+LBG10P2|Association of Consumer Research
+UG11P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000023D8
+LBG11P1|Cultural Studies Association
+UG11P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000023D9
+LBG11P2|Cultural Studies Association (US)
+UG12P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C30
+LBG12P1|Association for Computing Machinery
+UG12P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C31
+LBG12P2|Association for Computing Machinery (ACM)
+UG12P3|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000551B
+LBG12P3|Association of Computing and Machinery (ACM)
+UG13P1|http://vivo.cornell.edu/individual/OSP-0203E52003A0023C1A1
+LBG13P1|COMPUTING RESEARCH ASSOCIATION
+UG13P2|http://vivo.cornell.edu/individual/OSP-0203E52003A0024DB09
+LBG13P2|COMPUTING RESEARCH ASSOCIATION
+UG14P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30001D110
+LBG14P1|Northeast Dairy Producer's Association
+UG14P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000004B7
+LBG14P2|Northeast Dairy Producers Association
+UG15P1|http://vivo.cornell.edu/individual/individual21113
+LBG15P1|Institute for African Development
+UG15P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006279
+LBG15P2|Institute for African Development (IAD)
+UG15P3|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000062A7
+LBG15P3|Institute of African Development
+UG16P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000431
+LBG16P1|National Association of Food & Drug Officials
+UG16P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002B65
+LBG16P2|National Association of Food and Drug Officials
+UG17P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000250A
+LBG17P1|Environmental Design Research Association
+UG17P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005F05
+LBG17P2|Environmental Design Research Association (EDRA)
+UG18P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000255C
+LBG18P1|European Science Education Research Association
+UG18P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005F64
+LBG18P2|European Science Education Research Association (ESERA)
+UG19P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006796
+LBG19P1|National Rural Education Association
+UG19P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000012DC
+LBG19P2|National Rural Education Association (NREA)
+UG20P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C35
+LBG20P1|Association for Science Teacher Education
+UG20P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000550A
+LBG20P2|Association for Science Teacher Education (ASTE)
+UG20P3|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020AC
+LBG20P3|Association for the Education of Teachers in Science
+UG20P4|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020E5
+LBG20P4|Association of Science Teacher Education
+UG21P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001314
+LBG21P1|New York Association of Natural Resource Extension Professionals
+UG21P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001315
+LBG21P2|New York Association of Natural Resource Extension Professionals (ANREP)
+UG22P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C45
+LBG22P1|Association of Natural Resource Extension Professionals
+UG22P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C46
+LBG22P2|Association of Natural Resource Extension Professionals (ANREP)
+UG22P3|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C48
+LBG22P3|Association of Natural Resources Extension Professionals
+UG23P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C47
+LBG23P1|Association of Natural Resource Extension Professionals/NY
+UG23P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002EC4
+LBG23P2|NY Association of Natural Resource Extension Professionals
+UG23P3|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000013AC
+LBG23P3|NY Association of Natural Resources Extension Professionals
+UG24P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006DD6
+LBG24P1|Southern Economic Association
+UG24P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006DD7
+LBG24P2|Southern Economics Association
+UG25P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005522
+LBG25P1|Association of Field Ornithologists & Wilson Ornithological Society
+UG25P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005523
+LBG25P2|Association of Field Ornithologists and Wilson Ornithological Society
+UG26P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000178C
+LBG26P1|Virginia Association FFA
+UG26P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000178E
+LBG26P2|Virginia Association of FFA
+UG27P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005525
+LBG27P1|Association of Finnish Municipalities
+UG27P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005FD8
+LBG27P2|Finnish Association of Municipalities
+UG28P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000010E2
+LBG28P1|International Association for Food Protection
+UG28P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002855
+LBG28P2|International Association for Food Protection (IAFP)
+UG28P3|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000286B
+LBG28P3|International Association of Food Protection
+UG29P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001333
+LBG29P1|New York State Association for Food Protection
+UG29P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002D41
+LBG29P2|New York State Association of Food Protection
+UG30P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002D01
+LBG30P1|New York Forest Owner Association
+UG30P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000477
+LBG30P2|New York Forest Owners Association
+UG31P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000137B
+LBG31P1|Northeast Organic Farmer's Association
+UG31P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006910
+LBG31P2|Northeast Organic Farmers Association
+UG32P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001005
+LBG32P1|Grocery Manufacturer's Association
+UG32P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001006
+LBG32P2|Grocery Manufacturers Association (GMA)
+UG33P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000285E
+LBG33P1|International Association for Great Lakes Research
+UG33P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000631C
+LBG33P2|International Association of Great Lake Research
+UG33P3|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000010EA
+LBG33P3|International Association of Great Lakes Research
+UG34P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006824
+LBG34P1|New Jersey Vegetable Growers Association
+UG34P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000073E5
+LBG34P2|Vegetable Growers Association of New Jersey
+UG35P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006840
+LBG35P1|New York Growers Vegetable Association
+UG35P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006891
+LBG35P2|New York Vegetable Growers Association
+UG36P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006AB8
+LBG36P1|Pennsylvania Vegetable Grower's Association
+UG36P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002FF1
+LBG36P2|Pennsylvania Vegetable Growers Association
+UG37P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002862
+LBG37P1|International Association for Society and Resource Management
+UG37P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006324
+LBG37P2|International Association of Society and Resource Management
+UG38P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006314
+LBG38P1|International Association for Society & Natural Resources
+UG38P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002861
+LBG38P2|International Association for Society and Natural Resources
+UG38P3|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002874
+LBG38P3|International Association of Society and Natural Resources
+UG39P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020D5
+LBG39P1|Association of Internet Researchers
+UG39P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005528
+LBG39P2|Association of Internet Researchers (AoIR)
+UG40P1|http://vivo.cornell.edu/individual/n31947
+LBG40P1|Special Libraries Association
+UG40P2|http://vivo.cornell.edu/individual/n49829
+LBG40P2|Special Libraries Association
+UG41P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002D82
+LBG41P1|New York State Nursery Landscape Association
+UG41P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000134B
+LBG41P2|New York State Nursery and Landscape Association
+UG42P1|http://vivo.cornell.edu/individual/OSP-0203E52003A001C6DA5
+LBG42P1|NORTHEAST WASTE MANAGEMENT OFFICIALS' ASSOCIATION
+UG42P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000004C7
+LBG42P2|Northeast Waste Management Officials Association (NEWMOA)
+UG43P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002D88
+LBG43P1|New York State Rural Schools Association
+UG43P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000005E2
+LBG43P2|Rural Schools Association of New York State
+UG44P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006719
+LBG44P1|National Association for Research in Science Teaching
+UG44P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000671A
+LBG44P2|National Association for Research in Science Teaching (NARST)
+UG44P3|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000671B
+LBG44P3|National Association for Research on Science Teaching
+UG44P4|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002B6A
+LBG44P4|National Association of Research in Science Teaching
+UG44P5|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006724
+LBG44P5|National Association of Research in Science Teaching (NARST)
+UG45P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002C33
+LBG45P1|National Science Teacher Association
+UG45P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000012E7
+LBG45P2|National Science Teachers Association
+UG46P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006983
+LBG46P1|NY Rural Schools Association
+UG46P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000005E3
+LBG46P2|Rural Schools Association of NYS
+UG47P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300003525
+LBG47P1|Union for African Population Studies
+UG47P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300003526
+LBG47P2|Union of African Population Studies
+UG48P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000032FF
+LBG48P1|Society for the Study of Amphibians & Reptiles
+UG48P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300003300
+LBG48P2|Society for the Study of Amphibians and Reptiles
+UG49P1|http://vivo.cornell.edu/individual/individual31975
+LBG49P1|Asian Studies
+UG49P2|http://vivo.cornell.edu/individual/individual5659
+LBG49P2|Asian Studies (ASIAN)
+UG50P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000E6A
+LBG50P1|David R. Atkinson Center for a Sustainable Future
+UG50P2|http://vivo.cornell.edu/individual/individual32077
+LBG50P2|David R. Atkinson Center for a Sustainable Future (ACSF)
+UG51P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000064BE
+LBG51P1|Kirtland Air Force Base
+UG51P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30001CDE4
+LBG51P2|Kirtland Air Force Base
+UG52P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000137C
+LBG52P1|Northeast Region Certified Crop Adviser (NRCCA)
+UG52P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006911
+LBG52P2|Northeast Region Certified Crop Advisers
+UG52P3|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000137D
+LBG52P3|Northeast Region Certified Crop Advisor (NRCCA)
+UG53P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000031EC
+LBG53P1|Scientific Advisory Board (Fachbeirat), Max Planck Institute for Chemical Ecology
+UG53P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000031F6
+LBG53P2|Scientific Advisory Board of the Max Planck Institute for Chemical Ecology
+UG54P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002509
+LBG54P1|Environmental and Resource Economics, Scientific Advisory Board
+UG54P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000031F0
+LBG54P2|Scientific Advisory Board, Environmental and Resource Economics
+UG55P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002A35
+LBG55P1|Livestock Advisory Committee, SUNY Cobleskill
+UG55P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000033E9
+LBG55P2|SUNY Cobleskill Livestock Advisory Committee
+UG56P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B30000021D
+LBG56P1|Department of Applied Economics & Management, Cornell University; NY
+UG56P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B30000021E
+LBG56P2|Department of Applied Economics and Management, Cornell University; NY
+UG57P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005A1F
+LBG57P1|Cornell University Department of Applied Economics and Management
+UG57P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B30000021D
+LBG57P2|Department of Applied Economics & Management, Cornell University
+UG57P3|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B30000021E
+LBG57P3|Department of Applied Economics and Management, Cornell University
+UG58P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005487
+LBG58P1|Applied Economics and Management Department
+UG58P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000241C
+LBG58P2|Department of Applied Economics and Management
+UG59P1|http://vivo.cornell.edu/individual/individual26035
+LBG59P1|Theoretical and Applied Mechanics
+UG59P2|http://vivo.cornell.edu/individual/individual5698
+LBG59P2|Theoretical and Applied Mechanics (T&AM)
+UG60P1|http://vivo.cornell.edu/individual/individual31978
+LBG60P1|Design and Environmental Analysis
+UG60P2|http://vivo.cornell.edu/individual/individual5762
+LBG60P2|Design and Environmental Analysis (DEA)
+UG61P1|http://vivo.cornell.edu/individual/individual32060
+LBG61P1|Policy Analysis and Management
+UG61P2|http://vivo.cornell.edu/individual/individual5590
+LBG61P2|Policy Analysis and Management (PAM)
+UG62P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000152A
+LBG62P1|Society for Risk Analysis
+UG62P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006D6D
+LBG62P2|Society for Risk Analysis (SRA)
+UG63P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000040
+LBG63P1|American Agriculturist Foundation
+UG63P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300013746
+LBG63P2|American Agriculturist Foundation
+UG64P1|http://vivo.cornell.edu/individual/individual27223
+LBG64P1|AMES RESEARCH CENTER, NASA
+UG64P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000428
+LBG64P2|NASA Ames Research Center
+UG65P1|http://vivo.cornell.edu/individual/OSP-0203E52003A001C5A48
+LBG65P1|NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS
+UG65P2|http://vivo.cornell.edu/individual/individual21682
+LBG65P2|NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS
+UG66P1|http://vivo.cornell.edu/individual/OSP-0203E52003A001C491D
+LBG66P1|RURAL BUSINESS AND COOPERATIVE SERVICE USDA
+UG66P2|http://vivo.cornell.edu/individual/individual16773
+LBG66P2|RURAL BUSINESS AND COOPERATIVE SERVICE USDA
+UG67P1|http://vivo.cornell.edu/individual/OSP-0203E52003A001C5679
+LBG67P1|US SECURITIES AND EXCHANGE COMMISSION
+UG67P2|http://vivo.cornell.edu/individual/individual28899
+LBG67P2|US SECURITIES AND EXCHANGE COMMISSION
+UG68P1|http://vivo.cornell.edu/individual/OSP-0203E52003A001BE6A5
+LBG68P1|NYS OFFICE OF CHILDREN AND FAMILY SERVICES
+UG68P2|http://vivo.cornell.edu/individual/individual15887
+LBG68P2|NYS OFFICE OF CHILDREN AND FAMILY SERVICES
+UG69P1|http://vivo.cornell.edu/individual/OSP-0203E52003A0023BD1F
+LBG69P1|CANCER RESEARCH AND TREATMENT FUND
+UG69P2|http://vivo.cornell.edu/individual/OSP-0203E52003A0024DA20
+LBG69P2|CANCER RESEARCH AND TREATMENT FUND
+UG70P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001688
+LBG70P1|Universidad de Los Andes
+UG70P2|http://vivo.cornell.edu/individual/n748844
+LBG70P2|Universidad de Los Andes (Bogota)
+UG71P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006900
+LBG71P1|Northeast Association of Fish & Wildlife Agencies
+UG71P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006901
+LBG71P2|Northeast Association of Fish and Wildlife Agencies
+UG72P1|http://vivo.cornell.edu/individual/OSP-0203E52003A001C22EB
+LBG72P1|NATL CTR FOR COMPLEMENTARY AND ALTERNATIVE MEDICINE
+UG72P2|http://vivo.cornell.edu/individual/individual9492
+LBG72P2|NATL CTR FOR COMPLEMENTARY AND ALTERNATIVE MEDICINE
+UG73P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000006F8
+LBG73P1|Univeristy of Texas - Arlington
+UG73P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001722
+LBG73P2|University of Texas at Arlington
+UG74P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000A93
+LBG74P1|5th Annual Boeing Science Writing Contest
+UG74P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000A94
+LBG74P2|6th Annual Boeing Science Writing Contest
+UG75P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006FFF
+LBG75P1|The Wildlife Society 12th Annual Conference
+UG75P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300007000
+LBG75P2|The Wildlife Society 14th Annual Conference
+UG76P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005476
+LBG76P1|Annual meeting of the Society for Invertebrate Pathology
+UG76P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005479
+LBG76P2|Annual meeting, Society for Invertebrate Pathology
+UG77P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000028F7
+LBG77P1|International Society for Arachnology
+UG77P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000063B3
+LBG77P2|International Society of Arachnology
+UG78P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002837
+LBG78P1|Inter-Institute Study section Alcohol and Toxicology Subcommittee 3
+UG78P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002838
+LBG78P2|Inter-Institute Study sections, Alcohol and Toxicology Subcommittee
+UG79P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000639F
+LBG79P1|International Society for Biology of Actinomycetes
+UG79P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000063B0
+LBG79P2|International Society for the Biology of Actinomycetes
+UG80P1|http://vivo.cornell.edu/individual/AI-EDOR-0203DF692B300001B33
+LBG80P1|Universitat Autonoma de Barcelona
+UG80P2|http://vivo.cornell.edu/individual/n13967
+LBG80P2|Universitat Autonoma de Barcelona
+UG81P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002E6D
+LBG81P1|Northeastern Branch of Crop, Soil and Agronomy Societies of America
+UG81P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006923
+LBG81P2|Northeastern Branch of the Crop, Soil and Agronomy Societies of America
+UG82P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001386
+LBG82P1|Northeastern Branch American Society of Agronomy
+UG82P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001388
+LBG82P2|Northeastern Branch of American Society of Agronomy
+UG83P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000053F3
+LBG83P1|American Society for Agronomy
+UG83P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000BB0
+LBG83P2|American Society of Agronomy
+UG84P1|http://vivo.cornell.edu/individual/AI-EDOR-0203DF692B300001BFC
+LBG84P1|University of Texas at San Antonio
+UG84P2|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000035A5
+LBG84P2|University of Texas, San Antonio
+UG85P1|http://vivo.cornell.edu/individual/individual31969
+LBG85P1|Anthropology
+UG85P2|http://vivo.cornell.edu/individual/individual5649
+LBG85P2|Anthropology (ANTHR)
+UG86P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005A1E
+LBG86P1|Cornell University Department of Anthropology
+UG86P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005B77
+LBG86P2|Department of Anthropology, Cornell University
+UG87P1|http://vivo.cornell.edu/individual/n104433
+LBG87P1|Society for Humanistic Anthropology
+UG87P2|http://vivo.cornell.edu/individual/n18567
+LBG87P2|Society for Humanistic Anthropology
+UG87P3|http://vivo.cornell.edu/individual/n36692
+LBG87P3|Society for Humanistic Anthropology
+UG88P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000015BF
+LBG88P1|The 48th Annual Meeting of the Canadian Fertility & Andrology Society
+UG88P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000015C0
+LBG88P2|The 49th Annual Meeting of the Canadian Fertility & Andrology Society
+UG89P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002F0D
+LBG89P1|NYS Energy Research and Development Authority
+UG89P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000069BB
+LBG89P2|NYS Energy Research and Development Authority (NYSERDA)
+UG90P1|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000BFD
+LBG90P1|APA
+UG90P2|http://vivo.cornell.edu/individual/OSP-0203E52003A001C6687
+LBG90P2|ASPCA
+UG91P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000435
+LBG91P1|National Center Atmospheric Research
+UG91P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000129E
+LBG91P2|National Center for Atmospheric Research
+UG92P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000284
+LBG92P1|Earth and Atmospheric Sciences
+UG92P2|http://vivo.cornell.edu/individual/individual5208
+LBG92P2|Earth and Atmospheric Sciences (EAS)
+UG93P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C1
+LBG93P1|USDA APHIS-PPQ
+UG93P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007DA
+LBG93P2|USDA/APHIS/PPQ
+UG94P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000073B9
+LBG94P1|USDA-ARS Appalachian Fruit Research Station
+UG94P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30001D8F7
+LBG94P2|USDA-ARS Appalachian Fruit Research Station
+UG95P1|http://vivo.cornell.edu/individual/individual5351
+LBG95P1|USDA-ARS Plant Genetic Resources Unit (PGRU)
+UG95P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007E2
+LBG95P2|USDA-ARS Plant Genetics Resources Unit
+UG96P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4
+LBG96P1|USDA, ARS; Ithaca, NY
+UG96P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4
+LBG96P2|USDA-ARS; Ithaca NY
+UG97P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4
+LBG97P1|USDA ARS; NY
+UG97P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4
+LBG97P2|USDA-ARS; NY
+UG98P1|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4
+LBG98P1|USDA, ARS
+UG98P2|http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007DC
+LBG98P2|USDA/ARS
+UG99P1|http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300003343
+LBG99P1|Solid Waste Association of North America
+UG99P2|http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001553
+LBG99P2|Solid Waste Association of North America (SWANA)
+UG100P1|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000523B
+LBG100P1|1998 Annual Meeting of Entomological Society of America
+UG100P2|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000523C
+LBG100P2|1999 Annual Meeting of Entomological Society of America
+UG100P3|http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005EF4
+LBG100P3|Entomological Society of America, Annual Meeting

@@ -1,0 +1,1064 @@
+<?xml version="1.0"?>
+<chunk chunk='3' nchunks='6' token='jSample' 
+ group-max-size='100' ngroups='530' created='Fri May 11, 2012 08:26 AM'>
+   <group skl='BLY-CMIL-NTUE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000011E2</uri> 
+         <label>Nature Chemical Biology</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n67203</uri> 
+         <label>Nature Chemical Biology</label>
+      </journal>
+   </group>
+   <group skl='BLY-CRT' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005F1</uri> 
+         <label>Current Biology</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n28891</uri> 
+         <label>Current Biology</label>
+      </journal>
+   </group>
+   <group skl='BLY-EIML-MICE-PEEG-SIY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001467</uri> 
+         <label>Proceedings of the Society for Experimental Biology and Medicine</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001469</uri> 
+         <label>Proceedings of the Society of Experimental Biology and Medicine</label>
+      </journal>
+   </group>
+   <group skl='BLY-EUN-GNOE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000894</uri> 
+         <label>Genome Biology &amp; Evolution</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000895</uri> 
+         <label>Genome Biology and Evolution</label>
+      </journal>
+   </group>
+   <group skl='BLY-EUN-MCR' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001179</uri> 
+         <label>Molecular Biology and Evolution</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n52425</uri> 
+         <label>Molecular Biology and Evolution</label>
+      </journal>
+   </group>
+   <group skl='BLY-LRY-PBLC-SEE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000014A8</uri> 
+         <label>Public Library of Science - Biology</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000014A9</uri> 
+         <label>Public Library of Science: Biology</label>
+      </journal>
+   </group>
+   <group skl='BLY-MTHD-MCR' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000111D</uri> 
+         <label>Methods in Molecular Biology</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000111F</uri> 
+         <label>Methods Molecular Biology</label>
+      </journal>
+   </group>
+   <group skl='BLY-PAT' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000139B</uri> 
+         <label>Plant Biology</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n82664</uri> 
+         <label>Plant Biology</label>
+      </journal>
+   </group>
+   <group skl='BLY-PLO' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013EA</uri> 
+         <label>PLoS Biology</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n22405</uri> 
+         <label>PLoS Biology</label>
+      </journal>
+   </group>
+   <group skl='BMC-BLY-PAT' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000003D0</uri> 
+         <label>BMC Plant Biology</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n40561</uri> 
+         <label>BMC Plant Biology</label>
+      </journal>
+   </group>
+   <group skl='BNL-BLEN-CLUB-TRRY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000042E</uri> 
+         <label>Bulletin of the Torrey Botanical Club</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000042F</uri> 
+         <label>Bulletin of Torrey Botanical Club</label>
+      </journal>
+   </group>
+   <group skl='BNL-JRL-SIY-TRRY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000FD3</uri> 
+         <label>Journal of the Torrey Botanical Society</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000101B</uri> 
+         <label>Journal Torrey Botanical Society</label>
+      </journal>
+   </group>
+   <group skl='BNY-BOMS' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000382</uri> 
+         <label>Biomass &amp; Bioenergy</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000383</uri> 
+         <label>Biomass and Bioenergy</label>
+      </journal>
+   </group>
+   <group skl='BOC' count='3'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000032C</uri> 
+         <label>Bioacoustics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000035F</uri> 
+         <label>Bioinformatics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000038D</uri> 
+         <label>Biomicrofluidics</label>
+      </journal>
+   </group>
+   <group skl='BOGL-CIY-JRL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D22</uri> 
+         <label>Journal of Biological Chemistry</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n106823</uri> 
+         <label>Journal of Biological Chemistry</label>
+      </journal>
+   </group>
+   <group skl='BPE-LIFE-SEE-SPT' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001082</uri> 
+         <label>Life Support and Biosphere Science</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001083</uri> 
+         <label>Life Support and Biosphere Sciences</label>
+      </journal>
+   </group>
+   <group skl='BSD-ISE-MERL-NVL-SI-TNOY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000010D2</uri> 
+         <label>Material Issues in Novel Si-Based Technology</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000010D8</uri> 
+         <label>Materials Issues in Novel Si-Based Technology</label>
+      </journal>
+   </group>
+   <group skl='BSE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000035D</uri> 
+         <label>Biogeosciences</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000003BF</uri> 
+         <label>BirdScope</label>
+      </journal>
+   </group>
+   <group skl='BTAY-ENL-EIML' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000071B</uri> 
+         <label>Environmental &amp; Experimental Botany</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000071C</uri> 
+         <label>Environmental and Experimental Botany</label>
+      </journal>
+   </group>
+   <group skl='BULL-CET' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000051A</uri> 
+         <label>Coleopt. Bull.</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000051C</uri> 
+         <label>Coleopts. Bull.</label>
+      </journal>
+   </group>
+   <group skl='BVIL-BAN-SEE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000310</uri> 
+         <label>Behavioral and Brain Sciences</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n13372</uri> 
+         <label>Behavioral and Brain Sciences</label>
+      </journal>
+   </group>
+   <group skl='BYL-JRL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000392</uri> 
+         <label>Biophysical Journal</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n14020</uri> 
+         <label>Biophysical Journal</label>
+      </journal>
+   </group>
+   <group skl='BA-BILA-RIA-DE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000153E</uri> 
+         <label>Revista Brasileira de Botânica</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000153F</uri> 
+         <label>Revista Brasileira de Botânica (Brazilian Journal of Botany)</label>
+      </journal>
+   </group>
+   <group skl='C-CHEM-J-PHY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000C2A</uri> 
+         <label>J. Phys. Chem C (Gubbins special issue)</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000C29</uri> 
+         <label>J. Phys. Chem. C</label>
+      </journal>
+   </group>
+   <group skl='C-ENG-MTHD-PART-TSSE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002673</uri> 
+         <label>Tissue Eng Part C Methods</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001765</uri> 
+         <label>Tissue Eng Part C: Methods</label>
+      </journal>
+   </group>
+   <group skl='CAN-FOR-J-RE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000044D</uri> 
+         <label>Can J. of For. Res</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000044A</uri> 
+         <label>Can. J. For. Res.</label>
+      </journal>
+   </group>
+   <group skl='CAN-J-POY-PAT' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000044E</uri> 
+         <label>Can. J. of Plant Pathology</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000451</uri> 
+         <label>Can. J. Plant Pathology</label>
+      </journal>
+   </group>
+   <group skl='CANE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004B2</uri> 
+         <label>Chance</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004B3</uri> 
+         <label>Change</label>
+      </journal>
+   </group>
+   <group skl='CBE-MERL-RAD-SIN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000025EC</uri> 
+         <label>Silicon Carbide and Related Materials - 2002</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000025ED</uri> 
+         <label>Silicon Carbide and Related Materials 2004</label>
+      </journal>
+   </group>
+   <group skl='CDL-CLIN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001DD3</uri> 
+         <label>Cardiol Clin</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E0E</uri> 
+         <label>Clin Cardiol</label>
+      </journal>
+   </group>
+   <group skl='CED-JRL-MTTR-PYSC' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000F03</uri> 
+         <label>Journal of Physics-Condensed Matter</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000F03</uri> 
+         <label>Journal of Physics. Condensed Matter</label>
+      </journal>
+   </group>
+   <group skl='CELL-CTE-OGN-PAT-TSSE' count='4'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013A5</uri> 
+         <label>Plant Cell Organ &amp; Tissue Culture</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013AC</uri> 
+         <label>Plant Cell Tissue and Organ Culture</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013AD</uri> 
+         <label>Plant Cell Tissue Organ Culture</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013AB</uri> 
+         <label>Plant, Cell, Tissue &amp; Organ Culture</label>
+      </journal>
+   </group>
+   <group skl='CELL-EXP-RE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000798</uri> 
+         <label>Exp. Cell Res</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000798</uri> 
+         <label>Exp. Cell Res.</label>
+      </journal>
+   </group>
+   <group skl='CELL-GENE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000087F</uri> 
+         <label>Genes Cells</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000882</uri> 
+         <label>Genes to Cells</label>
+      </journal>
+   </group>
+   <group skl='CELL-MOL-PEC' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001158</uri> 
+         <label>Mol Cell Proteomic</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001159</uri> 
+         <label>Mol Cell Proteomics</label>
+      </journal>
+   </group>
+   <group skl='CELL-PAT-RPOT' count='3'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013A7</uri> 
+         <label>Plant Cell Report</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n230595</uri> 
+         <label>Plant Cell Report</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013A8</uri> 
+         <label>Plant Cell Reports</label>
+      </journal>
+   </group>
+   <group skl='CENN-EET-JRL-TRM' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D86</uri> 
+         <label>Journal of Convention and Event Tourism</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n22720</uri> 
+         <label>Journal of Convention and Event Tourism</label>
+      </journal>
+   </group>
+   <group skl='CERE-IAL-LOW-PYSC-PROC-TRE-TH' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002503</uri> 
+         <label>Proc. 10th International Conference on Low Temperature Physics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002504</uri> 
+         <label>Proc. 12th International Conference on Low Temperature Physics</label>
+      </journal>
+   </group>
+   <group skl='CFOA-MGET-RVIW' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000441</uri> 
+         <label>California Management Review</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n27368</uri> 
+         <label>California Management Review</label>
+      </journal>
+   </group>
+   <group skl='CHEM-CMMN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004BC</uri> 
+         <label>Chem Commun (Camb)</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004BB</uri> 
+         <label>Chem. Commun.</label>
+      </journal>
+   </group>
+   <group skl='CHEM-J-PHY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000B72</uri> 
+         <label>J. Chem. Phys.</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000C27</uri> 
+         <label>J. Phys. Chem.</label>
+      </journal>
+   </group>
+   <group skl='CHIP-LAB' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000103F</uri> 
+         <label>Lab on a Chip</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001040</uri> 
+         <label>Lab-on-Chip</label>
+      </journal>
+   </group>
+   <group skl='CIA-ERH-FNTR-SEE' count='3'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000851</uri> 
+         <label>Frontiers in Earth Sciences in China</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000856</uri> 
+         <label>Frontiers of Earth Science China</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000857</uri> 
+         <label>Frontiers of Earth Science in China</label>
+      </journal>
+   </group>
+   <group skl='CID-IAL-TSSE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000043D</uri> 
+         <label>Calcified Tissue International</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n20166</uri> 
+         <label>Calcified Tissue International</label>
+      </journal>
+   </group>
+   <group skl='CID-MERL-NIN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n54320</uri> 
+         <label>Maternal &amp; Child Nutrition</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000010DF</uri> 
+         <label>Maternal and Child Nutrition</label>
+      </journal>
+   </group>
+   <group skl='CIN-CUG-MBIE-WES' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001B89</uri> 
+         <label>Wireless Communications &amp; Mobile Computing</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000187F</uri> 
+         <label>Wireless Communications and Mobile Computing</label>
+      </journal>
+   </group>
+   <group skl='CIN-IAE-PESG-SGNL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000025E7</uri> 
+         <label>Signal Processing-Image Communication</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000015E2</uri> 
+         <label>Signal Processing: Image Communication</label>
+      </journal>
+   </group>
+   <group skl='CIN-IEEE-TAN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000009AC</uri> 
+         <label>IEEE Transactions on Communication</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000009AD</uri> 
+         <label>IEEE Transactions on Communications</label>
+      </journal>
+   </group>
+   <group skl='CIN-IEEE-WES' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000009C9</uri> 
+         <label>IEEE Wireless Communication</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001B26</uri> 
+         <label>IEEE Wireless Communications</label>
+      </journal>
+   </group>
+   <group skl='CIN-JRL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D5F</uri> 
+         <label>Journal of Communication</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D60</uri> 
+         <label>Journal of Communications</label>
+      </journal>
+   </group>
+   <group skl='CIN-MAS-RPD-SROY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000014D6</uri> 
+         <label>Rapid Communication in Mass Spectrometry</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000014D7</uri> 
+         <label>Rapid Communications in Mass Spectrometry</label>
+      </journal>
+   </group>
+   <group skl='CIN-REAH-VRIY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001836</uri> 
+         <label>Veterinary Research Communication</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001837</uri> 
+         <label>Veterinary Research Communications</label>
+      </journal>
+   </group>
+   <group skl='CIY-CAL-JRL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D5D</uri> 
+         <label>Journal of Combinatorial Chemistry</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D72</uri> 
+         <label>Journal of Computational Chemistry</label>
+      </journal>
+   </group>
+   <group skl='CIY-IGC' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002099</uri> 
+         <label>Inorganic Chemistry</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n110623</uri> 
+         <label>Inorganic Chemistry</label>
+      </journal>
+   </group>
+   <group skl='CIY-JRL-OAC' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000EE6</uri> 
+         <label>Journal of Organic Chemistry</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001018</uri> 
+         <label>Journal Organic Chemistry</label>
+      </journal>
+   </group>
+   <group skl='CIY-JRL-PSIL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000EFF</uri> 
+         <label>Journal of Physical Chemistry</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n31629</uri> 
+         <label>Journal of Physical Chemistry</label>
+      </journal>
+   </group>
+   <group skl='CLE-CIN-CSN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n29929</uri> 
+         <label>College Composition and Communication</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n29929</uri> 
+         <label>College Composition and Communication</label>
+      </journal>
+   </group>
+   <group skl='CLN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004F5</uri> 
+         <label>Circulation</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n115303</uri> 
+         <label>Constellations</label>
+      </journal>
+   </group>
+   <group skl='CLUR-MCR-PEC' count='3'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001170</uri> 
+         <label>Molecular &amp; Cellular Proteomics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001176</uri> 
+         <label>Molecular and Cellular Proteomics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001180</uri> 
+         <label>Molecular Cellular Proteomics</label>
+      </journal>
+   </group>
+   <group skl='CMEE-IERT-JRL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000E6B</uri> 
+         <label>Journal of Internet Commerce</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n12937</uri> 
+         <label>Journal of Internet Commerce</label>
+      </journal>
+   </group>
+   <group skl='CMIL-CIY-PSIL-PYSC' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000135C</uri> 
+         <label>Physical Chemistry Chemical Physics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n13706</uri> 
+         <label>Physical Chemistry Chemical Physics</label>
+      </journal>
+   </group>
+   <group skl='CMIL-DATA-EEG-JRL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000021AC</uri> 
+         <label>Journal of Chemical and Engineering Data</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000021AF</uri> 
+         <label>Journal of Chemical Engineering Data</label>
+      </journal>
+   </group>
+   <group skl='CMIL-JRL-PYSC' count='3'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D47</uri> 
+         <label>Journal of Chemical Physics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n31329</uri> 
+         <label>Journal of Chemical Physics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D48</uri> 
+         <label>Journal of Chemical Physics (JCP)</label>
+      </journal>
+   </group>
+   <group skl='CMIL-PYSC' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004CD</uri> 
+         <label>Chemical Physics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n36672</uri> 
+         <label>Chemical Physics</label>
+      </journal>
+   </group>
+   <group skl='CMIL-RVIW-SIY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004D1</uri> 
+         <label>Chemical Society Review</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004D2</uri> 
+         <label>Chemical Society Reviews</label>
+      </journal>
+   </group>
+   <group skl='CNAA-GCY-JRL-OEC' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000EDF</uri> 
+         <label>Journal of Obstetrics &amp; Gynaecology Canada</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000EE0</uri> 
+         <label>Journal of Obstetrics and Gynaecology Canada</label>
+      </journal>
+   </group>
+   <group skl='CNCN-NIR-NRL-SEE-SLAN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000532</uri> 
+         <label>Communcations in Nonlinear Science and Numerical Simulation</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000533</uri> 
+         <label>Communcations in Nonlinear Science and Numerical Simulations</label>
+      </journal>
+   </group>
+   <group skl='CNIL-EOPN-JRL-NIN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000077A</uri> 
+         <label>European Journal of Clinical Nutrition</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n59142</uri> 
+         <label>European Journal of Clinical Nutrition</label>
+      </journal>
+   </group>
+   <group skl='CNL-EEG-QTY' count='3'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005AA</uri> 
+         <label>Cornell Engineering Quarterly</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000006F7</uri> 
+         <label>Engineering Cornell Quarterly</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000006FA</uri> 
+         <label>Engineering: Cornell Quarterly</label>
+      </journal>
+   </group>
+   <group skl='CNL-FOCU' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005AC</uri> 
+         <label>Cornell Focus</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005AD</uri> 
+         <label>Cornell Focus (Biotechnology Issue)</label>
+      </journal>
+   </group>
+   <group skl='CNL-HTY-QTY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005AE</uri> 
+         <label>Cornell Hospitality Quarterly</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n56149</uri> 
+         <label>Cornell Hospitality Quarterly</label>
+      </journal>
+   </group>
+   <group skl='CNL-JRL-LAW-PLIY-PBLC' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005B4</uri> 
+         <label>Cornell Journal of Law &amp; Public Policy</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005B5</uri> 
+         <label>Cornell Journal of Law and Public Policy</label>
+      </journal>
+   </group>
+   <group skl='CNWH-HTY-IERL-JRL-THE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n22920</uri> 
+         <label>The Journal of Imperial and Commonwealth History</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n22920</uri> 
+         <label>The Journal of Imperial and Commonwealth History</label>
+      </journal>
+   </group>
+   <group skl='COMP-J-NURL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000B7B</uri> 
+         <label>J. Comp. Neurol.</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000C14</uri> 
+         <label>J. of Comp. Neurol.</label>
+      </journal>
+   </group>
+   <group skl='COMP-J-PSL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000B7D</uri> 
+         <label>J. Comp. Physiol.</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000B80</uri> 
+         <label>J. Comp. Physiol. [A]</label>
+      </journal>
+   </group>
+   <group skl='COT-IEEE-LTTR-MOE-WES' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000977</uri> 
+         <label>IEEE Microwave and Wireless Component Letters</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000978</uri> 
+         <label>Ieee Microwave and Wireless Components Letters</label>
+      </journal>
+   </group>
+   <group skl='CPOD-SNR' count='7'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E40</uri> 
+         <label>Compound Semiconductors 1994</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E41</uri> 
+         <label>Compound Semiconductors 1995</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E42</uri> 
+         <label>Compound Semiconductors 1996</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E43</uri> 
+         <label>Compound Semiconductors 1997</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E44</uri> 
+         <label>Compound Semiconductors 1999</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E45</uri> 
+         <label>Compound Semiconductors 2001</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E46</uri> 
+         <label>Compound Semiconductors 2002</label>
+      </journal>
+   </group>
+   <group skl='CPUR' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E52</uri> 
+         <label>Computer</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000057A</uri> 
+         <label>Computers</label>
+      </journal>
+   </group>
+   <group skl='CPUR-DSIN-IEEE-TEST' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001FDA</uri> 
+         <label>Ieee Design &amp; Test of Computers</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000962</uri> 
+         <label>IEEE Design and Test of Computers</label>
+      </journal>
+   </group>
+   <group skl='CPUR-EAN-JRL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000584</uri> 
+         <label>Computers in Education Journal</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D79</uri> 
+         <label>Journal of Computers and Education</label>
+      </journal>
+   </group>
+   <group skl='CPUR-ECCV-PEEG-PT-VSIN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E62</uri> 
+         <label>Computer Vision - Eccv 2006 , Pt 1, Proceedings</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E63</uri> 
+         <label>Computer Vision - Eccv 2006, Pt 2, Proceedings</label>
+      </journal>
+   </group>
+   <group skl='CPUR-FDAN-G-IEEE-PROC-SURY-TH' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002506</uri> 
+         <label>Proc. 17th IEEE Computer Security Foundations GǪ</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002508</uri> 
+         <label>Proc. 19th IEEE Computer Security Foundations GǪ</label>
+      </journal>
+   </group>
+   <group skl='CPUR-GCIE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E67</uri> 
+         <label>Computers &amp; Geosciences</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000581</uri> 
+         <label>Computers and Geosciences</label>
+      </journal>
+   </group>
+   <group skl='CPUR-HMN-IAN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000928</uri> 
+         <label>Human Computer Interaction</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000928</uri> 
+         <label>Human-Computer Interaction</label>
+      </journal>
+   </group>
+   <group skl='CPUR-IAL-JRL-VSIN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000A7C</uri> 
+         <label>International Journal of Computer Vision</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000A7D</uri> 
+         <label>International Journal of Computer Vision (IJCV)</label>
+      </journal>
+   </group>
+   <group skl='CPUR-JRL-SEE-SSTM' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D75</uri> 
+         <label>Journal of Computer and System Sciences</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n17546</uri> 
+         <label>Journal of Computer and System Sciences</label>
+      </journal>
+   </group>
+   <group skl='CPUR-LTE-NOTE-SEE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002332</uri> 
+         <label>Lecture Notes in Computer Science</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001070</uri> 
+         <label>Lecture Notes in Computer Science (LNCS)</label>
+      </journal>
+   </group>
+   <group skl='CPUR-OAN-REAH' count='4'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000572</uri> 
+         <label>Computer and Operations Research</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000057D</uri> 
+         <label>Computers &amp; Operations Research</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000582</uri> 
+         <label>Computers and Operations Research</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E71</uri> 
+         <label>Computers in Operations Research</label>
+      </journal>
+   </group>
+   <group skl='CRC-CTIL-PAT-RVIW-SEE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005BF</uri> 
+         <label>CRC Critical Reviews in Plant Science</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005C0</uri> 
+         <label>CRC Critical Reviews in Plant Sciences</label>
+      </journal>
+   </group>
+   <group skl='CRE-ENOC-JRL' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000442</uri> 
+         <label>Cambridge Journal of Economics</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D66</uri> 
+         <label>Journal of Comparative Economics</label>
+      </journal>
+   </group>
+   <group skl='CRT' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005ED</uri> 
+         <label>Current</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000060B</uri> 
+         <label>Currents</label>
+      </journal>
+   </group>
+   <group skl='CRT-DOT-GEC-ONN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005FB</uri> 
+         <label>Current Opinion in Genetics &amp; Development</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005FC</uri> 
+         <label>Current Opinion in Genetics and Development</label>
+      </journal>
+   </group>
+   <group skl='CRT-SEE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000605</uri> 
+         <label>Current Science</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000606</uri> 
+         <label>Current Sciences</label>
+      </journal>
+   </group>
+   <group skl='CRVN-JRL-SOIL-WTR' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000F61</uri> 
+         <label>Journal of Soil &amp; Water Conservation</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000F64</uri> 
+         <label>Journal of Soil and Water Conservation</label>
+      </journal>
+   </group>
+   <group skl='CSL-EAE-SEE-SEF' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000757</uri> 
+         <label>Estuarine and Coastal Shelf Science</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000758</uri> 
+         <label>Estuarine, Coastal, and Shelf Science</label>
+      </journal>
+   </group>
+   <group skl='CSL-RVIW-THE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n19638</uri> 
+         <label>The Classical Review</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n19638</uri> 
+         <label>The Classical Review</label>
+      </journal>
+   </group>
+   <group skl='CSUR-FMIY-JRL-SEE' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000DEE</uri> 
+         <label>Journal of Family and Consumer Science</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000DEF</uri> 
+         <label>Journal of Family and Consumer Sciences</label>
+      </journal>
+   </group>
+   <group skl='CSVT-IEEE-TRAN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000098E</uri> 
+         <label>IEEE Trans. CSVT</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000997</uri> 
+         <label>IEEE Trans. on CSVT</label>
+      </journal>
+   </group>
+   <group skl='CTE-IAL-JRL-PIC-SIY' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000ABC</uri> 
+         <label>International Journal of Politics, Culture and Society</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000ABC</uri> 
+         <label>International Journal of Politics, Culture, and Society</label>
+      </journal>
+   </group>
+   <group skl='CTE-JRL-SIGN-SIY-WMN' count='2'>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000015E4</uri> 
+         <label>Signs: Journal of Women in Culture and Society</label>
+      </journal>
+      <journal>
+         <uri>http://vivo.cornell.edu/individual/n49889</uri> 
+         <label>Signs: Journal of Women in Culture and Society</label>
+      </journal>
+   </group>
+</chunk>

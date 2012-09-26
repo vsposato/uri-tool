@@ -1,0 +1,954 @@
+NG1P1|dr53
+LG1P1|Roy
+FG1P1|Devparna
+MG1P1|
+UG1P1|http://vivo.cornell.edu/individual/dr53
+LBG1P1|Roy,Devparna
+NG1P2|
+LG1P2|Roy
+FG1P2|Devparna
+MG1P2|
+UG1P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000D700
+LBG1P2|Roy, Devparna
+NG2P1|ir45
+LG2P1|Ryona
+FG2P1|Imelda
+MG2P1|
+UG2P1|http://vivo.cornell.edu/individual/ir45
+LBG2P1|Ryona,Imelda
+NG2P2|
+LG2P2|Ryona
+FG2P2|Imelda
+MG2P2|
+UG2P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC000072C5
+LBG2P2|Ryona, Imelda
+NG3P1|des16
+LG3P1|Sahn
+FG3P1|David
+MG3P1|
+UG3P1|http://vivo.cornell.edu/individual/individual5532
+LBG3P1|Sahn, David Ezra
+NG3P2|
+LG3P2|Sahn
+FG3P2|David
+MG3P2|
+UG3P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000D7C6
+LBG3P2|Sahn, David
+NG4P1|lgm2
+LG4P1|Sanderson
+FG4P1|L
+MG4P1|
+UG4P1|http://vivo.cornell.edu/individual/CRW-lgm2
+LBG4P1|Morehouse, L
+NG4P2|
+LG4P2|Sanderson
+FG4P2|L
+MG4P2|
+UG4P2|http://vivo.cornell.edu/individual/n79750
+LBG4P2|Sanderson, L
+NG5P1|mls248
+LG5P1|Schneider
+FG5P1|M
+MG5P1|
+UG5P1|http://vivo.cornell.edu/individual/CRW-mls248
+LBG5P1|Schneider, M
+NG5P2|
+LG5P2|Schneider
+FG5P2|M
+MG5P2|
+UG5P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00007622
+LBG5P2|Schneider, M
+NG6P1|ks258
+LG6P1|Scholl
+FG6P1|Katherine
+MG6P1|
+UG6P1|http://vivo.cornell.edu/individual/KatherineScholl
+LBG6P1|Scholl, Kathy
+NG6P2|
+LG6P2|Scholl
+FG6P2|Katherine
+MG6P2|
+UG6P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FAD4
+LBG6P2|Scholl, Katherine
+NG7P1|tms23
+LG7P1|Schusler
+FG7P1|Tania
+MG7P1|
+UG7P1|http://vivo.cornell.edu/individual/tms23
+LBG7P1|Schusler,Tania Marie
+NG7P2|
+LG7P2|Schusler
+FG7P2|Tania
+MG7P2|
+UG7P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC000076D3
+LBG7P2|Schusler, Tania
+NG8P1|mls63
+LG8P1|Scott-Pierce
+FG8P1|Michelle
+MG8P1|
+UG8P1|http://vivo.cornell.edu/individual/MichelleScottPierce
+LBG8P1|Scott-Pierce, Michelle L
+NG8P2|
+LG8P2|Scott-Pierce
+FG8P2|Michelle
+MG8P2|
+UG8P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FAE7
+LBG8P2|Scott-Pierce, Michelle
+NG9P1|
+LG9P1|Shen
+FG9P1|L
+MG9P1|
+UG9P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00007943
+LBG9P1|Shen, L
+NG9P2|
+LG9P2|Shen
+FG9P2|L
+MG9P2|
+UG9P2|http://vivo.cornell.edu/individual/n37567
+LBG9P2|Shen, L
+NG10P1|
+LG10P1|Smith-Lovin
+FG10P1|Lynn
+MG10P1|
+UG10P1|http://vivo.cornell.edu/individual/n117767
+LBG10P1|Smith-Lovin, Lynn
+NG10P2|
+LG10P2|Smith-Lovin
+FG10P2|Lynn
+MG10P2|
+UG10P2|http://vivo.cornell.edu/individual/n54369
+LBG10P2|Smith-Lovin, Lynn
+NG11P1|bys2
+LG11P1|Smith
+FG11P1|Benjamin
+MG11P1|Yuri
+UG11P1|http://vivo.cornell.edu/individual/bys2
+LBG11P1|Smith, Benjamin
+NG11P2|bys4
+LG11P2|Smith
+FG11P2|Benjamin
+MG11P2|Yuri
+UG11P2|http://vivo.cornell.edu/individual/bys4
+LBG11P2|Smith, Benjamin
+NG12P1|ejs43
+LG12P1|Smith
+FG12P1|E
+MG12P1|
+UG12P1|http://vivo.cornell.edu/individual/CRW-ejs43
+LBG12P1|Smith, E
+NG12P2|
+LG12P2|Smith
+FG12P2|E
+MG12P2|
+UG12P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00007C3B
+LBG12P2|Smith, E
+NG13P1|jss386
+LG13P1|Smith
+FG13P1|J
+MG13P1|
+UG13P1|http://vivo.cornell.edu/individual/CRW-jss386
+LBG13P1|Smith, J
+NG13P2|
+LG13P2|Smith
+FG13P2|J
+MG13P2|
+UG13P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00007C53
+LBG13P2|Smith, J
+NG14P1|
+LG14P1|Smith
+FG14P1|Ned
+MG14P1|
+UG14P1|http://vivo.cornell.edu/individual/n19967
+LBG14P1|Smith, Ned
+NG14P2|
+LG14P2|Smith
+FG14P2|Ned
+MG14P2|
+UG14P2|http://vivo.cornell.edu/individual/n52993
+LBG14P2|Smith, Ned
+NG14P3|
+LG14P3|Smith
+FG14P3|Ned
+MG14P3|
+UG14P3|http://vivo.cornell.edu/individual/n64750
+LBG14P3|Smith, Ned
+NG15P1|
+LG15P1|Smith
+FG15P1|R
+MG15P1|
+UG15P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00007C86
+LBG15P1|Smith, R
+NG15P2|
+LG15P2|Smith
+FG15P2|R
+MG15P2|
+UG15P2|http://vivo.cornell.edu/individual/n36272
+LBG15P2|Smith, R
+NG16P1|ses95
+LG16P1|Smith
+FG16P1|S
+MG16P1|
+UG16P1|http://vivo.cornell.edu/individual/CRW-ses95
+LBG16P1|Smith, S
+NG16P2|
+LG16P2|Smith
+FG16P2|S
+MG16P2|
+UG16P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00007C95
+LBG16P2|Smith, S
+NG17P1|
+LG17P1|Sorensen
+FG17P1|G
+MG17P1|
+UG17P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00007D74
+LBG17P1|Sorensen, G
+NG17P2|
+LG17P2|Sorensen
+FG17P2|G
+MG17P2|
+UG17P2|http://vivo.cornell.edu/individual/n42163
+LBG17P2|Sorensen, G
+NG18P1|sps22
+LG18P1|Stanne
+FG18P1|Stephen
+MG18P1|
+UG18P1|http://vivo.cornell.edu/individual/individual8731
+LBG18P1|Stanne, Stephen P
+NG18P2|
+LG18P2|Stanne
+FG18P2|Stephen
+MG18P2|
+UG18P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FB6E
+LBG18P2|Stanne, Stephen
+NG19P1|efs24
+LG19P1|Stoquert
+FG19P1|Elizabeth
+MG19P1|
+UG19P1|http://vivo.cornell.edu/individual/ElizabethStoquert
+LBG19P1|Stoquert, Betty
+NG19P2|
+LG19P2|Stoquert
+FG19P2|Elizabeth
+MG19P2|
+UG19P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FB8C
+LBG19P2|Stoquert, Elizabeth
+NG20P1|
+LG20P1|Stritzel-Thomson
+FG20P1|J
+MG20P1|L
+UG20P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC0000805B
+LBG20P1|Stritzel-Thomson, J L
+NG20P2|
+LG20P2|Stritzel-Thomson
+FG20P2|J
+MG20P2|L
+UG20P2|http://vivo.cornell.edu/individual/AI-PRPR-0203DF692AC00016069
+LBG20P2|Stritzel-Thomson, J L
+NG21P1|eds8
+LG21P1|Styger
+FG21P1|Erika
+MG21P1|
+UG21P1|http://vivo.cornell.edu/individual/eds8
+LBG21P1|Styger, Erika
+NG21P2|
+LG21P2|Styger
+FG21P2|Erika
+MG21P2|
+UG21P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC000080A3
+LBG21P2|Styger, Erika
+NG22P1|js151
+LG22P1|Sullivan
+FG22P1|John
+MG22P1|
+UG22P1|http://vivo.cornell.edu/individual/js151
+LBG22P1|Sullivan, John P.
+NG22P2|
+LG22P2|Sullivan
+FG22P2|John
+MG22P2|
+UG22P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00008101
+LBG22P2|Sullivan, John
+NG23P1|kjs237
+LG23P1|Sullivan
+FG23P1|K
+MG23P1|
+UG23P1|http://vivo.cornell.edu/individual/CRW-kjs237
+LBG23P1|Sullivan, K
+NG23P2|
+LG23P2|Sullivan
+FG23P2|K
+MG23P2|
+UG23P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000DFC2
+LBG23P2|Sullivan, K
+NG24P1|
+LG24P1|Sun
+FG24P1|Miao
+MG24P1|
+UG24P1|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FB9B
+LBG24P1|Sun, Miao
+NG24P2|
+LG24P2|Sun
+FG24P2|Miao
+MG24P2|
+UG24P2|http://vivo.cornell.edu/individual/n11143
+LBG24P2|Sun, Miao
+NG25P1|dps1
+LG25P1|Swaney
+FG25P1|Dennis
+MG25P1|
+UG25P1|http://vivo.cornell.edu/individual/individual23906
+LBG25P1|Swaney, Dennis
+NG25P2|
+LG25P2|Swaney
+FG25P2|Dennis
+MG25P2|
+UG25P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FBA1
+LBG25P2|Swaney, Dennis
+NG26P1|cds33
+LG26P1|Sweeney
+FG26P1|C
+MG26P1|
+UG26P1|http://vivo.cornell.edu/individual/CRW-cds33
+LBG26P1|Sweeney, C
+NG26P2|
+LG26P2|Sweeney
+FG26P2|C
+MG26P2|
+UG26P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E03D
+LBG26P2|Sweeney, C
+NG27P1|at426
+LG27P1|Tan
+FG27P1|Aik Ling
+MG27P1|
+UG27P1|http://vivo.cornell.edu/individual/at426
+LBG27P1|Tan, Aik Ling
+NG27P2|
+LG27P2|Tan
+FG27P2|Aik Ling
+MG27P2|
+UG27P2|http://vivo.cornell.edu/individual/AI-PRPR-0203DF692AC000160F6
+LBG27P2|Tan, Aik Ling
+NG28P1|bt42
+LG28P1|Thompson
+FG28P1|Belinda
+MG28P1|
+UG28P1|http://vivo.cornell.edu/individual/individual24450
+LBG28P1|Thompson, Belinda S.
+NG28P2|
+LG28P2|Thompson
+FG28P2|Belinda
+MG28P2|
+UG28P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FBC7
+LBG28P2|Thompson, Belinda
+NG29P1|bbt24
+LG29P1|Thompson
+FG29P1|B
+MG29P1|
+UG29P1|http://vivo.cornell.edu/individual/CRW-bbt24
+LBG29P1|Butler, B
+NG29P2|
+LG29P2|Thompson
+FG29P2|B
+MG29P2|
+UG29P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E189
+LBG29P2|Thompson, B
+NG30P1|ct30
+LG30P1|Thompson
+FG30P1|Catherine
+MG30P1|
+UG30P1|http://vivo.cornell.edu/individual/individual22319
+LBG30P1|Thompson, Cate
+NG30P2|
+LG30P2|Thompson
+FG30P2|Catherine
+MG30P2|
+UG30P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FBC8
+LBG30P2|Thompson, Catherine
+NG31P1|sdt39
+LG31P1|Thompson
+FG31P1|S
+MG31P1|
+UG31P1|http://vivo.cornell.edu/individual/CRW-sdt39
+LBG31P1|Thompson, S
+NG31P2|
+LG31P2|Thompson
+FG31P2|S
+MG31P2|
+UG31P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E19C
+LBG31P2|Thompson, S
+NG32P1|bmt42
+LG32P1|Torres
+FG32P1|B
+MG32P1|
+UG32P1|http://vivo.cornell.edu/individual/CRW-bmt42
+LBG32P1|Torres, B
+NG32P2|
+LG32P2|Torres
+FG32P2|B
+MG32P2|
+UG32P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E24B
+LBG32P2|Torres, B
+NG33P1|yt373
+LG33P1|Tran
+FG33P1|Y
+MG33P1|
+UG33P1|http://vivo.cornell.edu/individual/CRW-yt373
+LBG33P1|Tran, Y
+NG33P2|
+LG33P2|Tran
+FG33P2|Y
+MG33P2|
+UG33P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC0000861B
+LBG33P2|Tran, Y
+NG34P1|twt2
+LG34P1|Tucker
+FG34P1|T
+MG34P1|
+UG34P1|http://vivo.cornell.edu/individual/CRW-twt2
+LBG34P1|Tucker, T
+NG34P2|
+LG34P2|Tucker
+FG34P2|T
+MG34P2|
+UG34P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC000086D7
+LBG34P2|Tucker, T
+NG35P1|
+LG35P1|Uchida
+FG35P1|T
+MG35P1|
+UG35P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00008789
+LBG35P1|Uchida, T
+NG35P2|
+LG35P2|Uchida
+FG35P2|T
+MG35P2|
+UG35P2|http://vivo.cornell.edu/individual/n112011
+LBG35P2|Uchida, T
+NG36P1|fjv2
+LG36P1|Vokey
+FG36P1|Frans
+MG36P1|
+UG36P1|http://vivo.cornell.edu/individual/CCE_fjv2
+LBG36P1|Vokey, Frans
+NG36P2|
+LG36P2|Vokey
+FG36P2|Frans
+MG36P2|
+UG36P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E515
+LBG36P2|Vokey, Frans
+NG37P1|anw47
+LG37P1|Walker
+FG37P1|A
+MG37P1|
+UG37P1|http://vivo.cornell.edu/individual/CRW-anw47
+LBG37P1|Walker, A
+NG37P2|
+LG37P2|Walker
+FG37P2|A
+MG37P2|
+UG37P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00008BA2
+LBG37P2|Walker, A
+NG38P1|hw346
+LG38P1|Wang
+FG38P1|Hao-Chuan
+MG38P1|
+UG38P1|http://vivo.cornell.edu/individual/hw346
+LBG38P1|Wang, Hao-Chuan
+NG38P2|
+LG38P2|Wang
+FG38P2|Hao-Chuan
+MG38P2|
+UG38P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E5EE
+LBG38P2|Wang, Hao-Chuan
+NG39P1|qw23
+LG39P1|Wang
+FG39P1|Qi
+MG39P1|
+UG39P1|http://vivo.cornell.edu/individual/individual24233
+LBG39P1|Wang, Qi
+NG39P2|qw58
+LG39P2|Wang
+FG39P2|Qi
+MG39P2|
+UG39P2|http://vivo.cornell.edu/individual/qw58
+LBG39P2|Wang, Qi
+NG40P1|tw353
+LG40P1|Wang
+FG40P1|Tao
+MG40P1|
+UG40P1|http://vivo.cornell.edu/individual/tw353
+LBG40P1|Wang, Tao
+NG40P2|tw355
+LG40P2|Wang
+FG40P2|Tao
+MG40P2|
+UG40P2|http://vivo.cornell.edu/individual/tw355
+LBG40P2|Wang,Tao
+NG41P1|
+LG41P1|Wang
+FG41P1|W
+MG41P1|
+UG41P1|http://vivo.cornell.edu/individual/n53870
+LBG41P1|Wang, W
+NG41P2|
+LG41P2|Wang
+FG41P2|W
+MG41P2|
+UG41P2|http://vivo.cornell.edu/individual/n9471
+LBG41P2|Wang, W
+NG42P1|yw233
+LG42P1|Wang
+FG42P1|Yi
+MG42P1|
+UG42P1|http://vivo.cornell.edu/individual/individual11792
+LBG42P1|Wang, Yi
+NG42P2|yw283
+LG42P2|Wang
+FG42P2|Yi
+MG42P2|
+UG42P2|http://vivo.cornell.edu/individual/yw283
+LBG42P2|Wang,Yi
+NG43P1|yw377
+LG43P1|Wang
+FG43P1|Yuan
+MG43P1|
+UG43P1|http://vivo.cornell.edu/individual/yw377
+LBG43P1|Wang, Yuan
+NG43P2|yw476
+LG43P2|Wang
+FG43P2|Yuan
+MG43P2|
+UG43P2|http://vivo.cornell.edu/individual/yw476
+LBG43P2|Wang, Yuan
+NG44P1|
+LG44P1|Ware
+FG44P1|Doreen
+MG44P1|
+UG44P1|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FC46
+LBG44P1|Ware, Doreen
+NG44P2|
+LG44P2|Ware
+FG44P2|Doreen
+MG44P2|
+UG44P2|http://vivo.cornell.edu/individual/n55036
+LBG44P2|Ware, Doreen
+NG45P1|anw52
+LG45P1|Warner
+FG45P1|A
+MG45P1|
+UG45P1|http://vivo.cornell.edu/individual/CRW-anw52
+LBG45P1|Warner, A
+NG45P2|
+LG45P2|Warner
+FG45P2|A
+MG45P2|
+UG45P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E639
+LBG45P2|Warner, A
+NG46P1|paw14
+LG46P1|Warner
+FG46P1|Philson
+MG46P1|
+UG46P1|http://vivo.cornell.edu/individual/individual8747
+LBG46P1|Warner, Philson Ashworth Anthony
+NG46P2|
+LG46P2|Warner
+FG46P2|Philson
+MG46P2|
+UG46P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FC4C
+LBG46P2|Warner, Philson
+NG47P1|bcw32
+LG47P1|Watson
+FG47P1|Brian
+MG47P1|
+UG47P1|http://vivo.cornell.edu/individual/BrianWatson
+LBG47P1|Watson, Brian C.
+NG47P2|bsw77
+LG47P2|Watson
+FG47P2|Brian
+MG47P2|
+UG47P2|http://vivo.cornell.edu/individual/bsw77
+LBG47P2|Watson,Brian S.
+NG48P1|
+LG48P1|Webber
+FG48P1|C
+MG48P1|B
+UG48P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00008D61
+LBG48P1|Webber, C B
+NG48P2|
+LG48P2|Webber
+FG48P2|C
+MG48P2|B
+UG48P2|http://vivo.cornell.edu/individual/n34614
+LBG48P2|Webber, C B
+NG49P1|
+LG49P1|Weinstein
+FG49P1|S
+MG49P1|J
+UG49P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00008DEA
+LBG49P1|Weinstein, S J
+NG49P2|
+LG49P2|Weinstein
+FG49P2|S
+MG49P2|J
+UG49P2|http://vivo.cornell.edu/individual/n60076
+LBG49P2|Weinstein, S J
+NG50P1|msw27
+LG50P1|Weiss
+FG50P1|Marissa
+MG50P1|
+UG50P1|http://vivo.cornell.edu/individual/msw27
+LBG50P1|Weiss, Marissa S.
+NG50P2|
+LG50P2|Weiss
+FG50P2|Marissa
+MG50P2|
+UG50P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FC68
+LBG50P2|Weiss, Marissa
+NG51P1|
+LG51P1|West
+FG51P1|A
+MG51P1|A
+UG51P1|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E778
+LBG51P1|West, A A
+NG51P2|
+LG51P2|West
+FG51P2|A
+MG51P2|A
+UG51P2|http://vivo.cornell.edu/individual/n107889
+LBG51P2|West, A A
+NG52P1|
+LG52P1|West
+FG52P1|Martin
+MG52P1|R.
+UG52P1|http://vivo.cornell.edu/individual/n124376
+LBG52P1|West, Martin R.
+NG52P2|
+LG52P2|West
+FG52P2|Martin
+MG52P2|R.
+UG52P2|http://vivo.cornell.edu/individual/n2498
+LBG52P2|West, Martin R.
+NG53P1|ew20
+LG53P1|Wethington
+FG53P1|Elaine
+MG53P1|
+UG53P1|http://vivo.cornell.edu/individual/individual22720
+LBG53P1|Wethington, Elaine
+NG53P2|
+LG53P2|Wethington
+FG53P2|Elaine
+MG53P2|
+UG53P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E77D
+LBG53P2|Wethington, Elaine
+NG54P1|
+LG54P1|White
+FG54P1|Harrison
+MG54P1|C.
+UG54P1|http://vivo.cornell.edu/individual/n221784
+LBG54P1|White, Harrison C.
+NG54P2|
+LG54P2|White
+FG54P2|Harrison
+MG54P2|C.
+UG54P2|http://vivo.cornell.edu/individual/n41652
+LBG54P2|White, Harrison C.
+NG54P3|
+LG54P3|White
+FG54P3|Harrison
+MG54P3|C.
+UG54P3|http://vivo.cornell.edu/individual/n53196
+LBG54P3|White, Harrison C.
+NG55P1|knw33
+LG55P1|Williams
+FG55P1|K
+MG55P1|
+UG55P1|http://vivo.cornell.edu/individual/CRW-knw33
+LBG55P1|Williams, K
+NG55P2|kw299
+LG55P2|Williams
+FG55P2|K
+MG55P2|
+UG55P2|http://vivo.cornell.edu/individual/CRW-kw299
+LBG55P2|Williams, K
+NG55P3|
+LG55P3|Williams
+FG55P3|K
+MG55P3|
+UG55P3|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC0000904A
+LBG55P3|Williams, K
+NG56P1|dbw3
+LG56P1|Wilson
+FG56P1|David
+MG56P1|
+UG56P1|http://vivo.cornell.edu/individual/individual5192
+LBG56P1|Wilson, David B
+NG56P2|
+LG56P2|Wilson
+FG56P2|David
+MG56P2|
+UG56P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FC99
+LBG56P2|Wilson, David
+NG57P1|klw229
+LG57P1|Wilson
+FG57P1|K
+MG57P1|
+UG57P1|http://vivo.cornell.edu/individual/CRW-klw229
+LBG57P1|Wilson, K
+NG57P2|
+LG57P2|Wilson
+FG57P2|K
+MG57P2|
+UG57P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC0000909A
+LBG57P2|Wilson, K
+NG58P1|rw293
+LG58P1|Wilson
+FG58P1|R
+MG58P1|
+UG58P1|http://vivo.cornell.edu/individual/CRW-rw293
+LBG58P1|Wilson, R
+NG58P2|
+LG58P2|Wilson
+FG58P2|R
+MG58P2|
+UG58P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E898
+LBG58P2|Wilson, R
+NG59P1|dww4
+LG59P1|Winkler
+FG59P1|David
+MG59P1|
+UG59P1|http://vivo.cornell.edu/individual/individual5234
+LBG59P1|Winkler, David Ward
+NG59P2|
+LG59P2|Winkler
+FG59P2|David
+MG59P2|
+UG59P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FC9F
+LBG59P2|Winkler, David
+NG60P1|avw1
+LG60P1|Wise
+FG60P1|Alice
+MG60P1|V
+UG60P1|http://vivo.cornell.edu/individual/CCE_avw1
+LBG60P1|Wise, Alice V
+NG60P2|
+LG60P2|Wise
+FG60P2|Alice
+MG60P2|V
+UG60P2|http://vivo.cornell.edu/individual/AI-ICIAR-0203DF692AC0000E8CD
+LBG60P2|Wise, Alice V
+NG61P1|mfw5
+LG61P1|Wolfner
+FG61P1|Mariana
+MG61P1|
+UG61P1|http://vivo.cornell.edu/individual/individual5712
+LBG61P1|Wolfner, Mariana Federica
+NG61P2|
+LG61P2|Wolfner
+FG61P2|Mariana
+MG61P2|
+UG61P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FCAD
+LBG61P2|Wolfner, Mariana
+NG62P1|kw342
+LG62P1|Wong
+FG62P1|K
+MG62P1|
+UG62P1|http://vivo.cornell.edu/individual/CRW-kw342
+LBG62P1|Wong, K
+NG62P2|
+LG62P2|Wong
+FG62P2|K
+MG62P2|
+UG62P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00009190
+LBG62P2|Wong, K
+NG63P1|ciw7
+LG63P1|Wood
+FG63P1|C
+MG63P1|
+UG63P1|http://vivo.cornell.edu/individual/CRW-ciw7
+LBG63P1|Wood, C
+NG63P2|
+LG63P2|Wood
+FG63P2|C
+MG63P2|
+UG63P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC000091C4
+LBG63P2|Wood, C
+NG64P1|syw22
+LG64P1|Wu
+FG64P1|S
+MG64P1|
+UG64P1|http://vivo.cornell.edu/individual/CRW-syw22
+LBG64P1|Wu, S
+NG64P2|
+LG64P2|Wu
+FG64P2|S
+MG64P2|
+UG64P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC0000926F
+LBG64P2|Wu, S
+NG65P1|
+LG65P1|Xue
+FG65P1|Z
+MG65P1|
+UG65P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC000092D1
+LBG65P1|Xue, Z
+NG65P2|
+LG65P2|Xue
+FG65P2|Z
+MG65P2|
+UG65P2|http://vivo.cornell.edu/individual/n85246
+LBG65P2|Xue, Z
+NG66P1|lx37
+LG66P1|Xu
+FG66P1|Lin
+MG66P1|
+UG66P1|http://vivo.cornell.edu/individual/lx37
+LBG66P1|Xu,Lin
+NG66P2|
+LG66P2|Xu
+FG66P2|Lin
+MG66P2|
+UG66P2|http://vivo.cornell.edu/individual/AI-ISIR-0203DF692AC0000FCCA
+LBG66P2|Xu, Lin
+NG67P1|
+LG67P1|Xu
+FG67P1|L
+MG67P1|
+UG67P1|http://vivo.cornell.edu/individual/n149308
+LBG67P1|Xu, L
+NG67P2|
+LG67P2|Xu
+FG67P2|L
+MG67P2|
+UG67P2|http://vivo.cornell.edu/individual/n33494
+LBG67P2|Xu, L
+NG67P3|
+LG67P3|Xu
+FG67P3|L
+MG67P3|
+UG67P3|http://vivo.cornell.edu/individual/n80264
+LBG67P3|Xu, L
+NG68P1|
+LG68P1|Yu
+FG68P1|Z
+MG68P1|
+UG68P1|http://vivo.cornell.edu/individual/n20370
+LBG68P1|Yu, Z
+NG68P2|
+LG68P2|Yu
+FG68P2|Z
+MG68P2|
+UG68P2|http://vivo.cornell.edu/individual/n42326
+LBG68P2|Yu, Z
+NG69P1|
+LG69P1|Zhang
+FG69P1|P
+MG69P1|
+UG69P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC000095D2
+LBG69P1|Zhang, P
+NG69P2|
+LG69P2|Zhang
+FG69P2|P
+MG69P2|
+UG69P2|http://vivo.cornell.edu/individual/n122591
+LBG69P2|Zhang, P
+NG70P1|yz286
+LG70P1|Zhang
+FG70P1|Yang
+MG70P1|
+UG70P1|http://vivo.cornell.edu/individual/yz286
+LBG70P1|Zhang,Yang
+NG70P2|yz46
+LG70P2|Zhang
+FG70P2|Yang
+MG70P2|
+UG70P2|http://vivo.cornell.edu/individual/individual24036
+LBG70P2|Zhang, Yang
+NG70P3|yz79
+LG70P3|Zhang
+FG70P3|Yang
+MG70P3|
+UG70P3|http://vivo.cornell.edu/individual/yz79
+LBG70P3|Zhang, Yang
+NG71P1|yz353
+LG71P1|Zhang
+FG71P1|Yan
+MG71P1|
+UG71P1|http://vivo.cornell.edu/individual/yz353
+LBG71P1|Zhang,Yan
+NG71P2|
+LG71P2|Zhang
+FG71P2|Yan
+MG71P2|
+UG71P2|http://vivo.cornell.edu/individual/n12352
+LBG71P2|Zhang, Yan
+NG72P1|
+LG72P1|Zhang
+FG72P1|Z
+MG72P1|
+UG72P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC000095F5
+LBG72P1|Zhang, Z
+NG72P2|
+LG72P2|Zhang
+FG72P2|Z
+MG72P2|
+UG72P2|http://vivo.cornell.edu/individual/n62476
+LBG72P2|Zhang, Z
+NG73P1|sz298
+LG73P1|Zhao
+FG73P1|S
+MG73P1|
+UG73P1|http://vivo.cornell.edu/individual/CRW-sz298
+LBG73P1|Zhao, S
+NG73P2|
+LG73P2|Zhao
+FG73P2|S
+MG73P2|
+UG73P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00009615
+LBG73P2|Zhao, S
+NG74P1|
+LG74P1|Zhou
+FG74P1|L
+MG74P1|
+UG74P1|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00009647
+LBG74P1|Zhou, L
+NG74P2|
+LG74P2|Zhou
+FG74P2|L
+MG74P2|
+UG74P2|http://vivo.cornell.edu/individual/n88857
+LBG74P2|Zhou, L
+NG75P1|zz254
+LG75P1|Zhou
+FG75P1|Z
+MG75P1|
+UG75P1|http://vivo.cornell.edu/individual/CRW-zz254
+LBG75P1|Zhou, Z
+NG75P2|
+LG75P2|Zhou
+FG75P2|Z
+MG75P2|
+UG75P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00009663
+LBG75P2|Zhou, Z
+NG76P1|pz74
+LG76P1|Zhuang
+FG76P1|Ping
+MG76P1|
+UG76P1|http://vivo.cornell.edu/individual/pz74
+LBG76P1|Zhuang,Ping
+NG76P2|
+LG76P2|Zhuang
+FG76P2|Ping
+MG76P2|
+UG76P2|http://vivo.cornell.edu/individual/AI-ICAR-0203DF692AC00009669
+LBG76P2|Zhuang, Ping
+NG77P1|xz95
+LG77P1|Zhu
+FG77P1|Xuling
+MG77P1|
+UG77P1|http://vivo.cornell.edu/individual/xz95
+LBG77P1|Zhu, Xuling
+NG77P2|
+LG77P2|Zhu
+FG77P2|Xuling
+MG77P2|
+UG77P2|http://vivo.cornell.edu/individual/n56024
+LBG77P2|Zhu, Xuling

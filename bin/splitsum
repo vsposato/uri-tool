@@ -1,0 +1,222 @@
+#!/usr/bin/perl
+# Copyright (c) 2012, Cornell University
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# 
+#     * Redistributions of source code must retain the above copyright notice,
+#       this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright notice,
+#       this list of conditions and the following disclaimer in the documentation
+#       and/or other materials provided with the distribution.
+#     * Neither the name of Cornell University nor the names of its contributors
+#       may be used to endorse or promote products derived from this software
+#       without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# 
+
+use sigtrap qw(die INT QUIT);
+use sigtrap qw(die untrapped normal-signals stack-trace any error-signals);
+use Getopt::Std;
+use FileHandle;
+use POSIX qw( strftime );
+use FindBin qw($Bin);
+@av = @ARGV;
+
+$g_T0 = time();
+$dmy = strftime("%d%b%y%p", localtime($g_T0) );
+autoflush STDOUT 1;
+$N=0;
+@Xmls = ();
+$opts = "Aim:oO:P:S:T:t:x";
+getopts($opts);
+
+# designed and coded by Joseph R. Mc Enerney jrm424@cornell.edu 
+
+if(scalar(@av) == 0){
+    usage(0);
+}
+sub usage {
+    my($r)=@_;
+    print "splitsum [params] file\n";
+    print "-A         all summaries that match. without -A require\n";
+    print "           that summary predicates must all match -m str\n";
+    print "-i         case independent matching\n";
+    print "-m str     match string\n";
+    print "-o         out put Matches and mismatches\n";
+    print "-t tag     output file tag\n";
+    print "-x         out put well formed xml files\n";
+    exit($r);
+}
+if($opt_P ne ''){
+    @res=qx(grep '<puri>' $opt_P | clip -s '</puri>' -p '<puri>' | sort -u);
+    print join("",@res);
+    exit 0;
+}
+if($opt_S ne ''){
+    @res=qx(grep '<suri>' $opt_S | clip -s '</suri>' -p '<suri>' | sort -u);
+    print join("",@res);
+    exit 0;
+}
+if($opt_O ne ''){
+    @res=qx(grep '<ouri>' $opt_O | clip -s '</ouri>' -p '<ouri>' | sort -u);
+    print join("",@res);
+    exit 0;
+}
+if($opt_T ne ''){
+    @res=qx(grep '<topic>' $opt_T | clip -s '</topic>' -p '<topic>' | sort -u);
+    print join("",@res);
+    exit 0;
+}
+
+
+
+@xmlns = ();
+$x = 0;
+start: while(<>){
+    my @tmp = ();
+    if(!$opt_x){
+	push @tmp, $_;
+    }
+    while(<>){
+	if(/^<\?xml version/){
+	    #print "$N\n";
+	    $N++;
+	    push @Xmls, [@tmp];
+	    $x = 1;
+	    redo start;
+	}
+	if($opt_x ){
+	    if($_ =~ /^\s*<Summary/){
+		push @tmp, "<Summary>\n";
+	    } elsif($_ =~ /^\s+xmlns/){
+		push @xmlns, $_ if $x == 0;
+	    } elsif(/^\s*>/){
+		;
+	    } else {
+		push @tmp, $_;
+	    }
+	} else {
+	    push @tmp, $_;
+	}
+	if(eof()){
+	    push @Xmls, [@tmp];
+	    last;
+	}
+    }
+    
+    last if eof();
+}
+
+#print join("",@{$Xmls[3]});
+$match = "webpage";
+$match = $opt_m if $opt_m ne '';
+$match =~ s=/=\\/=g;
+$match =~ s/\./\\./g;
+$N=0;
+@Match = @Mismatch = ();
+for(my $n=0; $n < scalar(@Xmls); $n++){
+    my @summary = @{$Xmls[$n]};
+    my $f = 0;
+    for(my $m=0; $m < scalar(@summary); $m++){
+	if($opt_i){
+	    if($summary[$m] =~ /$match/i || $match eq "none"){
+		$f = 1;
+		last;
+	    }
+	} else {
+	    if($summary[$m] =~ /$match/ || $match eq "none"){
+		$f = 1;
+		last;
+	    }
+	}
+    }
+    if($f){
+	push @Match, $n;
+    } else {
+	push @Mismatch, $n;
+    }
+    $N++;
+}
+
+$pfx = "";
+$pfx = "" if !$opt_x;
+
+$sfx = ".xml";
+$sfx = ".xmls" if !$opt_x;
+
+$handle = \*STDOUT;
+if($opt_o){
+    open OUT, ">$opt_t-Match-$match-$dmy$sfx";
+    $handle = \*OUT;
+    autoflush OUT 1;
+
+}
+if($opt_x){
+    print $handle '<?xml version="1.0" encoding="UTF-8"?>' ."\n";
+    print $handle "<Summaries\n";
+    print $handle join "", @xmlns;
+    print $handle ">\n";
+}
+
+for(my $w=0; $w < scalar(@Match); $w++){
+
+    if($opt_A){
+	print $handle $pfx . join $pfx, @{$Xmls[$Match[$w]]};
+    } else {
+	if(predMatch(\@{$Xmls[$Match[$w]]})){
+	    print $handle $pfx . join $pfx, @{$Xmls[$Match[$w]]};
+	} else {
+	    push @Mismatch, $Match[$w];
+	}
+    }
+}
+
+
+
+
+print $handle "</Summaries>\n" if $opt_x;
+print STDERR "$N " . scalar(@Mismatch) . "\n";
+
+if($opt_o){
+    open OUT2, ">$opt_t-Mismatch-$match-$dmy$sfx";
+    autoflush OUT2 1;
+    $handle = \*OUT2;
+    if($opt_x){
+	print $handle '<?xml version="1.0" encoding="UTF-8"?>' ."\n";
+	print $handle "<Summaries\n";
+	print $handle join "", @xmlns;
+	print $handle ">\n";
+    }
+
+    for(my $w=0; $w < scalar(@Mismatch); $w++){
+	print $handle $pfx . join $pfx, @{$Xmls[$Mismatch[$w]]};
+    }
+    print $handle "</Summaries>\n" if $opt_x;
+}
+
+sub predMatch {
+    my($ap) = @_;
+    if($opt_i){
+	foreach my $line (@$ap){
+	    return 0 if($line =~ /<puri>/ && $line !~ /$match/i);
+	}
+    } else {
+	foreach my $line (@$ap){
+	    return 0 if($line =~ /<puri>/ && $line !~ /$match/);
+	}
+    }
+    return 1;
+}
+

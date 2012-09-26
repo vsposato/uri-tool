@@ -1,0 +1,379 @@
+#!/usr/bin/perl
+# Copyright (c) 2012, Cornell University
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# 
+#     * Redistributions of source code must retain the above copyright notice,
+#       this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright notice,
+#       this list of conditions and the following disclaimer in the documentation
+#       and/or other materials provided with the distribution.
+#     * Neither the name of Cornell University nor the names of its contributors
+#       may be used to endorse or promote products derived from this software
+#       without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# 
+
+
+use Cwd qw(chdir getcwd);
+use sigtrap qw(die INT QUIT);
+use sigtrap qw(die untrapped normal-signals stack-trace any error-signals);
+use Getopt::Std;
+use FileHandle;
+use POSIX qw( strftime );
+use FindBin qw($Bin);
+use Term::ReadKey;
+
+# designed and coded by Joseph R. Mc Enerney jrm424@cornell.edu 
+
+%OntoMap = (
+"http://vitro.mannlib.cornell.edu/ns/reporting#"               => "far:",
+"http://vivoweb.org/ontology/activity-insight#"                => "acti:",
+"http://purl.org/ontology/bibo/"                               => "bibo:",
+"http://vivoweb.org/ontology/cornell-cooperative-extension#"   => "cce:",
+"http://vivo.cornell.edu/ns/hr/0.9/hr.owl#"                    => "hr:",
+"http://purl.org/dc/terms/"                                    => "dcterms:",
+"http://purl.org/dc/elements/1.1/"                             => "dcelem:",
+"http://purl.org/NET/c4dm/event.owl#"                          => "event:",
+"http://xmlns.com/foaf/0.1/"                                   => "foaf:",
+"http://vivoweb.org/ontology/cu-vivo-osp#"                     => "ospcu:",
+"http://www.w3.org/2000/01/rdf-schema#"                        => "rdfs:",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#"                  => "rdf:",
+"http://vivoweb.org/ontology/core#"                            => "vivo:",
+"http://vivo.library.cornell.edu/ns/0.1#"                      => "vivoc:",
+"http://vitro.mannlib.cornell.edu/ns/vitro/public#"            => "vitro-public:",
+"http://www.w3.org/2002/07/owl#"                               => "owl:",
+"http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"               => "vitro:",
+"http://aims.fao.org/aos/geopolitical.owl#"                    => "geo:",
+"http://www.w3.org/2001/XMLSchema#"                            => "xsd:",
+"http://vitro.mannlib.cornell.edu/ns/pubmed#"                  => "pubmed:"
+
+);
+
+
+
+@av = @ARGV;
+#print join(' ',@ARGV) . "\n";
+$g_T0 = time();
+$g_STARTED_AT = strftime("%Y\%m%d%H\%M\%S", localtime($g_T0) );
+print "Started at $g_STARTED_AT\n";
+
+$g_usr = qx(id -un);
+chomp $g_usr;
+
+sub uniqPush (\@@);
+
+open CONSOLE, ">&STDOUT";
+# flush
+autoflush CONSOLE 1;
+autoflush STDOUT 1;
+
+if(scalar(@ARGV) == 0){
+    usage(0);
+}
+$opts = "ab:c:h:i:l:n:N:O:u:p:Pv";
+getopts($opts);
+$g_usr = $opt_u if $opt_u ne '';
+$uri = shift;
+if($uri eq ''){
+    print "Must supply a uri.\n";
+    usage(1);
+}
+
+if($ENV{'SPARQLTOOL_PW'} eq ''){
+    print "Provide password\nexport SPARQLTOOL_PW=pw";
+    usage(1);
+}
+$base = "/home/ingest/Common";
+$base = $opt_b if $opt_b ne '';
+$xslt = "$base/xslt";
+
+$xslt = $ENV{'URITOOL_XSLT'} if $ENV{'URITOOL_XSLT'} ne '';
+$saxon = "java -jar $xslt/saxon9he.jar ";
+$stdns = 'http://vivo.cornell.edu/individual/';
+$stdns = $ENV{'URITOOL_STD_NS'} if $ENV{'URITOOL_STD_NS'} ne '';
+
+if($uri !~ /^http/){
+    $uri = $stdns . $uri;
+}
+
+$ctxt = "vivocornell";
+$ctxt = $opt_c if $opt_c ne '';
+
+$host = 'localhost';
+$host = $opt_h if $opt_h ne '';
+
+$port = '9090';
+$port = $opt_p if $opt_p ne '';
+
+$name = 'jrm424@cornell.edu';
+$name = $opt_n if $opt_n ne '';
+
+
+if($host eq 'vivo' || $0 =~ /\/dv$/){
+    $port = '8080';
+    $host = 'vivo';
+    $ctxt = '';
+}
+$inref = "/tmp/refsToSpRS_$opt_N$g_usr.xml";
+
+$outref = "/tmp/refsBySpRS_$opt_N$g_usr.xml";
+
+
+$out = outRefTemplate($uri);
+qx(echo '$out' > /tmp/out$g_usr.rq);
+
+$in = inRefTemplate($uri);
+qx(echo '$in' > /tmp/in$g_usr.rq);
+#exit 0;
+$flag = "L";
+$flag .= "V" if $opt_v;
+$cmd = "sparqltool ";
+$cmd .= " -c $ctxt " if $ctxt ne '';
+$cmd .= " -S RS_XML";
+$cmd .= " -h $host";
+$cmd .= " -p $port" if $port ne '';
+$cmd .= " -n $name";
+$cmd .= " -P env";
+$cmd .= " -o $outref";
+$cmd .= " -i /tmp/out$g_usr.rq";
+$cmd .= " -u $g_usr";
+$r = doit($cmd,$flag);
+exit 1 if $r;
+
+$cmd = "sparqltool ";
+$cmd .= " -c $ctxt " if $ctxt ne '';
+$cmd .= " -S RS_XML";
+$cmd .= " -h $host";
+$cmd .= " -p $port" if $port ne '';
+$cmd .= " -n $name";
+$cmd .= " -P env";
+$cmd .= " -o $inref";
+$cmd .= " -i /tmp/in$g_usr.rq";
+$cmd .= " -u $g_usr";
+$r = doit($cmd,$flag);
+exit 1 if $r;
+
+$cmd = "$saxon /tmp/refsToSpRS_$opt_N$g_usr.xml $xslt/discoverSimplifiedIn.xsl";
+$cmd .= " > /tmp/refsToInd$opt_N$g_usr.xml";
+$r = doit($cmd,$flag);
+exit 1 if $r;
+
+$cmd = "$saxon /tmp/refsBySpRS_$opt_N$g_usr.xml $xslt/discoverSimplifiedOut.xsl";
+$cmd .= " > /tmp/refsByInd$opt_N$g_usr.xml";
+$r = doit($cmd,$flag);
+exit 1 if $r;
+
+$cmd = "$saxon $xslt/empty.xml $xslt/indsum.xsl ";
+$cmd .= "ind=$uri insp=/tmp/refsToInd$opt_N$g_usr.xml ";
+$cmd .= "outsp=/tmp/refsByInd$opt_N$g_usr.xml ";
+
+$r = doit($cmd,$flag,undef,\@res);
+exit 1 if $r;
+
+if($opt_O ne ''){
+    $outcmd =">";
+    $outcmd =">>" if $opt_a;
+    my $r = open OUT, "$outcmd$opt_O";
+    if(!defined($r)){
+	print "can't open $opt_O\n";
+	exit 1;
+    }
+    my $first = shift(@res);
+    print OUT $first;
+    my $second = shift(@res);
+    $second =~ s/>$//;
+    print OUT $second;
+    #print OUT "<!--\n";
+    foreach my $u (sort keys(%OntoMap)){
+	my $prefix = $OntoMap{$u};
+	$prefix =~ s/://g;
+	printf OUT "\txmlns:%s=\"%s\"\n", $prefix, $u;
+    }
+    print OUT ">\n";
+ 
+    foreach my $line (@res){
+
+	foreach my $u (sort keys(%OntoMap)){
+	    if($line =~ /(<puri>|<type>)/){
+		my $prefix = $OntoMap{$u};
+		$line =~ s|$u|$prefix|g;
+	    } elsif($opt_P){
+		my $prefix = $OntoMap{$u};
+		$line =~ s|$u|$prefix|g;
+	    }
+	}
+
+	print OUT $line;
+    }
+    close OUT;
+} else {
+
+    my $first = shift(@res);
+    print $first;
+    my $second = shift(@res);
+    $second =~ s/>$//;
+    print $second;
+    #print "<!--\n";
+    foreach my $u (sort keys(%OntoMap)){
+	my $prefix = $OntoMap{$u};
+	$prefix =~ s/://g;
+	printf "\txmlns:%s=\"%s\"\n", $prefix, $u;
+    }
+    print ">\n";
+
+    foreach my $line (@res){	
+	
+	foreach my $u (sort keys(%OntoMap)){
+	    if($line =~ /(<puri>|<type>)/){
+		my $prefix = $OntoMap{$u};
+		$line =~ s|$u|$prefix|g;
+	    } elsif($opt_P){
+		my $prefix = $OntoMap{$u};
+		$line =~ s|$u|$prefix|g;
+	    }
+	}
+	
+	print $line;
+    }
+}
+
+
+
+# clean up string ends
+sub trim {
+    my($a) = @_;
+    $a =~ s/^\s*(\S+)\s*$/$1/;
+    $a =~ s/^\s*(\S.*\S)\s*$/$1/;
+    $a =~ s/(\s*)//;
+    return $a;
+}
+sub uniqPush (\@@) {
+    my $ara = shift;
+    my @items = @_;
+
+    my($i,$k,$x);
+    for($k=0;$k<=$#items;$k++){
+        $x = $items[$k];
+        for($i = 0; $i<=$#$ara; $i++){
+            if($x eq $$ara[$i]){
+                last;
+            }
+        }
+        push(@$ara,$x) if $i > $#$ara ;
+
+    }
+    return $#$ara;
+}
+
+sub doit {
+    my($cmd, $flag, $pw, $resp) = @_;
+    #print "$cmd, $flag, $pw, $resp\n";
+    my $t0 = time();
+    print STDOUT "$cmd\n" if $flag =~ /V/;
+    $cmd =~ s/_PW_/$pw/ if $pw;
+    my $pkg,$fn,$lno;
+    ($pkg,$fn,$lno) = caller();
+    my $callinfo = "Pkg=$pkg, File=$fn, Line=$lno";
+    if($flag =~ /L/ && $resp){
+	@$resp = qx($cmd);
+	my $r = ($? >> 8);
+	print STDOUT ">>>> ERROR !!! $callinfo\n" . join("", @$resp) if($r);
+	my $dt = time() - $t0;
+	print STDOUT "Elapsed time = $dt seconds.\n";
+	return $r;
+    } elsif($flag =~ /L/){
+	my @res = qx($cmd);
+	my $r = ($? >> 8);
+	print STDOUT ">>>> ERROR !!! $callinfo\n" . join("", @res) if($r);
+	my $dt = time() - $t0;
+	print STDOUT "Elapsed time = $dt seconds.\n";
+	return $r;
+    }
+    my $dt = time() - $t0;
+    print STDOUT  "Elapsed time = $dt seconds.\n";
+    return 0;
+}
+
+
+sub usage {
+    my($ex)=@_;
+    print "discover [params] uri\n";
+    print "-b base      default /home/ingest/Common\n";
+    print "-c context   default vivocornell\n";
+    print "-h host      default bailey.mannlib.cornell.edu\n";
+    print "-p port      default 9090\n";
+    print "-n user      vivo user name - default jrm424@cornell.edu\n";
+    print "-O file      output file\n";
+#    print "\n";
+
+    exit($ex);
+}
+
+sub outRefTemplate{
+    my($uri) = @_;
+    my $res = <<"OUTEMPLATE";
+select
+	?p ?o ?L ?O ?T ?g
+where
+{
+    GRAPH ?g {
+	<$uri> ?p ?o .
+	optional { ?o a ?T . }
+	bind(isLiteral(?o) as ?L)
+	bind(isURI(?o) as ?O)
+    }
+}
+OUTEMPLATE
+    return $res;
+}
+
+sub inRefTemplate {
+    my($uri) = @_;
+    my $res = <<"INTEMPLATE";
+select
+	?s ?p ?T ?g
+where
+{
+    GRAPH ?g {
+	?s ?p <$uri> .
+	?s a ?T .
+    }
+}
+INTEMPLATE
+    return $res;
+}
+
+END {
+    my $rcode = $?;
+    my $elapsed = time() - $g_T0;
+    my $err = "ERROR on $uri";
+    $err = '' if $rcode == 0;
+    my $t1 = strftime("%Y\%m%d%H\%M\%S", localtime(time()));
+    print STDERR $err . "Ending $0 at $t1. ". hms($elapsed) . " hms.\n";
+
+    $? = $rcode;
+}
+sub hms {
+    my($s) = @_;
+    my $h = int($s/3600);
+    my $r = $s - 3600*$h;
+    my $m = int($r/60);
+    my $s = $r - 60*$m;
+    my $res;
+    $res = sprintf("%02d:%02d:%02d", $h, $m, $s);
+    return $res;
+}
+

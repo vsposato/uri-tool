@@ -1,0 +1,127 @@
+#!/usr/bin/perl
+# Copyright (c) 2012, Cornell University
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# 
+#     * Redistributions of source code must retain the above copyright notice,
+#       this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright notice,
+#       this list of conditions and the following disclaimer in the documentation
+#       and/or other materials provided with the distribution.
+#     * Neither the name of Cornell University nor the names of its contributors
+#       may be used to endorse or promote products derived from this software
+#       without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# 
+
+
+use Cwd qw(chdir getcwd);
+use sigtrap qw(die INT QUIT);
+use sigtrap qw(die untrapped normal-signals stack-trace any error-signals);
+use Getopt::Std;
+use FileHandle;
+use POSIX qw( strftime );
+use FindBin qw($Bin);
+use Term::ReadKey;
+$g_T0 = time();
+$g_STARTED_AT = strftime("%Y\%m%d%H\%M\%S", localtime($g_T0) );
+#print "Started at $g_STARTED_AT\n";
+# designed and coded by Joseph R. Mc Enerney jrm424@cornell.edu
+$opts = "f:";
+getopts($opts);
+
+%H = ();
+while(<>){
+    if(/name="(U-\d+)"/){
+	my $un = $1;
+	my $triple;
+	my $token;
+w2:
+	while(<>){
+	    #print "w2\n";
+	    $triple = "";
+	    
+	    if(/<!--START-$un(.*?)-->/){
+		$token = $un . $1;
+		#print $token . " <- token\n";
+		while(my $line = <>){
+		    #print "w3: $line\n";
+		    if($line =~ /<!--END-$token-->/){
+			print $token."==".$triple;
+			$H{$token} = $triple;
+			last;
+		    }
+		    my $m = $token . "S";
+		    #print "XX $m\n";
+		    if($line =~ /$m/){
+			#print "boo\n";
+			$line =~ /<td id="$m"><a href="(.*?)"/;
+			$triple .= "<$1> ";
+		    }
+		    $m = $token . "P";
+		    if($line =~ /$m/){
+			$line =~ /<td id="$m">(.*?)<\/td>/;
+			$triple .= "<$1> ";
+		    }
+		    $m = $token . 'O';
+		    if($line =~ /$m/){
+			$line =~ /<td id="$m"><a href="(.*?)"/;
+			my $one = $1;
+			$triple .= "<$one> .\n" if $one ne '';
+			next if $one ne '';
+		    }
+		    #print $triple . "\n";
+		    if($line =~ /$m/){
+
+			if($line =~ /<td id="$m"><pre/){
+			    my $s = $line;
+			    if($line !~ /<\/pre>/){
+				while($line = <>){
+				    last if $line =~ /<\/pre>/;
+				    $s .= $line;
+				}
+				$s .= $line;
+			    }
+                            chomp $s;
+			    $s =~ s/\s*<td id="$m"><pre( .*?>|>)//;
+			    $s =~ s/<\/pre>.*$//;
+			    $s =~ s/(_\|_.*?)$//;
+			    my $ext = $1;
+			    $ext =~ s/_\|_//;
+			    $ext =~ s/&lt;/</g;
+			    $ext =~ s/&gt;/>/g;
+			    $s =~ s/"/\\"/g;
+			    $s =~ s/\n/\\n/g;
+			    $s =~ s/\r/\\r/g;
+                            $s =~ s/&\#xD;/\\r/g;
+			    $s =~ s/\t/\\t/g;
+			    $s =~ s/&lt;/</g;
+                            $s =~ s/&gt;/>/g;
+                            $s =~ s/&amp;([\w\#]+;)/&$1/g;
+			    #$s =~ s/\'/\\u2019/g;
+			    $triple .= "\"$s\"$ext .\n";
+			}
+		    }
+		}
+		
+	    }
+	    last if /__ENDTOPIC__/;
+	}
+
+    }
+    
+}
+
+#print $H{$opt_f};

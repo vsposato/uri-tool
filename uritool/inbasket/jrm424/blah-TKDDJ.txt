@@ -1,0 +1,1075 @@
+UG1P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000011E2
+LBG1P1|Nature Chemical Biology
+AG1P1|
+IG1P1|
+EG1P1|
+UG1P2|http://vivo.cornell.edu/individual/n67203
+LBG1P2|Nature Chemical Biology
+AG1P2|
+IG1P2|
+EG1P2|
+UG2P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005F1
+LBG2P1|Current Biology
+AG2P1|
+IG2P1|
+EG2P1|
+UG2P2|http://vivo.cornell.edu/individual/n28891
+LBG2P2|Current Biology
+AG2P2|
+IG2P2|
+EG2P2|
+UG3P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001467
+LBG3P1|Proceedings of the Society for Experimental Biology and Medicine
+AG3P1|
+IG3P1|
+EG3P1|
+UG3P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001469
+LBG3P2|Proceedings of the Society of Experimental Biology and Medicine
+AG3P2|
+IG3P2|
+EG3P2|
+UG4P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000894
+LBG4P1|Genome Biology & Evolution
+AG4P1|
+IG4P1|
+EG4P1|
+UG4P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000895
+LBG4P2|Genome Biology and Evolution
+AG4P2|
+IG4P2|
+EG4P2|
+UG5P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001179
+LBG5P1|Molecular Biology and Evolution
+AG5P1|
+IG5P1|
+EG5P1|
+UG5P2|http://vivo.cornell.edu/individual/n52425
+LBG5P2|Molecular Biology and Evolution
+AG5P2|
+IG5P2|
+EG5P2|
+UG6P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000014A8
+LBG6P1|Public Library of Science - Biology
+AG6P1|
+IG6P1|
+EG6P1|
+UG6P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000014A9
+LBG6P2|Public Library of Science: Biology
+AG6P2|
+IG6P2|
+EG6P2|
+UG7P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000111D
+LBG7P1|Methods in Molecular Biology
+AG7P1|
+IG7P1|
+EG7P1|
+UG7P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000111F
+LBG7P2|Methods Molecular Biology
+AG7P2|
+IG7P2|
+EG7P2|
+UG8P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000139B
+LBG8P1|Plant Biology
+AG8P1|
+IG8P1|
+EG8P1|
+UG8P2|http://vivo.cornell.edu/individual/n82664
+LBG8P2|Plant Biology
+AG8P2|
+IG8P2|
+EG8P2|
+UG9P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013EA
+LBG9P1|PLoS Biology
+AG9P1|
+IG9P1|
+EG9P1|
+UG9P2|http://vivo.cornell.edu/individual/n22405
+LBG9P2|PLoS Biology
+AG9P2|
+IG9P2|
+EG9P2|
+UG10P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000003D0
+LBG10P1|BMC Plant Biology
+AG10P1|
+IG10P1|
+EG10P1|
+UG10P2|http://vivo.cornell.edu/individual/n40561
+LBG10P2|BMC Plant Biology
+AG10P2|
+IG10P2|
+EG10P2|
+UG11P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000042E
+LBG11P1|Bulletin of the Torrey Botanical Club
+AG11P1|
+IG11P1|
+EG11P1|
+UG11P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000042F
+LBG11P2|Bulletin of Torrey Botanical Club
+AG11P2|
+IG11P2|
+EG11P2|
+UG12P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000FD3
+LBG12P1|Journal of the Torrey Botanical Society
+AG12P1|
+IG12P1|
+EG12P1|
+UG12P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000101B
+LBG12P2|Journal Torrey Botanical Society
+AG12P2|
+IG12P2|
+EG12P2|
+UG13P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000382
+LBG13P1|Biomass & Bioenergy
+AG13P1|
+IG13P1|
+EG13P1|
+UG13P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000383
+LBG13P2|Biomass and Bioenergy
+AG13P2|
+IG13P2|
+EG13P2|
+UG14P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000032C
+LBG14P1|Bioacoustics
+AG14P1|
+IG14P1|
+EG14P1|
+UG14P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000035F
+LBG14P2|Bioinformatics
+AG14P2|
+IG14P2|
+EG14P2|
+UG14P3|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000038D
+LBG14P3|Biomicrofluidics
+AG14P3|
+IG14P3|
+EG14P3|
+UG15P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D22
+LBG15P1|Journal of Biological Chemistry
+AG15P1|
+IG15P1|
+EG15P1|
+UG15P2|http://vivo.cornell.edu/individual/n106823
+LBG15P2|Journal of Biological Chemistry
+AG15P2|
+IG15P2|
+EG15P2|
+UG16P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001082
+LBG16P1|Life Support and Biosphere Science
+AG16P1|
+IG16P1|
+EG16P1|
+UG16P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001083
+LBG16P2|Life Support and Biosphere Sciences
+AG16P2|
+IG16P2|
+EG16P2|
+UG17P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000010D2
+LBG17P1|Material Issues in Novel Si-Based Technology
+AG17P1|
+IG17P1|
+EG17P1|
+UG17P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000010D8
+LBG17P2|Materials Issues in Novel Si-Based Technology
+AG17P2|
+IG17P2|
+EG17P2|
+UG18P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000035D
+LBG18P1|Biogeosciences
+AG18P1|
+IG18P1|
+EG18P1|
+UG18P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000003BF
+LBG18P2|BirdScope
+AG18P2|
+IG18P2|
+EG18P2|
+UG19P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000071B
+LBG19P1|Environmental & Experimental Botany
+AG19P1|
+IG19P1|
+EG19P1|
+UG19P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000071C
+LBG19P2|Environmental and Experimental Botany
+AG19P2|
+IG19P2|
+EG19P2|
+UG20P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000051A
+LBG20P1|Coleopt. Bull.
+AG20P1|
+IG20P1|
+EG20P1|
+UG20P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000051C
+LBG20P2|Coleopts. Bull.
+AG20P2|
+IG20P2|
+EG20P2|
+UG21P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000310
+LBG21P1|Behavioral and Brain Sciences
+AG21P1|
+IG21P1|
+EG21P1|
+UG21P2|http://vivo.cornell.edu/individual/n13372
+LBG21P2|Behavioral and Brain Sciences
+AG21P2|
+IG21P2|
+EG21P2|
+UG22P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000392
+LBG22P1|Biophysical Journal
+AG22P1|
+IG22P1|
+EG22P1|
+UG22P2|http://vivo.cornell.edu/individual/n14020
+LBG22P2|Biophysical Journal
+AG22P2|
+IG22P2|
+EG22P2|
+UG23P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000153E
+LBG23P1|Revista Brasileira de Botânica
+AG23P1|
+IG23P1|
+EG23P1|
+UG23P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000153F
+LBG23P2|Revista Brasileira de Botânica (Brazilian Journal of Botany)
+AG23P2|
+IG23P2|
+EG23P2|
+UG24P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000C2A
+LBG24P1|J. Phys. Chem C (Gubbins special issue)
+AG24P1|
+IG24P1|
+EG24P1|
+UG24P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000C29
+LBG24P2|J. Phys. Chem. C
+AG24P2|
+IG24P2|
+EG24P2|
+UG25P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002673
+LBG25P1|Tissue Eng Part C Methods
+AG25P1|
+IG25P1|
+EG25P1|
+UG25P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001765
+LBG25P2|Tissue Eng Part C: Methods
+AG25P2|
+IG25P2|
+EG25P2|
+UG26P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000044D
+LBG26P1|Can J. of For. Res
+AG26P1|
+IG26P1|
+EG26P1|
+UG26P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000044A
+LBG26P2|Can. J. For. Res.
+AG26P2|
+IG26P2|
+EG26P2|
+UG27P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000044E
+LBG27P1|Can. J. of Plant Pathology
+AG27P1|
+IG27P1|
+EG27P1|
+UG27P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000451
+LBG27P2|Can. J. Plant Pathology
+AG27P2|
+IG27P2|
+EG27P2|
+UG28P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004B2
+LBG28P1|Chance
+AG28P1|
+IG28P1|
+EG28P1|
+UG28P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004B3
+LBG28P2|Change
+AG28P2|
+IG28P2|
+EG28P2|
+UG29P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000025EC
+LBG29P1|Silicon Carbide and Related Materials - 2002
+AG29P1|
+IG29P1|
+EG29P1|
+UG29P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000025ED
+LBG29P2|Silicon Carbide and Related Materials 2004
+AG29P2|
+IG29P2|
+EG29P2|
+UG30P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001DD3
+LBG30P1|Cardiol Clin
+AG30P1|
+IG30P1|
+EG30P1|
+UG30P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E0E
+LBG30P2|Clin Cardiol
+AG30P2|
+IG30P2|
+EG30P2|
+UG31P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000F03
+LBG31P1|Journal of Physics-Condensed Matter
+AG31P1|
+IG31P1|
+EG31P1|
+UG31P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000F03
+LBG31P2|Journal of Physics. Condensed Matter
+AG31P2|
+IG31P2|
+EG31P2|
+UG32P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013A5
+LBG32P1|Plant Cell Organ & Tissue Culture
+AG32P1|
+IG32P1|
+EG32P1|
+UG32P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013AC
+LBG32P2|Plant Cell Tissue and Organ Culture
+AG32P2|
+IG32P2|
+EG32P2|
+UG32P3|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013AD
+LBG32P3|Plant Cell Tissue Organ Culture
+AG32P3|
+IG32P3|
+EG32P3|
+UG32P4|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013AB
+LBG32P4|Plant, Cell, Tissue & Organ Culture
+AG32P4|
+IG32P4|
+EG32P4|
+UG33P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000798
+LBG33P1|Exp. Cell Res
+AG33P1|
+IG33P1|
+EG33P1|
+UG33P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000798
+LBG33P2|Exp. Cell Res.
+AG33P2|
+IG33P2|
+EG33P2|
+UG34P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000087F
+LBG34P1|Genes Cells
+AG34P1|
+IG34P1|
+EG34P1|
+UG34P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000882
+LBG34P2|Genes to Cells
+AG34P2|
+IG34P2|
+EG34P2|
+UG35P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001158
+LBG35P1|Mol Cell Proteomic
+AG35P1|
+IG35P1|
+EG35P1|
+UG35P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001159
+LBG35P2|Mol Cell Proteomics
+AG35P2|
+IG35P2|
+EG35P2|
+UG36P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013A7
+LBG36P1|Plant Cell Report
+AG36P1|
+IG36P1|
+EG36P1|
+UG36P2|http://vivo.cornell.edu/individual/n230595
+LBG36P2|Plant Cell Report
+AG36P2|
+IG36P2|
+EG36P2|
+UG36P3|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000013A8
+LBG36P3|Plant Cell Reports
+AG36P3|
+IG36P3|
+EG36P3|
+UG37P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D86
+LBG37P1|Journal of Convention and Event Tourism
+AG37P1|
+IG37P1|
+EG37P1|
+UG37P2|http://vivo.cornell.edu/individual/n22720
+LBG37P2|Journal of Convention and Event Tourism
+AG37P2|
+IG37P2|
+EG37P2|
+UG38P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002503
+LBG38P1|Proc. 10th International Conference on Low Temperature Physics
+AG38P1|
+IG38P1|
+EG38P1|
+UG38P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002504
+LBG38P2|Proc. 12th International Conference on Low Temperature Physics
+AG38P2|
+IG38P2|
+EG38P2|
+UG39P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000441
+LBG39P1|California Management Review
+AG39P1|
+IG39P1|
+EG39P1|
+UG39P2|http://vivo.cornell.edu/individual/n27368
+LBG39P2|California Management Review
+AG39P2|
+IG39P2|
+EG39P2|
+UG40P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004BC
+LBG40P1|Chem Commun (Camb)
+AG40P1|
+IG40P1|
+EG40P1|
+UG40P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004BB
+LBG40P2|Chem. Commun.
+AG40P2|
+IG40P2|
+EG40P2|
+UG41P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000B72
+LBG41P1|J. Chem. Phys.
+AG41P1|
+IG41P1|
+EG41P1|
+UG41P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000C27
+LBG41P2|J. Phys. Chem.
+AG41P2|
+IG41P2|
+EG41P2|
+UG42P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000103F
+LBG42P1|Lab on a Chip
+AG42P1|
+IG42P1|
+EG42P1|
+UG42P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001040
+LBG42P2|Lab-on-Chip
+AG42P2|
+IG42P2|
+EG42P2|
+UG43P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000851
+LBG43P1|Frontiers in Earth Sciences in China
+AG43P1|
+IG43P1|
+EG43P1|
+UG43P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000856
+LBG43P2|Frontiers of Earth Science China
+AG43P2|
+IG43P2|
+EG43P2|
+UG43P3|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000857
+LBG43P3|Frontiers of Earth Science in China
+AG43P3|
+IG43P3|
+EG43P3|
+UG44P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000043D
+LBG44P1|Calcified Tissue International
+AG44P1|
+IG44P1|
+EG44P1|
+UG44P2|http://vivo.cornell.edu/individual/n20166
+LBG44P2|Calcified Tissue International
+AG44P2|
+IG44P2|
+EG44P2|
+UG45P1|http://vivo.cornell.edu/individual/n54320
+LBG45P1|Maternal & Child Nutrition
+AG45P1|
+IG45P1|
+EG45P1|
+UG45P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000010DF
+LBG45P2|Maternal and Child Nutrition
+AG45P2|
+IG45P2|
+EG45P2|
+UG46P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001B89
+LBG46P1|Wireless Communications & Mobile Computing
+AG46P1|
+IG46P1|
+EG46P1|
+UG46P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000187F
+LBG46P2|Wireless Communications and Mobile Computing
+AG46P2|
+IG46P2|
+EG46P2|
+UG47P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000025E7
+LBG47P1|Signal Processing-Image Communication
+AG47P1|
+IG47P1|
+EG47P1|
+UG47P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000015E2
+LBG47P2|Signal Processing: Image Communication
+AG47P2|
+IG47P2|
+EG47P2|
+UG48P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000009AC
+LBG48P1|IEEE Transactions on Communication
+AG48P1|
+IG48P1|
+EG48P1|
+UG48P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000009AD
+LBG48P2|IEEE Transactions on Communications
+AG48P2|
+IG48P2|
+EG48P2|
+UG49P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000009C9
+LBG49P1|IEEE Wireless Communication
+AG49P1|
+IG49P1|
+EG49P1|
+UG49P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001B26
+LBG49P2|IEEE Wireless Communications
+AG49P2|
+IG49P2|
+EG49P2|
+UG50P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D5F
+LBG50P1|Journal of Communication
+AG50P1|
+IG50P1|
+EG50P1|
+UG50P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D60
+LBG50P2|Journal of Communications
+AG50P2|
+IG50P2|
+EG50P2|
+UG51P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000014D6
+LBG51P1|Rapid Communication in Mass Spectrometry
+AG51P1|
+IG51P1|
+EG51P1|
+UG51P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000014D7
+LBG51P2|Rapid Communications in Mass Spectrometry
+AG51P2|
+IG51P2|
+EG51P2|
+UG52P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001836
+LBG52P1|Veterinary Research Communication
+AG52P1|
+IG52P1|
+EG52P1|
+UG52P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001837
+LBG52P2|Veterinary Research Communications
+AG52P2|
+IG52P2|
+EG52P2|
+UG53P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D5D
+LBG53P1|Journal of Combinatorial Chemistry
+AG53P1|
+IG53P1|
+EG53P1|
+UG53P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D72
+LBG53P2|Journal of Computational Chemistry
+AG53P2|
+IG53P2|
+EG53P2|
+UG54P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002099
+LBG54P1|Inorganic Chemistry
+AG54P1|
+IG54P1|
+EG54P1|
+UG54P2|http://vivo.cornell.edu/individual/n110623
+LBG54P2|Inorganic Chemistry
+AG54P2|
+IG54P2|
+EG54P2|
+UG55P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000EE6
+LBG55P1|Journal of Organic Chemistry
+AG55P1|
+IG55P1|
+EG55P1|
+UG55P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001018
+LBG55P2|Journal Organic Chemistry
+AG55P2|
+IG55P2|
+EG55P2|
+UG56P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000EFF
+LBG56P1|Journal of Physical Chemistry
+AG56P1|
+IG56P1|
+EG56P1|
+UG56P2|http://vivo.cornell.edu/individual/n31629
+LBG56P2|Journal of Physical Chemistry
+AG56P2|
+IG56P2|
+EG56P2|
+UG57P1|http://vivo.cornell.edu/individual/n29929
+LBG57P1|College Composition and Communication
+AG57P1|
+IG57P1|
+EG57P1|
+UG57P2|http://vivo.cornell.edu/individual/n29929
+LBG57P2|College Composition and Communication
+AG57P2|
+IG57P2|
+EG57P2|
+UG58P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004F5
+LBG58P1|Circulation
+AG58P1|
+IG58P1|
+EG58P1|
+UG58P2|http://vivo.cornell.edu/individual/n115303
+LBG58P2|Constellations
+AG58P2|
+IG58P2|
+EG58P2|
+UG59P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001170
+LBG59P1|Molecular & Cellular Proteomics
+AG59P1|
+IG59P1|
+EG59P1|
+UG59P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001176
+LBG59P2|Molecular and Cellular Proteomics
+AG59P2|
+IG59P2|
+EG59P2|
+UG59P3|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001180
+LBG59P3|Molecular Cellular Proteomics
+AG59P3|
+IG59P3|
+EG59P3|
+UG60P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000E6B
+LBG60P1|Journal of Internet Commerce
+AG60P1|
+IG60P1|
+EG60P1|
+UG60P2|http://vivo.cornell.edu/individual/n12937
+LBG60P2|Journal of Internet Commerce
+AG60P2|
+IG60P2|
+EG60P2|
+UG61P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000135C
+LBG61P1|Physical Chemistry Chemical Physics
+AG61P1|
+IG61P1|
+EG61P1|
+UG61P2|http://vivo.cornell.edu/individual/n13706
+LBG61P2|Physical Chemistry Chemical Physics
+AG61P2|
+IG61P2|
+EG61P2|
+UG62P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000021AC
+LBG62P1|Journal of Chemical and Engineering Data
+AG62P1|
+IG62P1|
+EG62P1|
+UG62P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000021AF
+LBG62P2|Journal of Chemical Engineering Data
+AG62P2|
+IG62P2|
+EG62P2|
+UG63P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D47
+LBG63P1|Journal of Chemical Physics
+AG63P1|
+IG63P1|
+EG63P1|
+UG63P2|http://vivo.cornell.edu/individual/n31329
+LBG63P2|Journal of Chemical Physics
+AG63P2|
+IG63P2|
+EG63P2|
+UG63P3|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D48
+LBG63P3|Journal of Chemical Physics (JCP)
+AG63P3|
+IG63P3|
+EG63P3|
+UG64P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004CD
+LBG64P1|Chemical Physics
+AG64P1|
+IG64P1|
+EG64P1|
+UG64P2|http://vivo.cornell.edu/individual/n36672
+LBG64P2|Chemical Physics
+AG64P2|
+IG64P2|
+EG64P2|
+UG65P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004D1
+LBG65P1|Chemical Society Review
+AG65P1|
+IG65P1|
+EG65P1|
+UG65P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000004D2
+LBG65P2|Chemical Society Reviews
+AG65P2|
+IG65P2|
+EG65P2|
+UG66P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000EDF
+LBG66P1|Journal of Obstetrics & Gynaecology Canada
+AG66P1|
+IG66P1|
+EG66P1|
+UG66P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000EE0
+LBG66P2|Journal of Obstetrics and Gynaecology Canada
+AG66P2|
+IG66P2|
+EG66P2|
+UG67P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000532
+LBG67P1|Communcations in Nonlinear Science and Numerical Simulation
+AG67P1|
+IG67P1|
+EG67P1|
+UG67P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000533
+LBG67P2|Communcations in Nonlinear Science and Numerical Simulations
+AG67P2|
+IG67P2|
+EG67P2|
+UG68P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000077A
+LBG68P1|European Journal of Clinical Nutrition
+AG68P1|
+IG68P1|
+EG68P1|
+UG68P2|http://vivo.cornell.edu/individual/n59142
+LBG68P2|European Journal of Clinical Nutrition
+AG68P2|
+IG68P2|
+EG68P2|
+UG69P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005AA
+LBG69P1|Cornell Engineering Quarterly
+AG69P1|
+IG69P1|
+EG69P1|
+UG69P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000006F7
+LBG69P2|Engineering Cornell Quarterly
+AG69P2|
+IG69P2|
+EG69P2|
+UG69P3|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000006FA
+LBG69P3|Engineering: Cornell Quarterly
+AG69P3|
+IG69P3|
+EG69P3|
+UG70P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005AC
+LBG70P1|Cornell Focus
+AG70P1|
+IG70P1|
+EG70P1|
+UG70P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005AD
+LBG70P2|Cornell Focus (Biotechnology Issue)
+AG70P2|
+IG70P2|
+EG70P2|
+UG71P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005AE
+LBG71P1|Cornell Hospitality Quarterly
+AG71P1|
+IG71P1|
+EG71P1|
+UG71P2|http://vivo.cornell.edu/individual/n56149
+LBG71P2|Cornell Hospitality Quarterly
+AG71P2|
+IG71P2|
+EG71P2|
+UG72P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005B4
+LBG72P1|Cornell Journal of Law & Public Policy
+AG72P1|
+IG72P1|
+EG72P1|
+UG72P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005B5
+LBG72P2|Cornell Journal of Law and Public Policy
+AG72P2|
+IG72P2|
+EG72P2|
+UG73P1|http://vivo.cornell.edu/individual/n22920
+LBG73P1|The Journal of Imperial and Commonwealth History
+AG73P1|
+IG73P1|
+EG73P1|
+UG73P2|http://vivo.cornell.edu/individual/n22920
+LBG73P2|The Journal of Imperial and Commonwealth History
+AG73P2|
+IG73P2|
+EG73P2|
+UG74P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000B7B
+LBG74P1|J. Comp. Neurol.
+AG74P1|
+IG74P1|
+EG74P1|
+UG74P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000C14
+LBG74P2|J. of Comp. Neurol.
+AG74P2|
+IG74P2|
+EG74P2|
+UG75P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000B7D
+LBG75P1|J. Comp. Physiol.
+AG75P1|
+IG75P1|
+EG75P1|
+UG75P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000B80
+LBG75P2|J. Comp. Physiol. [A]
+AG75P2|
+IG75P2|
+EG75P2|
+UG76P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000977
+LBG76P1|IEEE Microwave and Wireless Component Letters
+AG76P1|
+IG76P1|
+EG76P1|
+UG76P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000978
+LBG76P2|Ieee Microwave and Wireless Components Letters
+AG76P2|
+IG76P2|
+EG76P2|
+UG77P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E40
+LBG77P1|Compound Semiconductors 1994
+AG77P1|
+IG77P1|
+EG77P1|
+UG77P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E41
+LBG77P2|Compound Semiconductors 1995
+AG77P2|
+IG77P2|
+EG77P2|
+UG77P3|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E42
+LBG77P3|Compound Semiconductors 1996
+AG77P3|
+IG77P3|
+EG77P3|
+UG77P4|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E43
+LBG77P4|Compound Semiconductors 1997
+AG77P4|
+IG77P4|
+EG77P4|
+UG77P5|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E44
+LBG77P5|Compound Semiconductors 1999
+AG77P5|
+IG77P5|
+EG77P5|
+UG77P6|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E45
+LBG77P6|Compound Semiconductors 2001
+AG77P6|
+IG77P6|
+EG77P6|
+UG77P7|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E46
+LBG77P7|Compound Semiconductors 2002
+AG77P7|
+IG77P7|
+EG77P7|
+UG78P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E52
+LBG78P1|Computer
+AG78P1|
+IG78P1|
+EG78P1|
+UG78P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000057A
+LBG78P2|Computers
+AG78P2|
+IG78P2|
+EG78P2|
+UG79P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001FDA
+LBG79P1|Ieee Design & Test of Computers
+AG79P1|
+IG79P1|
+EG79P1|
+UG79P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000962
+LBG79P2|IEEE Design and Test of Computers
+AG79P2|
+IG79P2|
+EG79P2|
+UG80P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000584
+LBG80P1|Computers in Education Journal
+AG80P1|
+IG80P1|
+EG80P1|
+UG80P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D79
+LBG80P2|Journal of Computers and Education
+AG80P2|
+IG80P2|
+EG80P2|
+UG81P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E62
+LBG81P1|Computer Vision - Eccv 2006 , Pt 1, Proceedings
+AG81P1|
+IG81P1|
+EG81P1|
+UG81P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E63
+LBG81P2|Computer Vision - Eccv 2006, Pt 2, Proceedings
+AG81P2|
+IG81P2|
+EG81P2|
+UG82P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002506
+LBG82P1|Proc. 17th IEEE Computer Security Foundations GǪ
+AG82P1|
+IG82P1|
+EG82P1|
+UG82P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002508
+LBG82P2|Proc. 19th IEEE Computer Security Foundations GǪ
+AG82P2|
+IG82P2|
+EG82P2|
+UG83P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E67
+LBG83P1|Computers & Geosciences
+AG83P1|
+IG83P1|
+EG83P1|
+UG83P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000581
+LBG83P2|Computers and Geosciences
+AG83P2|
+IG83P2|
+EG83P2|
+UG84P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000928
+LBG84P1|Human Computer Interaction
+AG84P1|
+IG84P1|
+EG84P1|
+UG84P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000928
+LBG84P2|Human-Computer Interaction
+AG84P2|
+IG84P2|
+EG84P2|
+UG85P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000A7C
+LBG85P1|International Journal of Computer Vision
+AG85P1|
+IG85P1|
+EG85P1|
+UG85P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000A7D
+LBG85P2|International Journal of Computer Vision (IJCV)
+AG85P2|
+IG85P2|
+EG85P2|
+UG86P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D75
+LBG86P1|Journal of Computer and System Sciences
+AG86P1|
+IG86P1|
+EG86P1|
+UG86P2|http://vivo.cornell.edu/individual/n17546
+LBG86P2|Journal of Computer and System Sciences
+AG86P2|
+IG86P2|
+EG86P2|
+UG87P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00002332
+LBG87P1|Lecture Notes in Computer Science
+AG87P1|
+IG87P1|
+EG87P1|
+UG87P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001070
+LBG87P2|Lecture Notes in Computer Science (LNCS)
+AG87P2|
+IG87P2|
+EG87P2|
+UG88P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000572
+LBG88P1|Computer and Operations Research
+AG88P1|
+IG88P1|
+EG88P1|
+UG88P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000057D
+LBG88P2|Computers & Operations Research
+AG88P2|
+IG88P2|
+EG88P2|
+UG88P3|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000582
+LBG88P3|Computers and Operations Research
+AG88P3|
+IG88P3|
+EG88P3|
+UG88P4|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00001E71
+LBG88P4|Computers in Operations Research
+AG88P4|
+IG88P4|
+EG88P4|
+UG89P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005BF
+LBG89P1|CRC Critical Reviews in Plant Science
+AG89P1|
+IG89P1|
+EG89P1|
+UG89P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005C0
+LBG89P2|CRC Critical Reviews in Plant Sciences
+AG89P2|
+IG89P2|
+EG89P2|
+UG90P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000442
+LBG90P1|Cambridge Journal of Economics
+AG90P1|
+IG90P1|
+EG90P1|
+UG90P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000D66
+LBG90P2|Journal of Comparative Economics
+AG90P2|
+IG90P2|
+EG90P2|
+UG91P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005ED
+LBG91P1|Current
+AG91P1|
+IG91P1|
+EG91P1|
+UG91P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000060B
+LBG91P2|Currents
+AG91P2|
+IG91P2|
+EG91P2|
+UG92P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005FB
+LBG92P1|Current Opinion in Genetics & Development
+AG92P1|
+IG92P1|
+EG92P1|
+UG92P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000005FC
+LBG92P2|Current Opinion in Genetics and Development
+AG92P2|
+IG92P2|
+EG92P2|
+UG93P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000605
+LBG93P1|Current Science
+AG93P1|
+IG93P1|
+EG93P1|
+UG93P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000606
+LBG93P2|Current Sciences
+AG93P2|
+IG93P2|
+EG93P2|
+UG94P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000F61
+LBG94P1|Journal of Soil & Water Conservation
+AG94P1|
+IG94P1|
+EG94P1|
+UG94P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000F64
+LBG94P2|Journal of Soil and Water Conservation
+AG94P2|
+IG94P2|
+EG94P2|
+UG95P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000757
+LBG95P1|Estuarine and Coastal Shelf Science
+AG95P1|
+IG95P1|
+EG95P1|
+UG95P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000758
+LBG95P2|Estuarine, Coastal, and Shelf Science
+AG95P2|
+IG95P2|
+EG95P2|
+UG96P1|http://vivo.cornell.edu/individual/n19638
+LBG96P1|The Classical Review
+AG96P1|
+IG96P1|
+EG96P1|
+UG96P2|http://vivo.cornell.edu/individual/n19638
+LBG96P2|The Classical Review
+AG96P2|
+IG96P2|
+EG96P2|
+UG97P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000DEE
+LBG97P1|Journal of Family and Consumer Science
+AG97P1|
+IG97P1|
+EG97P1|
+UG97P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000DEF
+LBG97P2|Journal of Family and Consumer Sciences
+AG97P2|
+IG97P2|
+EG97P2|
+UG98P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF0000098E
+LBG98P1|IEEE Trans. CSVT
+AG98P1|
+IG98P1|
+EG98P1|
+UG98P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000997
+LBG98P2|IEEE Trans. on CSVT
+AG98P2|
+IG98P2|
+EG98P2|
+UG99P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000ABC
+LBG99P1|International Journal of Politics, Culture and Society
+AG99P1|
+IG99P1|
+EG99P1|
+UG99P2|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF00000ABC
+LBG99P2|International Journal of Politics, Culture, and Society
+AG99P2|
+IG99P2|
+EG99P2|
+UG100P1|http://vivo.cornell.edu/individual/AI-ICJR-0203DF692BF000015E4
+LBG100P1|Signs: Journal of Women in Culture and Society
+AG100P1|
+IG100P1|
+EG100P1|
+UG100P2|http://vivo.cornell.edu/individual/n49889
+LBG100P2|Signs: Journal of Women in Culture and Society
+AG100P2|
+IG100P2|
+EG100P2|

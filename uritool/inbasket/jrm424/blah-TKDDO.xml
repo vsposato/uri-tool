@@ -1,0 +1,1072 @@
+<?xml version="1.0"?>
+<chunk chunk='2' nchunks='12' token='orgSample' 
+ group-max-size='100' ngroups='1191' created='Fri May 11, 2012 08:24 AM'>
+   <group skl='AIN-CIN-DISN-IMN-IAL-SSTM' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000109B</uri> 
+         <label>Information Systems Division of the International Communication Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000288B</uri> 
+         <label>International Communication Association-Information Systems Division</label>
+      </org>
+   </group>
+   <group skl='AIN-CIN-IAL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000010F3</uri> 
+         <label>International Communication Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000010F4</uri> 
+         <label>International Communication Association (ICA)</label>
+      </org>
+   </group>
+   <group skl='AIN-CIN-WMN' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020B1</uri> 
+         <label>Association for Women in Communication</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020EA</uri> 
+         <label>Association of Women in Communications</label>
+      </org>
+   </group>
+   <group skl='AIN-CITY-CUNY-IAL-MGET' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006338</uri> 
+         <label>International City County Management Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006339</uri> 
+         <label>International City/County Management Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30001CCC7</uri> 
+         <label>International City/County Management Association</label>
+      </org>
+   </group>
+   <group skl='AIN-CLE-GAT-LAND-NIOL-SAE-URE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002B6C</uri> 
+         <label>National Association of State Universities and Land Grant College</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001298</uri> 
+         <label>National Association of State Universities and Land Grant Colleges (NASULGC)</label>
+      </org>
+   </group>
+   <group skl='AIN-CLE-LRAE-REAH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/n108621</uri> 
+         <label>Association of College and Research Libraries</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C39</uri> 
+         <label>Association of College and Research Libraries (for series edited by W.C. Olsen, The Literature of the Agricultural Sciences)</label>
+      </org>
+   </group>
+   <group skl='AIN-CRE-CNL-ECAR-ENN-H-NY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002EFC</uri> 
+         <label>NYS Association of Cornell Cooperative Extension 4-H Educators</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000013CB</uri> 
+         <label>NYS Association of Cornell Cooperative Extensions 4-H Educators</label>
+      </org>
+   </group>
+   <group skl='AIN-CRE-CNL-ENN-GOWR-NY-VTE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005940</uri> 
+         <label>Cornell Cooperative Extension and NYS Vegetable Growers Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005942</uri> 
+         <label>Cornell Cooperative Extension and the NYS Vegetable Growers Association</label>
+      </org>
+   </group>
+   <group skl='AIN-CRER-EAN-REAH-TNL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002095</uri> 
+         <label>Association for Career and Technical Education Research</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005513</uri> 
+         <label>Association of Career and Technical Education Research</label>
+      </org>
+   </group>
+   <group skl='AIN-CSUR-REAH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C32</uri> 
+         <label>Association for Consumer Research</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020C2</uri> 
+         <label>Association of Consumer Research</label>
+      </org>
+   </group>
+   <group skl='AIN-CTUL-SUDE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000023D8</uri> 
+         <label>Cultural Studies Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000023D9</uri> 
+         <label>Cultural Studies Association (US)</label>
+      </org>
+   </group>
+   <group skl='AIN-CUG-MIY' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C30</uri> 
+         <label>Association for Computing Machinery</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C31</uri> 
+         <label>Association for Computing Machinery (ACM)</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000551B</uri> 
+         <label>Association of Computing and Machinery (ACM)</label>
+      </org>
+   </group>
+   <group skl='AIN-CUG-REAH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A0023C1A1</uri> 
+         <label>COMPUTING RESEARCH ASSOCIATION</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A0024DB09</uri> 
+         <label>COMPUTING RESEARCH ASSOCIATION</label>
+      </org>
+   </group>
+   <group skl='AIN-DIY-NHT-PDUR' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30001D110</uri> 
+         <label>Northeast Dairy Producer's Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000004B7</uri> 
+         <label>Northeast Dairy Producers Association</label>
+      </org>
+   </group>
+   <group skl='AIN-DOT-IIE' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual21113</uri> 
+         <label>Institute for African Development</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006279</uri> 
+         <label>Institute for African Development (IAD)</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000062A7</uri> 
+         <label>Institute of African Development</label>
+      </org>
+   </group>
+   <group skl='AIN-DRUG-FOOD-NIOL-OICL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000431</uri> 
+         <label>National Association of Food &amp; Drug Officials</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002B65</uri> 
+         <label>National Association of Food and Drug Officials</label>
+      </org>
+   </group>
+   <group skl='AIN-DSIN-ENL-REAH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000250A</uri> 
+         <label>Environmental Design Research Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005F05</uri> 
+         <label>Environmental Design Research Association (EDRA)</label>
+      </org>
+   </group>
+   <group skl='AIN-EAN-EOPN-REAH-SEE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000255C</uri> 
+         <label>European Science Education Research Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005F64</uri> 
+         <label>European Science Education Research Association (ESERA)</label>
+      </org>
+   </group>
+   <group skl='AIN-EAN-NIOL-RRL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006796</uri> 
+         <label>National Rural Education Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000012DC</uri> 
+         <label>National Rural Education Association (NREA)</label>
+      </org>
+   </group>
+   <group skl='AIN-EAN-SEE-TCR' count='4'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C35</uri> 
+         <label>Association for Science Teacher Education</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000550A</uri> 
+         <label>Association for Science Teacher Education (ASTE)</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020AC</uri> 
+         <label>Association for the Education of Teachers in Science</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020E5</uri> 
+         <label>Association of Science Teacher Education</label>
+      </org>
+   </group>
+   <group skl='AIN-ENN-NUL-NEW-PSSL-ROUE-YORK' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001314</uri> 
+         <label>New York Association of Natural Resource Extension Professionals</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001315</uri> 
+         <label>New York Association of Natural Resource Extension Professionals (ANREP)</label>
+      </org>
+   </group>
+   <group skl='AIN-ENN-NUL-PSSL-ROUE' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C45</uri> 
+         <label>Association of Natural Resource Extension Professionals</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C46</uri> 
+         <label>Association of Natural Resource Extension Professionals (ANREP)</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C48</uri> 
+         <label>Association of Natural Resources Extension Professionals</label>
+      </org>
+   </group>
+   <group skl='AIN-ENN-NY-NUL-PSSL-ROUE' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000C47</uri> 
+         <label>Association of Natural Resource Extension Professionals/NY</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002EC4</uri> 
+         <label>NY Association of Natural Resource Extension Professionals</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000013AC</uri> 
+         <label>NY Association of Natural Resources Extension Professionals</label>
+      </org>
+   </group>
+   <group skl='AIN-ENOC-STHN' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006DD6</uri> 
+         <label>Southern Economic Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006DD7</uri> 
+         <label>Southern Economics Association</label>
+      </org>
+   </group>
+   <group skl='AIN-FED-OOLL-OOT-SIY-WLSN' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005522</uri> 
+         <label>Association of Field Ornithologists &amp; Wilson Ornithological Society</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005523</uri> 
+         <label>Association of Field Ornithologists and Wilson Ornithological Society</label>
+      </org>
+   </group>
+   <group skl='AIN-FFA-VGIA' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000178C</uri> 
+         <label>Virginia Association FFA</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000178E</uri> 
+         <label>Virginia Association of FFA</label>
+      </org>
+   </group>
+   <group skl='AIN-FNH-MPE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005525</uri> 
+         <label>Association of Finnish Municipalities</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005FD8</uri> 
+         <label>Finnish Association of Municipalities</label>
+      </org>
+   </group>
+   <group skl='AIN-FOOD-IAL-PECN' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000010E2</uri> 
+         <label>International Association for Food Protection</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002855</uri> 
+         <label>International Association for Food Protection (IAFP)</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000286B</uri> 
+         <label>International Association of Food Protection</label>
+      </org>
+   </group>
+   <group skl='AIN-FOOD-NEW-PECN-SAE-YORK' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001333</uri> 
+         <label>New York State Association for Food Protection</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002D41</uri> 
+         <label>New York State Association of Food Protection</label>
+      </org>
+   </group>
+   <group skl='AIN-FRET-NEW-ONR-YORK' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002D01</uri> 
+         <label>New York Forest Owner Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000477</uri> 
+         <label>New York Forest Owners Association</label>
+      </org>
+   </group>
+   <group skl='AIN-FRMR-NHT-OAC' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000137B</uri> 
+         <label>Northeast Organic Farmer's Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006910</uri> 
+         <label>Northeast Organic Farmers Association</label>
+      </org>
+   </group>
+   <group skl='AIN-GCY-MACR' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001005</uri> 
+         <label>Grocery Manufacturer's Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001006</uri> 
+         <label>Grocery Manufacturers Association (GMA)</label>
+      </org>
+   </group>
+   <group skl='AIN-GET-IAL-LAKE-REAH' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000285E</uri> 
+         <label>International Association for Great Lakes Research</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000631C</uri> 
+         <label>International Association of Great Lake Research</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000010EA</uri> 
+         <label>International Association of Great Lakes Research</label>
+      </org>
+   </group>
+   <group skl='AIN-GOWR-JRSY-NEW-VTE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006824</uri> 
+         <label>New Jersey Vegetable Growers Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000073E5</uri> 
+         <label>Vegetable Growers Association of New Jersey</label>
+      </org>
+   </group>
+   <group skl='AIN-GOWR-NEW-VTE-YORK' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006840</uri> 
+         <label>New York Growers Vegetable Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006891</uri> 
+         <label>New York Vegetable Growers Association</label>
+      </org>
+   </group>
+   <group skl='AIN-GOWR-PYLA-VTE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006AB8</uri> 
+         <label>Pennsylvania Vegetable Grower's Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002FF1</uri> 
+         <label>Pennsylvania Vegetable Growers Association</label>
+      </org>
+   </group>
+   <group skl='AIN-IAL-MGET-ROUE-SIY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002862</uri> 
+         <label>International Association for Society and Resource Management</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006324</uri> 
+         <label>International Association of Society and Resource Management</label>
+      </org>
+   </group>
+   <group skl='AIN-IAL-NUL-ROUE-SIY' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006314</uri> 
+         <label>International Association for Society &amp; Natural Resources</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002861</uri> 
+         <label>International Association for Society and Natural Resources</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002874</uri> 
+         <label>International Association of Society and Natural Resources</label>
+      </org>
+   </group>
+   <group skl='AIN-IERT-RARR' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000020D5</uri> 
+         <label>Association of Internet Researchers</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005528</uri> 
+         <label>Association of Internet Researchers (AoIR)</label>
+      </org>
+   </group>
+   <group skl='AIN-LRAE-SCL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/n31947</uri> 
+         <label>Special Libraries Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/n49829</uri> 
+         <label>Special Libraries Association</label>
+      </org>
+   </group>
+   <group skl='AIN-LSE-NEW-NSY-SAE-YORK' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002D82</uri> 
+         <label>New York State Nursery Landscape Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000134B</uri> 
+         <label>New York State Nursery and Landscape Association</label>
+      </org>
+   </group>
+   <group skl='AIN-MGET-NHT-OICL-WSE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A001C6DA5</uri> 
+         <label>NORTHEAST WASTE MANAGEMENT OFFICIALS' ASSOCIATION</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000004C7</uri> 
+         <label>Northeast Waste Management Officials Association (NEWMOA)</label>
+      </org>
+   </group>
+   <group skl='AIN-NEW-RRL-SHOL-SAE-YORK' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002D88</uri> 
+         <label>New York State Rural Schools Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000005E2</uri> 
+         <label>Rural Schools Association of New York State</label>
+      </org>
+   </group>
+   <group skl='AIN-NIOL-REAH-SEE-TCHG' count='5'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006719</uri> 
+         <label>National Association for Research in Science Teaching</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000671A</uri> 
+         <label>National Association for Research in Science Teaching (NARST)</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000671B</uri> 
+         <label>National Association for Research on Science Teaching</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002B6A</uri> 
+         <label>National Association of Research in Science Teaching</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006724</uri> 
+         <label>National Association of Research in Science Teaching (NARST)</label>
+      </org>
+   </group>
+   <group skl='AIN-NIOL-SEE-TCR' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002C33</uri> 
+         <label>National Science Teacher Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000012E7</uri> 
+         <label>National Science Teachers Association</label>
+      </org>
+   </group>
+   <group skl='AIN-NY-RRL-SHOL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006983</uri> 
+         <label>NY Rural Schools Association</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000005E3</uri> 
+         <label>Rural Schools Association of NYS</label>
+      </org>
+   </group>
+   <group skl='AIN-PLAN-SUDE-UIN' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300003525</uri> 
+         <label>Union for African Population Studies</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300003526</uri> 
+         <label>Union of African Population Studies</label>
+      </org>
+   </group>
+   <group skl='AIN-RTE-SIY-SUY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000032FF</uri> 
+         <label>Society for the Study of Amphibians &amp; Reptiles</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300003300</uri> 
+         <label>Society for the Study of Amphibians and Reptiles</label>
+      </org>
+   </group>
+   <group skl='AIN-SUDE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual31975</uri> 
+         <label>Asian Studies</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual5659</uri> 
+         <label>Asian Studies (ASIAN)</label>
+      </org>
+   </group>
+   <group skl='AINN-CNTR-DVD-FTUE-R-SIE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000E6A</uri> 
+         <label>David R. Atkinson Center for a Sustainable Future</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual32077</uri> 
+         <label>David R. Atkinson Center for a Sustainable Future (ACSF)</label>
+      </org>
+   </group>
+   <group skl='AIR-BASE-FRE-KTLD' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000064BE</uri> 
+         <label>Kirtland Air Force Base</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30001CDE4</uri> 
+         <label>Kirtland Air Force Base</label>
+      </org>
+   </group>
+   <group skl='AIR-CID-CROP-NHT-RGIN' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000137C</uri> 
+         <label>Northeast Region Certified Crop Adviser (NRCCA)</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006911</uri> 
+         <label>Northeast Region Certified Crop Advisers</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000137D</uri> 
+         <label>Northeast Region Certified Crop Advisor (NRCCA)</label>
+      </org>
+   </group>
+   <group skl='AISY-BAD-CMIL-ELY-IIE-MAX-PANK-SNTC' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000031EC</uri> 
+         <label>Scientific Advisory Board (Fachbeirat), Max Planck Institute for Chemical Ecology</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000031F6</uri> 
+         <label>Scientific Advisory Board of the Max Planck Institute for Chemical Ecology</label>
+      </org>
+   </group>
+   <group skl='AISY-BAD-ENOC-ENL-ROUE-SNTC' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002509</uri> 
+         <label>Environmental and Resource Economics, Scientific Advisory Board</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000031F0</uri> 
+         <label>Scientific Advisory Board, Environmental and Resource Economics</label>
+      </org>
+   </group>
+   <group skl='AISY-CESL-CIE-LSK-SUNY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002A35</uri> 
+         <label>Livestock Advisory Committee, SUNY Cobleskill</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000033E9</uri> 
+         <label>SUNY Cobleskill Livestock Advisory Committee</label>
+      </org>
+   </group>
+   <group skl='ALD-CNL-DRTT-ENOC-MGET-NY-UERY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B30000021D</uri> 
+         <label>Department of Applied Economics &amp; Management, Cornell University; NY</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B30000021E</uri> 
+         <label>Department of Applied Economics and Management, Cornell University; NY</label>
+      </org>
+   </group>
+   <group skl='ALD-CNL-DRTT-ENOC-MGET-UERY' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005A1F</uri> 
+         <label>Cornell University Department of Applied Economics and Management</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B30000021D</uri> 
+         <label>Department of Applied Economics &amp; Management, Cornell University</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B30000021E</uri> 
+         <label>Department of Applied Economics and Management, Cornell University</label>
+      </org>
+   </group>
+   <group skl='ALD-DRTT-ENOC-MGET' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005487</uri> 
+         <label>Applied Economics and Management Department</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B30000241C</uri> 
+         <label>Department of Applied Economics and Management</label>
+      </org>
+   </group>
+   <group skl='ALD-MHAC-TEL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual26035</uri> 
+         <label>Theoretical and Applied Mechanics</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual5698</uri> 
+         <label>Theoretical and Applied Mechanics (T&amp;AM)</label>
+      </org>
+   </group>
+   <group skl='ALI-DSIN-ENL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual31978</uri> 
+         <label>Design and Environmental Analysis</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual5762</uri> 
+         <label>Design and Environmental Analysis (DEA)</label>
+      </org>
+   </group>
+   <group skl='ALI-MGET-PLIY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual32060</uri> 
+         <label>Policy Analysis and Management</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual5590</uri> 
+         <label>Policy Analysis and Management (PAM)</label>
+      </org>
+   </group>
+   <group skl='ALI-RISK-SIY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000152A</uri> 
+         <label>Society for Risk Analysis</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006D6D</uri> 
+         <label>Society for Risk Analysis (SRA)</label>
+      </org>
+   </group>
+   <group skl='ALT-ARIN-FDAN' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000040</uri> 
+         <label>American Agriculturist Foundation</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300013746</uri> 
+         <label>American Agriculturist Foundation</label>
+      </org>
+   </group>
+   <group skl='AME-CNTR-NASA-REAH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual27223</uri> 
+         <label>AMES RESEARCH CENTER, NASA</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000428</uri> 
+         <label>NASA Ames Research Center</label>
+      </org>
+   </group>
+   <group skl='AND-AHN-KISN-NIOL-OF-UERY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A001C5A48</uri> 
+         <label>NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual21682</uri> 
+         <label>NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</label>
+      </org>
+   </group>
+   <group skl='AND-BIS-CRE-RRL-SVE-USDA' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A001C491D</uri> 
+         <label>RURAL BUSINESS AND COOPERATIVE SERVICE USDA</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual16773</uri> 
+         <label>RURAL BUSINESS AND COOPERATIVE SERVICE USDA</label>
+      </org>
+   </group>
+   <group skl='AND-CISN-EHAE-SRE-U' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A001C5679</uri> 
+         <label>US SECURITIES AND EXCHANGE COMMISSION</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual28899</uri> 
+         <label>US SECURITIES AND EXCHANGE COMMISSION</label>
+      </org>
+   </group>
+   <group skl='AND-CLDN-FMIY-NY-OF-OFIE-SVE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A001BE6A5</uri> 
+         <label>NYS OFFICE OF CHILDREN AND FAMILY SERVICES</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual15887</uri> 
+         <label>NYS OFFICE OF CHILDREN AND FAMILY SERVICES</label>
+      </org>
+   </group>
+   <group skl='AND-CNCR-FUND-REAH-TTT' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A0023BD1F</uri> 
+         <label>CANCER RESEARCH AND TREATMENT FUND</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A0024DA20</uri> 
+         <label>CANCER RESEARCH AND TREATMENT FUND</label>
+      </org>
+   </group>
+   <group skl='ANDE-LO-URD-DE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001688</uri> 
+         <label>Universidad de Los Andes</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/n748844</uri> 
+         <label>Universidad de Los Andes (Bogota)</label>
+      </org>
+   </group>
+   <group skl='ANE-AIN-FISH-NHT-WDLE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006900</uri> 
+         <label>Northeast Association of Fish &amp; Wildlife Agencies</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006901</uri> 
+         <label>Northeast Association of Fish and Wildlife Agencies</label>
+      </org>
+   </group>
+   <group skl='ANE-AND-CMY-CTR-FOR-MICE-NATL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A001C22EB</uri> 
+         <label>NATL CTR FOR COMPLEMENTARY AND ALTERNATIVE MEDICINE</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual9492</uri> 
+         <label>NATL CTR FOR COMPLEMENTARY AND ALTERNATIVE MEDICINE</label>
+      </org>
+   </group>
+   <group skl='ANN-TEXA-UERY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000006F8</uri> 
+         <label>Univeristy of Texas - Arlington</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001722</uri> 
+         <label>University of Texas at Arlington</label>
+      </org>
+   </group>
+   <group skl='ANUL-BEIG-CTT-SEE-WTG-TH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000A93</uri> 
+         <label>5th Annual Boeing Science Writing Contest</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000A94</uri> 
+         <label>6th Annual Boeing Science Writing Contest</label>
+      </org>
+   </group>
+   <group skl='ANUL-CERE-SIY-THE-WDLE-TH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006FFF</uri> 
+         <label>The Wildlife Society 12th Annual Conference</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300007000</uri> 
+         <label>The Wildlife Society 14th Annual Conference</label>
+      </org>
+   </group>
+   <group skl='ANUL-ITEE-POY-SIY-MTG' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005476</uri> 
+         <label>Annual meeting of the Society for Invertebrate Pathology</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005479</uri> 
+         <label>Annual meeting, Society for Invertebrate Pathology</label>
+      </org>
+   </group>
+   <group skl='ANY-IAL-SIY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000028F7</uri> 
+         <label>International Society for Arachnology</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000063B3</uri> 
+         <label>International Society of Arachnology</label>
+      </org>
+   </group>
+   <group skl='AOL-IIE-ITR-SUY-SMME-TCOY-STN' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002837</uri> 
+         <label>Inter-Institute Study section Alcohol and Toxicology Subcommittee 3</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002838</uri> 
+         <label>Inter-Institute Study sections, Alcohol and Toxicology Subcommittee</label>
+      </org>
+   </group>
+   <group skl='AOME-BLY-IAL-SIY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000639F</uri> 
+         <label>International Society for Biology of Actinomycetes</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000063B0</uri> 
+         <label>International Society for the Biology of Actinomycetes</label>
+      </org>
+   </group>
+   <group skl='AONA-BEA-URT-DE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-EDOR-0203DF692B300001B33</uri> 
+         <label>Universitat Autonoma de Barcelona</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/n13967</uri> 
+         <label>Universitat Autonoma de Barcelona</label>
+      </org>
+   </group>
+   <group skl='AONY-ARA-BANH-CROP-NEAN-SIEE-SOIL' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002E6D</uri> 
+         <label>Northeastern Branch of Crop, Soil and Agronomy Societies of America</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300006923</uri> 
+         <label>Northeastern Branch of the Crop, Soil and Agronomy Societies of America</label>
+      </org>
+   </group>
+   <group skl='AONY-ARIN-BANH-NEAN-SIY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001386</uri> 
+         <label>Northeastern Branch American Society of Agronomy</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001388</uri> 
+         <label>Northeastern Branch of American Society of Agronomy</label>
+      </org>
+   </group>
+   <group skl='AONY-ARIN-SIY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000053F3</uri> 
+         <label>American Society for Agronomy</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000BB0</uri> 
+         <label>American Society of Agronomy</label>
+      </org>
+   </group>
+   <group skl='AOO-SAN-TEXA-UERY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-EDOR-0203DF692B300001BFC</uri> 
+         <label>University of Texas at San Antonio</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B3000035A5</uri> 
+         <label>University of Texas, San Antonio</label>
+      </org>
+   </group>
+   <group skl='AOPY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual31969</uri> 
+         <label>Anthropology</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual5649</uri> 
+         <label>Anthropology (ANTHR)</label>
+      </org>
+   </group>
+   <group skl='AOPY-CNL-DRTT-UERY' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005A1E</uri> 
+         <label>Cornell University Department of Anthropology</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005B77</uri> 
+         <label>Department of Anthropology, Cornell University</label>
+      </org>
+   </group>
+   <group skl='AOPY-HNIC-SIY' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/n104433</uri> 
+         <label>Society for Humanistic Anthropology</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/n18567</uri> 
+         <label>Society for Humanistic Anthropology</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/n36692</uri> 
+         <label>Society for Humanistic Anthropology</label>
+      </org>
+   </group>
+   <group skl='AOY-ANUL-CADN-FIY-MTG-SIY-THE-TH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000015BF</uri> 
+         <label>The 48th Annual Meeting of the Canadian Fertility &amp; Andrology Society</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B3000015C0</uri> 
+         <label>The 49th Annual Meeting of the Canadian Fertility &amp; Andrology Society</label>
+      </org>
+   </group>
+   <group skl='AOY-DOT-EERY-NY-REAH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300002F0D</uri> 
+         <label>NYS Energy Research and Development Authority</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000069BB</uri> 
+         <label>NYS Energy Research and Development Authority (NYSERDA)</label>
+      </org>
+   </group>
+   <group skl='APA' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300000BFD</uri> 
+         <label>APA</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/OSP-0203E52003A001C6687</uri> 
+         <label>ASPCA</label>
+      </org>
+   </group>
+   <group skl='APC-CNTR-NIOL-REAH' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000435</uri> 
+         <label>National Center Atmospheric Research</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B30000129E</uri> 
+         <label>National Center for Atmospheric Research</label>
+      </org>
+   </group>
+   <group skl='APC-ERH-SEE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B300000284</uri> 
+         <label>Earth and Atmospheric Sciences</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual5208</uri> 
+         <label>Earth and Atmospheric Sciences (EAS)</label>
+      </org>
+   </group>
+   <group skl='APHI-PPQ-USDA' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C1</uri> 
+         <label>USDA APHIS-PPQ</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007DA</uri> 
+         <label>USDA/APHIS/PPQ</label>
+      </org>
+   </group>
+   <group skl='AR-AAN-FUT-REAH-STN-USDA' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B3000073B9</uri> 
+         <label>USDA-ARS Appalachian Fruit Research Station</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30001D8F7</uri> 
+         <label>USDA-ARS Appalachian Fruit Research Station</label>
+      </org>
+   </group>
+   <group skl='AR-GEC-PAT-ROUE-USDA-UNIT' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/individual5351</uri> 
+         <label>USDA-ARS Plant Genetic Resources Unit (PGRU)</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007E2</uri> 
+         <label>USDA-ARS Plant Genetics Resources Unit</label>
+      </org>
+   </group>
+   <group skl='AR-IHAA-NY-USDA' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4</uri> 
+         <label>USDA, ARS; Ithaca, NY</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4</uri> 
+         <label>USDA-ARS; Ithaca NY</label>
+      </org>
+   </group>
+   <group skl='AR-NY-USDA' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4</uri> 
+         <label>USDA ARS; NY</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4</uri> 
+         <label>USDA-ARS; NY</label>
+      </org>
+   </group>
+   <group skl='AR-USDA' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007C4</uri> 
+         <label>USDA, ARS</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-ISCER-0203DF692B3000007DC</uri> 
+         <label>USDA/ARS</label>
+      </org>
+   </group>
+   <group skl='ARA-AIN-NRH-SLD-WSE' count='2'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-SPOR-0203DF692B300003343</uri> 
+         <label>Solid Waste Association of North America</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-AWOR-0203DF692B300001553</uri> 
+         <label>Solid Waste Association of North America (SWANA)</label>
+      </org>
+   </group>
+   <group skl='ARA-ANUL-ELL-MTG-SIY' count='3'>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000523B</uri> 
+         <label>1998 Annual Meeting of Entomological Society of America</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B30000523C</uri> 
+         <label>1999 Annual Meeting of Entomological Society of America</label>
+      </org>
+      <org>
+         <uri>http://vivo.cornell.edu/individual/AI-PROR-0203DF692B300005EF4</uri> 
+         <label>Entomological Society of America, Annual Meeting</label>
+      </org>
+   </group>
+</chunk>

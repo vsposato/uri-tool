@@ -1,0 +1,177 @@
+#!/usr/bin/perl
+# Copyright (c) 2012, Cornell University
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# 
+#     * Redistributions of source code must retain the above copyright notice,
+#       this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright notice,
+#       this list of conditions and the following disclaimer in the documentation
+#       and/or other materials provided with the distribution.
+#     * Neither the name of Cornell University nor the names of its contributors
+#       may be used to endorse or promote products derived from this software
+#       without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# 
+
+use FindBin qw($Bin);
+use lib $Bin;
+use FileHandle;
+use common;
+use ulist;
+use CGI;
+use POSIX qw( strftime );
+use Net::SMTP;
+
+$g_T0 = time();
+
+$dmy = strftime("%d%b%y%p", localtime($g_T0) );
+
+$vacct = 'vivouritool@gmail.com';
+$utHome = $Bin;
+dotEnvBash("$utHome/.uritool");
+$spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
+dotEnvBash("$spEnv/.sp");
+$vacct = $ENV{'VIVO_ACCT_ID'};
+
+$base = shift; # base directory
+$eusr = shift; # netid from form
+$wusr = shift; # login netid
+$tokn = shift; # token prefix from form
+$num  = shift; # number of lines in path file
+$path = shift; # file of uris
+$xslt = shift; # path to Sum2Html.xsl
+$port = shift; # serverport
+
+$vhost = shift; # vivo host
+$vport = shift; # vivo port
+$vctxt = shift; # vivo ctxt
+
+if($vhost eq ''){
+    $vhost='vivo.cornell.edu';
+}
+if($vport eq ''){
+    $vport= '8080';
+}
+
+$hpcp  = " -h $vhost " if $vhost ne '';
+$hpcp .= " -p $vport " if $vport ne '';
+$hpcp .= " -c $vctxt " if $vctxt ne '';
+$HPC = "$host:$port:$ctxt";
+
+$wip = "$base/uritool/wip/$eusr";
+$inbasket = "$base/uritool/inbasket/$eusr";
+$saxon = "java -jar /home/ingest/Common/xslt/saxon9he.jar ";
+open LOG, ">>$base/logs/batch.log";
+print LOG "+++++++++++++++++++ batchLookup\n";
+autoflush LOG 1;
+
+qx(/bin/rm -f $base/cgi-bin/errf);
+print LOG $hpcp . "\n";
+# call dodv
+$cmd = "dodiscover $hpcp -b $base -c -u $wusr -n $vacct ";
+$cmd .= " -E $num -o $inbasket/$tokn.xmls $path";
+print LOG "$cmd\n";
+qx($cmd);
+$r = ($? >> 8);
+exit 1 if $r;
+
+# call splitsum
+$cmd = "splitsum -A -m none -t $tokn -x $inbasket/$tokn.xmls";
+$cmd .= " > $inbasket/$tokn.xml";
+print LOG "$cmd\n";
+qx($cmd);
+$r = ($? >> 8);
+exit 2 if $r;
+$hpc = "$vhost:$vport:$vctxt";
+# call Sum2Html.xsl
+$cmd ="$saxon $inbasket/$tokn.xml $xslt/Sum2Html.xsl";
+$cmd .=" filebase=$tokn rootbase=$tokn ruser=$eusr  wuser=$wusr hpc=$HPC " ;
+$cmd .=" urinum=$num > $inbasket/$tokn.html";
+print LOG "$cmd\n";
+qx($cmd);
+$r = ($? >> 8);
+exit 3 if $r;
+
+# call cp 
+$cmd = "cp $inbasket/$tokn.html ";
+$cmd .= " $wip/$tokn.html ";
+print LOG "$cmd\n";
+qx($cmd);
+$r = ($? >> 8);
+exit 4 if $r;
+
+# call getrip
+$cmd = "getrip $inbasket/$tokn.html > $inbasket/$tokn.tmap";
+print LOG "$cmd\n";
+qx($cmd);
+$r = ($? >> 8);
+exit 5 if $r;
+
+
+$t = $tokn;
+$t =~ s/-.*$//;
+$stdmsg = <<"STDMSG";
+Your URI lookup is done. Netid=$eusr, Prefix=$t.
+
+http://bailey.mannlib.cornell.edu:$port
+
+Click the 'ReStart' button after entering the Netid
+and Prefix Token shown above.
+
+Don\'t respond to this email. It won\'t be received.
+STDMSG
+
+sendIt("$wusr\@cornell.edu", "Job finished",$stdmsg);
+
+
+
+sub sendIt{
+    my($to,$subj,$msg) = @_;
+    $smtp = Net::SMTP->new("appsmtp.mail.cornell.edu",
+                           Hello => 'mannlib.cornell.edu',
+                           Timeout => 60);
+
+    $smtp->mail("jrm424\@cornell.edu");
+    $smtp->to($to);
+
+    $smtp->data();
+
+    $smtp->datasend("From: UriTool\n");
+    $smtp->datasend("To: $to\n");
+    chomp $subj;
+
+    $smtp->datasend("Subject: $subj\n");
+    $smtp->datasend("\n");
+
+    $smtp->datasend($msg . "\n");
+    $smtp->dataend();
+    $smtp->quit();
+}
+
+END {
+    my $rcode = $?;
+    my $elapsed = time() - $g_T0;
+    if($rcode != 0){
+	qx(touch $base/cgi-bin/errf);
+	sendIt("$wusr\@cornell.edu", 
+	       "Job failed",
+	       "A problem occurred while processing your URIs.");
+	sendIt("jrm424\@cornell.edu", 
+	       "UriTool upload lookup for $wusr failed",
+	       "batchLookup failed at $rcode.");
+    }
+    $? = $rcode;
+}

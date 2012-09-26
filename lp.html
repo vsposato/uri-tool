@@ -1,0 +1,710 @@
+<html>
+<!--
+# Copyright (c) 2012, Cornell University
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# 
+#     * Redistributions of source code must retain the above copyright notice,
+#       this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright notice,
+#       this list of conditions and the following disclaimer in the documentation
+#       and/or other materials provided with the distribution.
+#     * Neither the name of Cornell University nor the names of its contributors
+#       may be used to endorse or promote products derived from this software
+#       without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# 
+
+-->
+<head>
+
+<title>UriTool Control</title>
+<script type="text/javascript">
+function clearUri(){
+    document.getElementById('uri').value='';
+    tblColor('fgui');
+}
+function clearUpload(){
+    //alert('hi');
+    document.getElementById('uris').value='';
+    tblColor('fgui');
+}
+var H = 'vivostagingweb.vivo.ufl.edu';
+var P = '80';
+var C = '';
+function Host(o){
+    H = trim(o.value);
+    fixsource();
+}
+function Port(o){
+    P = trim(o.value);
+    fixsource();
+}
+function Ctxt(o){
+    C = trim(o.value);
+    fixsource();
+}
+function fixsource(){
+    var hpc = H;
+    if(P != '') hpc += ':' + P;
+    if(C != '') hpc += '/' + C;
+    document.getElementById('datasource').innerHTML = hpc;
+}
+
+function tblColor(tid){
+    document.getElementById('fgui').style.borderColor = 'black';
+    document.getElementById('fgui').style.borderWidth = '1px';
+    document.getElementById('fddp').style.borderColor = 'black';
+    document.getElementById('fddp').style.borderWidth = '1px';
+    document.getElementById('fddo').style.borderColor = 'black';
+    document.getElementById('fddo').style.borderWidth = '1px';
+    document.getElementById('fddj').style.borderColor = 'black';
+    document.getElementById('fddj').style.borderWidth = '1px';
+    if(tid == 'fgui'){
+        document.getElementById('fgui').style.borderColor = 'green';
+	document.getElementById('fgui').style.borderWidth = '4px';
+    }
+    if(tid == 'fddp'){
+        document.getElementById('fddp').style.borderColor = 'green';
+	document.getElementById('fddp').style.borderWidth = '4px';
+    }
+    if(tid == 'fddo'){
+        document.getElementById('fddo').style.borderColor = 'green';
+	document.getElementById('fddo').style.borderWidth = '4px';
+    }
+    if(tid == 'fddj'){
+        document.getElementById('fddj').style.borderColor = 'green';
+	document.getElementById('fddj').style.borderWidth = '4px';
+    }
+}
+function lookupRetracts(){
+    tblColor('fgui');
+    var ruser = document.getElementById('usr').value;
+    if(ruser == ''){
+	alert("Please supply a netid");
+	return false;
+    }
+    var token = document.getElementById('token').value;
+    if(token == ''){
+        alert("Please supply a token");
+        return false;
+    }
+    var rx = /\W/;
+    if(rx.test(token)){
+        if(token != '*'){
+            alert("Please supply a token using only {a-zA-Z0-9_}");
+            return false;
+	}
+    }
+    var url='/cgi-bin/myretracts.cgi?ruser='+ruser;
+    url += '&token='+token;
+    //alert(url);
+    main = document.getElementById('mainform');
+    main.target = 'retracts';
+    main.action = url;
+    main.submit();
+
+    return true;
+}
+function help(){
+    var div = document.getElementById('notes');
+    if(div.style.display == 'none')
+        div.style.display = 'block';
+    else
+        div.style.display = 'none';
+
+    return false;
+
+}
+function vivo(){
+    var div = document.getElementById('instance');
+    if(div.style.display == 'none')
+        div.style.display = 'block';
+    else
+        div.style.display = 'none';
+
+    return false;
+
+}
+function uriLookUpValid() {
+
+    var ruser = document.getElementById('usr').value;
+    if(ruser == ''){
+	alert("Please supply a netid");
+	return false;
+    }
+    var token = document.getElementById('token').value;
+    if(token == ''){
+        alert("Please supply a token");
+        return false;
+    }
+    var rx = /\W/;
+    if(rx.test(token)){
+        alert("Please supply a token using only {a-zA-Z0-9_}");
+        return false;
+    }
+    return true;
+
+}
+
+
+function lookUpUris(){
+    tblColor('fgui');
+    if(!uriLookUpValid()){
+        return;
+    }
+    //alert("Host="+document.getElementById('host').value);
+    var main = document.getElementById('mainform');
+    main.target = 'listing';
+    main.action ='/cgi-bin/lp.cgi';
+    main.ENCTYPE='multipart/form-data';
+    document.getElementById('op').value='lookup';
+    document.getElementById('mainform').submit();
+}
+
+function restartSession(){
+    tblColor('fgui');
+    if(!uriLookUpValid()){
+        return;
+    }
+    if(confirm('Do you want to clear the prior retracts?')){
+        document.getElementById('rc').value = 'Yes';
+    } else {
+        document.getElementById('rc').value = 'No';
+    }
+    document.getElementById('op').value='restart';
+    var main = document.getElementById('mainform');
+    main.target = 'listing';
+    main.action ='/cgi-bin/lp.cgi';
+    main.ENCTYPE='multipart/form-data';
+    document.getElementById('mainform').submit();
+}
+
+function dispGrp(){
+    tblColor('fddp');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var main = document.getElementById('mainform');
+    main.target = 'dedupeep';
+    main.action ='/cgi-bin/lp.cgi';
+    main.ENCTYPE='multipart/form-data';
+    document.getElementById('op').value='dispGrp';
+    document.getElementById('mainform').submit();
+}
+function dispJGrp(){
+    tblColor('fddj');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var main = document.getElementById('mainform');
+    main.target = 'dedupjournal';
+    main.action ='/cgi-bin/lp.cgi';
+    main.ENCTYPE='multipart/form-data';
+    document.getElementById('op').value='dispJGrp';
+    document.getElementById('mainform').submit();
+}
+function dispOGrp(){
+    tblColor('fddo');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var main = document.getElementById('mainform');
+    main.target = 'deduporg';
+    main.action ='/cgi-bin/lp.cgi';
+    main.ENCTYPE='multipart/form-data';
+    document.getElementById('op').value='dispOGrp';
+    document.getElementById('mainform').submit();
+}
+
+function reStartGrp(){
+    tblColor('fddp');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var main = document.getElementById('mainform');
+    main.target = 'dedupeep';
+    main.action ='/cgi-bin/lp.cgi';
+    main.ENCTYPE='multipart/form-data';
+    document.getElementById('op').value='restartGrp';
+    document.getElementById('mainform').submit();
+}
+function reStartJGrp(){
+    tblColor('fddj');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var main = document.getElementById('mainform');
+    main.target = 'dedupjournal';
+    main.action ='/cgi-bin/lp.cgi';
+    main.ENCTYPE='multipart/form-data';
+    document.getElementById('op').value='restartJGrp';
+    document.getElementById('mainform').submit();
+}
+function reStartOGrp(){
+    tblColor('fddo');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var main = document.getElementById('mainform');
+    main.target = 'deduporg';
+    main.action ='/cgi-bin/lp.cgi';
+    main.ENCTYPE='multipart/form-data';
+    document.getElementById('op').value='restartOGrp';
+    document.getElementById('mainform').submit();
+}
+
+function rListGrp(){
+    tblColor('fddp');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var ruser = document.getElementById('usr').value;
+    var token = document.getElementById('token').value;
+    var rmergeF = document.getElementById('rmerge').checked;
+    var rmergeV = document.getElementById('rmerge').value;
+    var url='/cgi-bin/myDdpRetracts.cgi?ruser='+ruser;
+    
+    url += '&token='+token;
+    if(rmergeF){
+        url += '&rmerge=' + rmergeV;
+    }
+    //alert(url);
+    main = document.getElementById('mainform');
+    main.target = 'retracts';
+    main.action = url;
+    main.submit();
+}
+function rListJGrp(){
+    tblColor('fddj');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var ruser = document.getElementById('usr').value;
+    var token = document.getElementById('token').value;
+    var rmergeF = document.getElementById('jrmerge').checked;
+    var rmergeV = document.getElementById('jrmerge').value;
+    var url='/cgi-bin/myDdjRetracts.cgi?ruser='+ruser;
+
+    url += '&token='+token;
+    if(rmergeF){
+        url += '&jrmerge=' + rmergeV;
+    }
+    //alert(url);
+    main = document.getElementById('mainform');
+    main.target = 'jretracts';
+    main.action = url;
+    main.submit();
+}
+function rListOGrp(){
+    tblColor('fddo');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var ruser = document.getElementById('usr').value;
+    var token = document.getElementById('token').value;
+    var rmergeF = document.getElementById('ormerge').checked;
+    var rmergeV = document.getElementById('ormerge').value;
+    var url='/cgi-bin/myDdoRetracts.cgi?ruser='+ruser;
+
+    url += '&token='+token;
+    if(rmergeF){
+        url += '&ormerge=' + rmergeV;
+    }
+    //alert(url);
+    main = document.getElementById('mainform');
+    main.target = 'oretracts';
+    main.action = url;
+    main.submit();
+}
+
+function aListGrp(){
+    tblColor('fddp');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var ruser = document.getElementById('usr').value;
+    var token = document.getElementById('token').value;
+    var amergeF = document.getElementById('amerge').checked;
+    var amergeV = document.getElementById('amerge').value;
+    var url='/cgi-bin/myDdpAsserts.cgi?ruser='+ruser;
+    
+    url += '&token='+token;
+    if(amergeF){
+        url += '&amerge=' + amergeV;
+    }
+    //alert(url);
+    main = document.getElementById('mainform');
+    main.target = 'asserts';
+    main.action = url;
+    main.submit();
+}
+function aListJGrp(){
+    tblColor('fddj');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var ruser = document.getElementById('usr').value;
+    var token = document.getElementById('token').value;
+    var amergeF = document.getElementById('jamerge').checked;
+    var amergeV = document.getElementById('jamerge').value;
+    var url='/cgi-bin/myDdjAsserts.cgi?ruser='+ruser;
+
+    url += '&token='+token;
+    if(amergeF){
+        url += '&jamerge=' + amergeV;
+    }
+    //alert(url);
+    main = document.getElementById('mainform');
+    main.target = 'jasserts';
+    main.action = url;
+    main.submit();
+}
+function aListOGrp(){
+    tblColor('fddo');
+    if(!uriLookUpValid()){
+        return;
+    }
+    var ruser = document.getElementById('usr').value;
+    var token = document.getElementById('token').value;
+    var amergeF = document.getElementById('oamerge').checked;
+    var amergeV = document.getElementById('oamerge').value;
+    var url='/cgi-bin/myDdoAsserts.cgi?ruser='+ruser;
+
+    url += '&token='+token;
+    if(amergeF){
+        url += '&oamerge=' + amergeV;
+    }
+    //alert(url);
+    main = document.getElementById('mainform');
+    main.target = 'oasserts';
+    main.action = url;
+    main.submit();
+}
+
+function trim(str) { 
+    if(str == null)
+	return "";
+    str = str.replace(/^\s+/, ''); 
+    str = str.replace(/\s+$/, '');
+    return str;
+}
+
+</script>
+</head>
+<body 
+style="font-family:Arial,Verdana;font-size:14px;background-color:#F5F5F5">
+<H1>Uri Tool</H1>
+
+<form method='post' id='mainform' 
+name='mainform' action='/cgi-bin/lp.cgi' 
+target='listing' ENCTYPE='multipart/form-data'/>
+
+<input type='hidden' id='op' name='op' value='lu'/>
+<input type='hidden' id='rc' name='rc' value='No'/>
+<p>
+<a href='#' style='color: blue; text-decoration: none;'
+onclick='help()'> Help </a><br/>
+<div id='notes' style='display: none;'>
+Enter your <b>netid</b> and a prefix <b>token</b> below these will be used
+to distinguish your files from those you<br/> have worked with before
+and those of other users. 
+Tokens should consist only of {a-zA-Z0-9_}<br/> <br/>
+Clicking 'URI Look Up' will cause any files 
+with that prefix to be cleared before the look up is performed.<br/>
+Tokens will have '-TK' appended to them to avoid ambiguity.
+When listing retract files the token '*' is permitted.
+</p>
+<p>
+You can enter a single URI or a list of URIs in a file.
+The file should contain a single URI per line. It takes about<br/>
+6 to 10 seconds per URI to prepare and display a list. If the upload list
+is 20 or more a batch job will be started<br/>
+and you will be notified by email when it is complete.
+</p>
+<p>
+
+If your
+URIs are in the 
+'<b>http://vivo.cornell.edu/individual</b>' namespace
+you can use just the local name.<br/>
+
+
+</p>
+</div>
+<p>
+The current data source is: 
+<span style="color: red;font-size:18px;font-family: courier;font-weight: bold;"
+ id='datasource'>Cornell VIVO</span>.</p>
+
+
+
+
+<table border="0" cellpadding="4" 
+cellspacing="4" style="font-size:16px;">
+<tr><td>
+<h4>Enter Netid and Token</h4>
+<table border="0" cellpadding="4" 
+cellspacing="4" style="font-size:14px;border:1px solid black;">
+<tr>
+<th>Netid</th>
+<th>Prefix Token</th>
+<tr>
+<td style='text-align: center;' >
+<input type='text' size='10' name='usr' id='usr'/></td>
+<td style='text-align: center;'>
+<input type='text' size='10' name='token' id='token'/></td>
+</tr>
+</table>
+</td>
+<td>
+<h4>Vivo Instance Declaration</h4>
+<table border="0" cellpadding="4" 
+cellspacing="4" style="font-size:14px;border:1px solid black;">
+
+<tr><th>Host</th><th>Port</th><th>Context</th>
+</tr>
+<tr>
+<td>
+<input type='text' name='host' id='host' value='vivo.cornell.edu' onchange='Host(this)' />
+</td>
+<td>
+<input type='text' name='port' size='6' id='port' value='8080' onchange='Port(this)'/>
+</td>
+<td>
+<input type='text' name='ctxt' size='10'  id='ctxt' value='' onchange='Ctxt(this)'/>
+</td>
+
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+
+<table border="0" cellpadding="1" cellspacing="4" >
+<tr><td style='vertical-align:top;'>
+
+<h4>Function: General URI Inspection</h4>
+
+<table border="0" cellpadding="4" id='fgui'
+cellspacing="4" style="font-size:14px;border:1px solid black;">
+
+<tr>
+
+<th>Single URI</th>
+
+<th colspan='2'>Upload a URI list</th>
+</tr>
+
+<tr>
+
+<td><input type='text' name='uri' 
+id='uri' onchange='clearUpload()'/></td>
+<td colspan='2'><input type='file' name='uris'  size='35'
+id='uris' onchange='clearUri()'/></td>
+</tr>
+
+<tr>
+<td colspan='3' style='text-align: center;'> 
+
+<input type='button' name='lookup' 
+value='URI Look Up' onclick='lookUpUris()'/>
+
+<input type='button' name='toretract' 
+value='List Retract Files' onclick='lookupRetracts()' />
+
+<input type='button' name='continue' 
+value='ReStart Session' onclick='restartSession()' />
+</td>
+
+</tr>
+
+</table>
+
+</td><td>
+<h4>Function: Merge Groups of Similar foaf:Person Objects</h4>
+
+<table border="0" cellpadding="4" id='fddp'
+cellspacing="4" style="font-size:14px;border:1px solid black;">
+
+<tr>
+
+<th>Grouping Criteria</th>
+
+<th colspan='2'>Upload a Person Group File</th>
+</tr>
+
+<tr>
+
+<td><input type='text' name='criteria' id='criteria' onchange=''/></td>
+<td colspan='2'><input type='file' name='gfile'   size='35'
+id='gfile' onchange='tblColor("fddp")'/></td>
+</tr>
+
+<tr>
+<td style='text-align: center;'> 
+
+<table style="font-size:14px;">
+<tr><td style='text-align: center;'>
+<input type='button' name='dispg' id='dispg' value='Display Groups' onclick='dispGrp()'/>
+</td</tr>
+<tr><td style='text-align: center;'>
+<input type='button' name='reGrp' id='reGrp' value='ReStart Group' onclick='reStartGrp()'/>
+</td</tr>
+</table>
+
+</td>
+<td colspan='2' style='text-align: center;'> 
+
+<table style="font-size:14px;border:1px solid black;">
+<tr>
+<td style="font-size:12px;"><input type='checkbox' name='rmerge' id='rmerge'
+value='mr' onclick='' /> Combine </td>
+<td style="font-size:12px;"><input type='checkbox' name='amerge' id='amerge'
+value='ma' onclick=''/> Combine </td>
+</tr>
+<tr><td>
+<input type='button' name='rlist' value='List Retract Files' onclick='rListGrp()'/>
+</td><td>
+<input type='button' name='alist' value='List Assert Files' onclick='aListGrp()'/>
+</td></tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+</td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><td>
+<h4>Function: Merge Groups of Similar bibo:Journal Objects </h4>
+<table border="0" cellpadding="4" id='fddj'
+cellspacing="4" style="font-size:14px;border:1px solid black;">
+
+<tr>
+
+<th>Grouping Criteria</th>
+
+<th colspan='2'>Upload a Journal Group File</th>
+</tr>
+
+<tr>
+
+<td><input type='text' name='jcriteria'
+id='jcriteria' onchange=''/></td>
+<td colspan='2'><input type='file' name='jgfile'   size='35'
+id='jgfile' onchange='tblColor("fddj")'/></td>
+</tr>
+
+<tr>
+<td style='text-align: center;'>
+<table style="font-size:14px;">
+<tr><td style='text-align: center;'>
+<input type='button' name='jdispg' id='jdispg' value='Display Groups' onclick='dispJGrp()'/>
+</td</tr>
+<tr><td style='text-align: center;'>
+<input type='button' name='jreGrp' id='jreGrp' value='ReStart Group' onclick='reStartJGrp()'/>
+</td</tr>
+</table>
+</td>
+<td colspan='2' style='text-align: center;'>
+<table style="font-size:14px;border:1px solid black;">
+<tr>
+<td style="font-size:12px;"><input type='checkbox' name='jrmerge' id='jrmerge'
+value='mr' onclick='' /> Combine </td>
+<td style="font-size:12px;"><input type='checkbox' name='jamerge' id='jamerge'
+value='ma' onclick=''/> Combine </td>
+</tr>
+<tr><td>
+<input type='button' name='jrlist'
+value='List Retract Files' onclick='rListJGrp()'/>
+</td><td>
+<input type='button' name='jalist'
+value='List Assert Files' onclick='aListJGrp()'/>
+</td></tr>
+</table>
+</td>
+</tr>
+
+</table>
+
+
+</td><td>
+<h4>Function: Merge Groups of Similar foaf:Organization Objects</h4>
+<table border="0" cellpadding="4" id='fddo'
+cellspacing="4" style="font-size:14px;border:1px solid black;">
+
+<tr>
+
+<th>Grouping Criteria</th>
+
+<th colspan='2'>Upload a Organization Group File</th>
+</tr>
+
+<tr>
+
+<td><input type='text' name='ocriteria'
+id='ocriteria' onchange=''/></td>
+<td colspan='2'><input type='file' name='ogfile'   size='35'
+id='ogfile' onchange='tblColor("fddo")'/></td>
+</tr>
+<tr>
+<td style='text-align: center;'>
+<table style="font-size:14px;">
+<tr><td style='text-align: center;'>
+<input type='button' name='odispg' id='odispg' value='Display Groups' onclick='dispOGrp()'/>
+</td</tr>
+<tr><td style='text-align: center;'>
+<input type='button' name='oreGrp' id='oreGrp' value='ReStart Group' onclick='reStartOGrp()'/>
+</td</tr>
+</table>
+</td>
+<td colspan='2' style='text-align: center;'>
+<table style="font-size:14px;border:1px solid black;">
+<tr>
+<td style="font-size:12px;"><input type='checkbox' name='ormerge' id='ormerge'
+value='mr' onclick='' /> Combine </td>
+<td style="font-size:12px;"><input type='checkbox' name='oamerge' id='oamerge'
+value='ma' onclick=''/> Combine </td>
+</tr>
+<tr><td>
+<input type='button' name='orlist'
+value='List Retract Files' onclick='rListOGrp()'/>
+</td><td>
+<input type='button' name='oalist'
+value='List Assert Files' onclick='aListOGrp()'/>
+</td></tr>
+</table>
+</td>
+</tr>
+
+</table>
+
+</td><tr>
+
+</table>
+
+</form>
+<script>
+fixsource()
+document.getElementById('host').value=H;
+document.getElementById('port').value=P;
+document.getElementById('ctxt').value=C;
+</script>
+</body>
+</html>
