@@ -38,12 +38,9 @@ use Net::SMTP;
 $g_T0 = time();
 
 $dmy = strftime("%d%b%y%p", localtime($g_T0) );
-
-$vacct = 'vivouritool@gmail.com';
 $utHome = $Bin;
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 $spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
-dotEnvBash("$spEnv/.sp");
 $vacct = $ENV{'VIVO_ACCT_ID'};
 
 $base = shift; # base directory
@@ -59,11 +56,10 @@ $vhost = shift; # vivo host
 $vport = shift; # vivo port
 $vctxt = shift; # vivo ctxt
 
-if($vhost eq ''){
-    $vhost='vivo.cornell.edu';
-}
-if($vport eq ''){
-    $vport= '8080';
+# TODO Need to add an environment variable that gets the default host & port if one is not passed from the GUI
+if ($vhost eq '' || $vport eq '') {
+	print LOG "Host: " . $vhost . " Port: " . $vport . " is blank! \n";
+	exit 1;
 }
 
 $hpcp  = " -h $vhost " if $vhost ne '';
@@ -73,8 +69,9 @@ $HPC = "$host:$port:$ctxt";
 
 $wip = "$base/uritool/wip/$eusr";
 $inbasket = "$base/uritool/inbasket/$eusr";
-$saxon = "java -jar /home/ingest/Common/xslt/saxon9he.jar ";
-open LOG, ">>$base/logs/batch.log";
+$saxon = $ENV{'saxon'};
+$log = $ENV{'URITOOL_LOG_DIR'};
+open LOG, ">>$log/batch.log";
 print LOG "+++++++++++++++++++ batchLookup\n";
 autoflush LOG 1;
 

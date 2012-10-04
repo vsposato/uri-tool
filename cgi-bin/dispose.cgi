@@ -36,7 +36,7 @@ $g_T0 = time();
 $g_TMS = strftime("\%M\%S", localtime($g_T0) );
 $serverport = $ENV{'SERVER_PORT'};
 $utHome = $Bin;
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 
 $bdn = "URITOOL_BASEDIR_$serverport";
 $baseDir = $ENV{$bdn};
@@ -61,7 +61,8 @@ $idx = $indexbase;
 $indexbase = $indexbase+1;
 #$indexbase = ($indexbase > 4)?0:$indexbase+1;
 $auxbase = $inData{'auxbase'};
-open LOG, ">>$baseDir/logs/uritool.log";
+$log = $ENV{'URITOOL_LOG_DIR'};
+open LOG, ">>$log/uritool.log";
 autoflush LOG 1;
 print LOG "+++++++++++++++++++ dispose.cgi\n";
 $nothing=1;
