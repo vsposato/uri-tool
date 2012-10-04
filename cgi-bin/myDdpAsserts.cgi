@@ -48,7 +48,8 @@ $bdn = "URITOOL_BASEDIR_$serverport";
 $baseDir = $ENV{$bdn};
 $dirbase = $ENV{$bdn}."/uritool";
 
-open LOG, ">>$baseDir/logs/uritool.log";
+$log = $ENV{'URITOOL_LOG_DIR'};
+open LOG, ">>$log/uritool.log";
 autoflush LOG 1;
 print LOG "+++++++++++++++++++ myDdpRetracts\n";
 print LOG "QUERY_STRING = $input\n";

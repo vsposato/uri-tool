@@ -46,8 +46,6 @@ $utHome = $Bin;
 
 dotEnvBash("$utHome/.uritool");
 $spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
-
-dotEnvBash("$spEnv/.sp");
 $vacct = $ENV{'VIVO_ACCT_ID'};
 
 $bdn = "URITOOL_BASEDIR_$serverport";
@@ -62,7 +60,8 @@ $binDir = $ENV{$bbd};
 
 $ENV{'PATH'} = "$binDir:$ENV{'PATH'}";
  
-open LOG, ">>$baseDir/logs/uritool.log";
+$log = $ENV{'URITOOL_LOG_DIR'};
+open LOG, ">>$log/uritool.log";
 autoflush LOG 1;
 print LOG "+++++++++++++++++++ lp.cgi\n";
 print LOG $ENV{'PATH'} . "\n";
