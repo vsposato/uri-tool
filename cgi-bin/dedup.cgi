@@ -40,7 +40,7 @@ $serverport = $ENV{'SERVER_PORT'};
 $ruser = $ENV{'REMOTE_USER'};
 $input = $ENV{'QUERY_STRING'};
 $utHome = $Bin;
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 $spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
 $vacct = $ENV{'VIVO_ACCT_ID'};
 

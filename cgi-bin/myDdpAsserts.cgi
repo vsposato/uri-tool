@@ -41,7 +41,7 @@ chomp($input);
 $user = $ENV{'REMOTE_USER'};
 $serverport = $ENV{'SERVER_PORT'};
 $utHome = $Bin;
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 
 $bdn = "URITOOL_BASEDIR_$serverport";
 

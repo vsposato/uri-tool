@@ -13,29 +13,37 @@ export VIVO_HOST_CONTEXT=
 
 # This is the full path without trailing / to the location of the URITool 
 export URITOOL_HOMEDIR=/var/www/uritool
+
 # This is the path until the URITOOL_HOMEDIR where you have extracted the jena tool
 export JENAROOT=URITOOL_HOMEDIR/bin/apache-jena-2.7.0-incubating
+
 # This is the path statement that will be executed in order to make sure everything is available to the application
 export PATH=$URITOOL_HOMEDIR/bin:$URITOOL_HOMEDIR/bin:$JENAROOT/bin:$PATH
+
 # These are the locations where the primary directories can be found, and you can have multiples based upon port number.
 # If you have multiple instances of VIVO running, you could have multiple sets of these to allow work in different environments.
 # You will note the number between _ and = is the port that you are using
 export URITOOL_BASEDIR_80=$URITOOL_HOMEDIR
 export URITOOL_XSLT_DIR_80=$URITOOL_HOMEDIR/xslt
 export URITOOL_BIN_DIR_80=$URITOOL_HOMEDIR/bin
+
 # This is where your account environment resides, which is the sp file that has your base VIVO login information
 # It is best to have this be the same as your URITOOL_HOMEDIR for simplicity's sake
 export VIVO_ACCT_ENV_PATH=$URITOOL_HOMEDIR
+
 # This is the log directory that will be used
 export URITOOL_LOG_DIR=$URITOOL_HOMEDIR/logs
+
 # These are the different Saxon parser call strings that are used throughout the application, the main difference is size of memory allotted.
 # If you have multiple environments, you will want to stabilize saxon into one directory and just use that for these calls as you cannot have 
 # different saxons for different environments
 export saxon='java -jar $URITOOL_XSLT_DIR_80/saxon9he.jar'
 export Saxon='java -Xmx8g -Xms8g -XX:MaxPermSize=500m -jar $URITOOL_XSLT_DIR_80/saxon9he.jar'
 export SAXON='java -Xmx16g -Xms16g -XX:MaxPermSize=1g -jar $URITOOL_XSLT_DIR_80/saxon9he.jar'
+
 # This is the namespace for your VIVO, and is not the web address always
 export URITOOL_STD_NS=http://vivo.ufl.edu/individual/
+
 # This is the username and password of the administrator account that will be used for the URI tool functionality
 export SPARQLTOOL_PW=
 export VIVO_ACCT_ID=

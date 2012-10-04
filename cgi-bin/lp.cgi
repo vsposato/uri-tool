@@ -44,7 +44,7 @@ $serverport = $ENV{'SERVER_PORT'};
 
 $utHome = $Bin;
 
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 $spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
 $vacct = $ENV{'VIVO_ACCT_ID'};
 

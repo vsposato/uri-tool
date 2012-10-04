@@ -39,7 +39,7 @@ $g_T0 = time();
 
 $dmy = strftime("%d%b%y%p", localtime($g_T0) );
 $utHome = $Bin;
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 $spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
 $vacct = $ENV{'VIVO_ACCT_ID'};
 

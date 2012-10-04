@@ -38,9 +38,8 @@ $serverport = $ENV{'SERVER_PORT'};
 $input = $ENV{'QUERY_STRING'};
 $wuser = $ENV{'REMOTE_USER'};
 $utHome = $Bin;
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 $spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
-dotEnvBash("$spEnv/.sp");
 $vacct = $ENV{'VIVO_ACCT_ID'};
 
 $bdn = "URITOOL_BASEDIR_$serverport";

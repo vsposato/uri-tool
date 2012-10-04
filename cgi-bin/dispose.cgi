@@ -36,7 +36,7 @@ $g_T0 = time();
 $g_TMS = strftime("\%M\%S", localtime($g_T0) );
 $serverport = $ENV{'SERVER_PORT'};
 $utHome = $Bin;
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 
 $bdn = "URITOOL_BASEDIR_$serverport";
 $baseDir = $ENV{$bdn};
