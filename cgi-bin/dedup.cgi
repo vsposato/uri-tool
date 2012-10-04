@@ -90,11 +90,10 @@ $chosenUri = $inData{"uri"};
 $host = $hpc[0] if $hpc[0] ne '';
 $port = $hpc[1] if $hpc[1] ne '';
 $ctxt = $hpc[2] if $hpc[2] ne '';
-if($host eq ''){
-    $host='vivo.cornell.edu';
-}
-if($port eq ''){
-    $port= '8080';
+# TODO Need to add an environment variable that gets the default host & port if one is not passed from the GUI
+if ($host eq '' || $port eq '') {
+	print LOG "Host: " . $host . " Port: " . $port . " is blank! \n";
+	exit 1;
 }
 
 $hpcp  = " -h $host " if $host ne '';
@@ -148,7 +147,6 @@ while(<INF>){
 
 $curi = $H{$chosenUri};
 chomp $curi;
-$name = 'vivouritool@gmail.com';
 
 $flag = 'LV';
 # gather all nt from kb2 for grp uris - this is retract stuff
@@ -178,7 +176,7 @@ for(my $u=1; $u <= $gsize; $u++){
     $cmd .= " -C N-Triple";
     $cmd .= " -h $host";
     $cmd .= " -p $port" if $port ne '';
-    $cmd .= " -n $name";
+    $cmd .= " -n $vacct";
     $cmd .= " -P env";
     $cmd .= " -o $outf";
     $cmd .= " -i $of";
@@ -240,10 +238,6 @@ foreach my $u (@Unchosen){
 	    $trip =~ s/http:\/\/www.w3.org\/2000\/01\/rdf-schema\#label/http:\/\/vivoweb.org\/ontology\/aka\#label/;
 	    print OUTNT $trip;
 
-	} elsif(/http:\/\/vivo.cornell.edu\/ns\/hr\/0.9\/hr.owl\#netId/){
-	    $_ = "#" . $_;
-	    print OUTNT $_;
-
 	} else {
 	    print OUTNT $_;
 	}
@@ -262,7 +256,7 @@ open INNT, $f;
 open OUTNT, ">$ff";
 autoflush OUTNT 1;
 while(<INNT>){
-    if(/(http:\/\/xmlns.com\/foaf\/0.1\/firstName|http:\/\/xmlns.com\/foaf\/0.1\/lastName|http:\/\/vivoweb.org\/ontology\/core\#middleName|http:\/\/www.w3.org\/2000\/01\/rdf-schema\#label|http:\/\/vivo.cornell.edu\/ns\/hr\/0.9\/hr.owl\#netId)/){
+    if(/(http:\/\/xmlns.com\/foaf\/0.1\/firstName|http:\/\/xmlns.com\/foaf\/0.1\/lastName|http:\/\/vivoweb.org\/ontology\/core\#middleName|http:\/\/www.w3.org\/2000\/01\/rdf-schema\#label)/){
 	print OUTNT $_;
     }
 }
@@ -278,7 +272,6 @@ autoflush OUTNT 1;
 $fn    = $inData{'fname'};
 $ln    = $inData{'lname'};
 $mn    = $inData{'mname'};
-$nid   = $inData{'netid'};
 $label = $inData{'label'};
 
 $nt = "<$curi> <http:\/\/xmlns.com\/foaf\/0.1\/firstName> \"$fn\" .\n";
@@ -289,9 +282,6 @@ print OUTNT $nt if $ln ne "";
 
 $nt = "<$curi> <http:\/\/vivoweb.org\/ontology\/core\#middleName> \"$mn\" .\n";
 print OUTNT $nt if $mn ne "";
-
-$nt = "<$curi> <http:\/\/vivo.cornell.edu\/ns\/hr\/0.9\/hr.owl\#netId> \"$nid\" .\n";
-print OUTNT $nt if $nid ne "";
 
 $nt = "<$curi> <http:\/\/www.w3.org\/2000\/01\/rdf-schema\#label> \"$label\" .\n";
 print OUTNT $nt if $label ne "";

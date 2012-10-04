@@ -37,8 +37,6 @@ $g_TMS = strftime("\%M\%S", localtime($g_T0) );
 $serverport = $ENV{'SERVER_PORT'};
 $input = $ENV{'QUERY_STRING'};
 $wuser = $ENV{'REMOTE_USER'};
-
-$vacct = 'vivouritool@gmail.com';
 $utHome = $Bin;
 dotEnvBash("$utHome/.uritool");
 $spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
@@ -82,11 +80,10 @@ $hpc = $inData{'hpc'};
 $host = $hpc[0] if $hpc[0] ne '';
 $port = $hpc[1] if $hpc[1] ne '';
 $ctxt = $hpc[2] if $hpc[2] ne '';
-if($host eq ''){
-    $host='vivo.cornell.edu';
-}
-if($port eq ''){
-    $port= '8080';
+# TODO Need to add an environment variable that gets the default host & port if one is not passed from the GUI
+if ($host eq '' || $port eq '') {
+	print LOG "Host: " . $host . " Port: " . $port . " is blank! \n";
+	exit 1;
 }
 
 $hpcp  = " -h $host " if $host ne '';
