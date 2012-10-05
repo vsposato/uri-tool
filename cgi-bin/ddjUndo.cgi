@@ -40,7 +40,7 @@ $serverport = $ENV{'SERVER_PORT'};
 $ruser = $ENV{'REMOTE_USER'};
 $input = $ENV{'QUERY_STRING'};
 $utHome = $Bin;
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 
 $bdn = "URITOOL_BASEDIR_$serverport";
 $baseDir = $ENV{$bdn};
@@ -62,7 +62,8 @@ $outhdr = "Content-Type: text/html\n";
 $outhdr .= "Expires: Tue, 01 Jan 1981 01:00:00 GMT\n\n";
 
 autoflush STDOUT 1;
-open LOG, ">>$baseDir/logs/uritool.log";
+$log = $ENV{'URITOOL_LOG_DIR'};
+open LOG, ">>$log/uritool.log";
 autoflush LOG 1;
 print LOG "\n+++++++++++++++++++ ddjUndo.cgi\n";
 print LOG "\$bdn = $bdn \n";

@@ -113,31 +113,21 @@ sub trim {
 }
 $g_ontology = $opt_O if $opt_O ne '';
 
+$g_context = $ENV{'VIVO_HOST_CONTEXT'};
 $g_context = $opt_c if $opt_c ne '';
 
-
-
-# HOST default vs arg
-$host = 'localhost';
+$host = $ENV{'VIVO_HOST'};
 $host = $opt_h if $opt_h ne '';
 
-if($host ne 'vivo.cornell.edu' && $host ne 'vivo' ){
-# PORT default vs arg
-    $port = '8080';
-    $port = $opt_p if $opt_p ne '';
+$port = $ENV{'VIVO_PORT'};
+$port = $opt_p if $opt_p ne '';
 
-# combine parts
-    $g_HOSTCTX = $host;
-    $g_HOSTCTX .= ":$port" if $port ne '';
-    $g_HOSTCTX .= "/$g_context" if $g_context ne '';
-} else {
-    $g_HOSTCTX =  $ENV{'VIVO_HOST_PORT'}; 
-    # e.g. 'sisler.mannlib.cornell.edu:8080';
-    #      'vivo.cornell.edu:8080';
-}
+$g_HOSTCTX = $host;
+$g_HOSTCTX .= ":$port" if $port ne '';
+$g_HOSTCTX .= "/$g_context" if $g_context ne '';
 
 # USER default vs arg
-$g_usr = 'defaultAdmin';
+$g_usr = $ENV{'VIVO_ACCT_ID'};
 $g_usr = $opt_n if $opt_n ne '';
 
 # now prep variables
@@ -275,7 +265,7 @@ $curlverb = '';
 $curlverb = '-v' if $opt_d;
 
 # prepare parameters
-$g_LOGIN_DATA = "bogus=b&loginName=$g_usr&";
+$g_LOGIN_DATA = "loginName=$g_usr&";
 $g_LOGIN_DATA .= "loginPassword=$g_pw&loginForm=Log%20in";
 
 # language
@@ -339,7 +329,9 @@ $g_r = ($? >> 8);
 $msg = join('', @g_res) . "\n";
 print $msg if ($opt_v || $g_r) &&  scalar(@g_res) && !$opt_l > 0;
 print LOG $msg  if $opt_l && ($opt_v || $g_r) &&  scalar(@g_res) > 0;
-if($msg !~ /individual loggedIn/){
+
+$loginPageInfo = $ENV{'LoginPageClass'};
+if($msg !~ /$loginPageInfo/){
     print "\n>>>------> LOG IN FAILED\n";
     print LOG "\n>>>------> LOG IN FAILED\n" if $opt_l;
     exit 1;

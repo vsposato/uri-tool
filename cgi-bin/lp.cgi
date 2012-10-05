@@ -42,14 +42,10 @@ $UNO = '1';
 $wuser = $ENV{'REMOTE_USER'};
 $serverport = $ENV{'SERVER_PORT'};
 
-#$vacct = 'vivouritool@gmail.com';
-
 $utHome = $Bin;
 
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 $spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
-
-dotEnvBash("$spEnv/.sp");
 $vacct = $ENV{'VIVO_ACCT_ID'};
 
 $bdn = "URITOOL_BASEDIR_$serverport";
@@ -64,7 +60,8 @@ $binDir = $ENV{$bbd};
 
 $ENV{'PATH'} = "$binDir:$ENV{'PATH'}";
  
-open LOG, ">>$baseDir/logs/uritool.log";
+$log = $ENV{'URITOOL_LOG_DIR'};
+open LOG, ">>$log/uritool.log";
 autoflush LOG 1;
 print LOG "+++++++++++++++++++ lp.cgi\n";
 print LOG $ENV{'PATH'} . "\n";
@@ -77,10 +74,7 @@ $retract = "$baseDir/uritool/retract";
 $assert = "$baseDir/uritool/assert";
 $upldir = "$baseDir/uritool/tmp";
 
-
-#$stdns = "http://vivo.cornell.edu/individual/";
 $stdns = $ENV{'URITOOL_STD_NS'} if $ENV{'URITOOL_STD_NS'} ne '';
-
 
 $g_cgi = new CGI; 
 
@@ -115,11 +109,11 @@ $oacomb = $g_cgi->param("oamerge");
 $host = trim($g_cgi->param("host"));
 $port = trim($g_cgi->param("port"));
 $ctxt = trim($g_cgi->param("ctxt"));
-if($host eq ''){
-    $host='vivo.cornell.edu';
-}
-if($port eq ''){
-    $port= '8080';
+
+# TODO Need to add an environment variable that gets the default host & port if one is not passed from the GUI
+if ($host eq '' || $port eq '') {
+	print LOG "Host: " . $host . " Port: " . $port . " is blank! \n";
+	exit 1;
 }
 
 $hpc = $host . ($port ne '' ?":$port":"") . ($ctxt ne '' ?"/$ctxt":'');

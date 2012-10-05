@@ -1,2 +1,0 @@
-export SPARQLTOOL_PW=
-export VIVO_ACCT_ID=

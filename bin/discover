@@ -38,6 +38,7 @@ use Term::ReadKey;
 
 # designed and coded by Joseph R. Mc Enerney jrm424@cornell.edu 
 
+# TODO - Update ontology map for your institution
 %OntoMap = (
 "http://vitro.mannlib.cornell.edu/ns/reporting#"               => "far:",
 "http://vivoweb.org/ontology/activity-insight#"                => "acti:",
@@ -96,7 +97,8 @@ if($ENV{'SPARQLTOOL_PW'} eq ''){
     print "Provide password\nexport SPARQLTOOL_PW=pw";
     usage(1);
 }
-$base = "/home/ingest/Common";
+
+$base = $ENV{$bdn};
 $base = $opt_b if $opt_b ne '';
 $xslt = "$base/xslt";
 
@@ -109,24 +111,18 @@ if($uri !~ /^http/){
     $uri = $stdns . $uri;
 }
 
-$ctxt = "vivocornell";
+$ctxt = $ENV{'VIVO_HOST_CONTEXT'};
 $ctxt = $opt_c if $opt_c ne '';
 
-$host = 'localhost';
+$host = $ENV{'VIVO_HOST'};
 $host = $opt_h if $opt_h ne '';
 
-$port = '9090';
+$port = $ENV{'VIVO_PORT'};
 $port = $opt_p if $opt_p ne '';
 
-$name = 'jrm424@cornell.edu';
+$name = $ENV{'VIVO_ACCT_ID'};
 $name = $opt_n if $opt_n ne '';
 
-
-if($host eq 'vivo' || $0 =~ /\/dv$/){
-    $port = '8080';
-    $host = 'vivo';
-    $ctxt = '';
-}
 $inref = "/tmp/refsToSpRS_$opt_N$g_usr.xml";
 
 $outref = "/tmp/refsBySpRS_$opt_N$g_usr.xml";

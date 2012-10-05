@@ -62,7 +62,7 @@ sub usage{
 
 $opts = "b:c:CE:h:o:Pp:n:vu:";
 getopts($opts);
-$base = "/home/ingest/Common";
+$base = $ENV{$bdn};
 $base = $opt_b if $opt_b ne '';
 $outf = "problemObjs.xmls";
 $outf = $opt_o if $opt_o ne '';
@@ -82,8 +82,8 @@ $n = " -n $opt_n " if $opt_n ne '';
 $hpc = " -h $opt_h " if $opt_h ne '';
 $hpc .= " -p $opt_p " if $opt_p ne '';
 $hpc .= " -c $opt_c " if $opt_c ne '';
-
-open LOG, ">>/home/ingest/www/logs/uritool.log";
+$log = $ENV{'URITOOL_LOG_DIR'};
+open LOG, ">>$log";
 print LOG "$0 " . join(' ',@av) . "\n" if $opt_v;
 qx(/bin/rm -f $outf);
 while(<>){

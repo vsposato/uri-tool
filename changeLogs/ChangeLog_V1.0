@@ -1,0 +1,10 @@
+/**************************************
+v1.0 - URI Tool
+2012-10-05
+**************************************/
+Vincent Sposato (4):
+      Initial load of the URI tool from Cornell
+      Finalized initial run through uritool to parameterize all entries and make the system function - now testing needs to occur
+      Logging fixed to go to an automatic directory
+      Tested and working - completed. Just need documentation
+

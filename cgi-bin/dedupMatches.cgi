@@ -43,9 +43,8 @@ $serverport = $ENV{'SERVER_PORT'};
 $ruser = $ENV{'REMOTE_USER'};
 $input = $ENV{'QUERY_STRING'};
 $utHome = $Bin;
-dotEnvBash("$utHome/.uritool");
+dotEnvBash("$utHome/uritool");
 $spEnv = $ENV{'VIVO_ACCT_ENV_PATH'};
-dotEnvBash("$spEnv/.sp");
 $vacct = $ENV{'VIVO_ACCT_ID'};
 
 
@@ -76,7 +75,8 @@ $outhdr .= "Expires: Tue, 01 Jan 1981 01:00:00 GMT\n\n";
 # set up logging
 #
 autoflush STDOUT 1;
-open LOG, ">>$baseDir/logs/uritool.log";
+$log = $ENV{'URITOOL_LOG_DIR'};
+open LOG, ">>$log/uritool.log";
 autoflush LOG 1;
 
 print LOG "\n+++++++++++++++++++ dedupMatches.cgi\n";
@@ -114,11 +114,10 @@ $chosenUri = $inData{"uri"};
 $host = $hpc[0] if $hpc[0] ne '';
 $port = $hpc[1] if $hpc[1] ne '';
 $ctxt = $hpc[2] if $hpc[2] ne '';
-if($host eq ''){
-    $host='vivo.cornell.edu';
-}
-if($port eq ''){
-    $port= '8080';
+# TODO Need to add an environment variable that gets the default host & port if one is not passed from the GUI
+if ($host eq '' || $port eq '') {
+	print LOG "Host: " . $host . " Port: " . $port . " is blank! \n";
+	exit 1;
 }
 $hpcp  = " -h $host " if $host ne '';
 $hpcp .= " -p $port " if $port ne '';
